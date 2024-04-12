@@ -4,16 +4,16 @@ import { ImageLabelSwiper, LogoSwiper, Inline, Usps } from './variant'
 
 type VariantRenderer = Record<
   NonNullable<RowLinksFragment['linksVariant']>,
-  React.VFC<RowLinksFragment>
+  React.FunctionComponent<RowLinksFragment>
 >
 
-type RowLinksProps = RowLinksFragment & {
+export type RowLinksProps = RowLinksFragment & {
   renderer?: Partial<VariantRenderer>
 }
 
 const defaultRenderer: Partial<VariantRenderer> = {
-  LogoSwiper,
   ImageLabelSwiper,
+  LogoSwiper,
   Inline,
   Usps,
 }

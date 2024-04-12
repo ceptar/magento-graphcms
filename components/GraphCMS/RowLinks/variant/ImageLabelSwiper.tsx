@@ -1,15 +1,10 @@
 import { Asset, RichText } from '@graphcommerce/graphcms-ui'
 import { responsiveVal, VariantImageLabelSwiper } from '@graphcommerce/next-ui'
-import { ContainerProps, Box, ButtonBase, Typography, Theme, SxProps } from '@mui/material'
+import { Box, ButtonBase, Typography } from '@mui/material'
 import { RowLinksFragment } from '../RowLinks.gql'
 
-export type RowLinksFragmentVar = RowLinksFragment & ContainerProps & {
-  pageLinks: React.ReactNode;
-  sx?: SxProps<Theme>;
-};
-
-export function ImageLabelSwiper(props: RowLinksFragmentVar) {
-  const { title, rowLinksCopy, pageLinks, sx = [], ...containerProps  } = props
+export function ImageLabelSwiper(props: RowLinksFragment) {
+  const { title, rowLinksCopy, pageLinks } = props
 
   return (
     <VariantImageLabelSwiper
@@ -32,12 +27,11 @@ export function ImageLabelSwiper(props: RowLinksFragmentVar) {
           {pageLink?.asset && (
             <Asset
               asset={pageLink.asset}
-              sx={(theme) => ({
+              sx={{
                 width: responsiveVal(120, 200),
                 maxWidth: responsiveVal(120, 200),
-                borderRadius: responsiveVal(theme.shape.borderRadius * 2, theme.shape.borderRadius * 3),
-              })}
-              sizes={responsiveVal(120, 200)}
+              }}
+              sizes={responsiveVal(260, 400)}
             />
           )}
           <Box sx={{ maxWidth: responsiveVal(120, 200) }}>
