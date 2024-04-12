@@ -180,9 +180,9 @@ export const NavigationOverlay = React.memo((props: NavigationOverlayProps) => {
               </Fab>
             }
           >
-            <LayoutTitle size='small' component='span'>
+            {/* <LayoutTitle size='small' component='span'>
               <NavigationTitle />
-            </LayoutTitle>
+            </LayoutTitle> */}
           </LayoutHeaderContent>
         </Box>
       </MotionDiv>

@@ -98,13 +98,13 @@ export function LayoutHeader(props: LayoutHeaderProps) {
           zIndex: children ? theme.zIndex.appBar : theme.zIndex.appBar - 2,
           position: 'sticky',
           pointerEvents: 'none',
-          marginLeft: 6,
+          marginLeft: 0,
 
           [theme.breakpoints.down('md')]: {
             top: 0,
             left: 0,
             // cc, neue Anordnung backbutton sticky overlay small
-            marginLeft: 6,
+            marginLeft: 0,
             marginTop: `calc(${theme.appShell.headerHeightSm} * -1)`,
 
             height: theme.appShell.headerHeightSm,

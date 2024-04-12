@@ -9,10 +9,11 @@ import {
   MuiSnackbar,
   MuiFabSizes,
   MuiSlider,
-  MuiChip,
+
   MuiButtonInline,
   NextLink,
 } from '@graphcommerce/next-ui'
+import { MuiChip } from './MuiChip'
 import { createTheme, Theme, alpha, LinkProps } from '@mui/material'
 import { Components, PaletteOptions } from '@mui/material/styles'
 

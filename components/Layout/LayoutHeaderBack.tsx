@@ -46,42 +46,42 @@ export function LayoutHeaderBack(props: BackProps) {
   const backIcon = <IconSvg src={iconChevronLeft} size='medium' />
   const canClickBack = backSteps > 0 && path !== prevUp?.href
 
-  let label = i18n._(/* i18n */ 'Back')
-  if (up?.href === path && up?.title) label = up.title
-  if (prevUp?.href === path && prevUp?.title) label = prevUp.title
+  // let label = i18n._(/* i18n */ 'Back')
+  // if (up?.href === path && up?.title) label = up.title
+  // if (prevUp?.href === path && prevUp?.title) label = prevUp.title
 
-  if (canClickBack) {
-    return (
-      <LinkOrButton
-        onClick={() => router.back()}
-        button={{ variant: 'pill', sx: buttonSx }}
-        color='inherit'
-        startIcon={backIcon}
-        aria-label={label}
-        {...props}
-      >
-        <Box component='span' sx={{ display: { xs: 'none', md: 'inline' } }}>
-          {label}
-        </Box>
-      </LinkOrButton>
-    )
-  }
+  // if (canClickBack) {
+  //   return (
+  //     <LinkOrButton
+  //       onClick={() => router.back()}
+  //       button={{ variant: 'pill', sx: buttonSx }}
+  //       color='inherit'
+  //       startIcon={backIcon}
+  //       aria-label={label}
+  //       {...props}
+  //     >
+  //       <Box component='span' sx={{ display: { xs: 'none', md: 'inline' } }}>
+  //         {label}
+  //       </Box>
+  //     </LinkOrButton>
+  //   )
+  // }
 
-  if (up?.href && up.href !== path)
-    return (
-      <LinkOrButton
-        href={up.href}
-        button={{ variant: 'pill', sx: buttonSx }}
-        startIcon={backIcon}
-        aria-label={up.title}
-        color='inherit'
-        {...props}
-      >
-        <Box component='span' sx={{ display: { xs: 'none', md: 'inline' } }}>
-          {up.title}
-        </Box>
-      </LinkOrButton>
-    )
+  // if (up?.href && up.href !== path)
+  //   return (
+  //     <LinkOrButton
+  //       href={up.href}
+  //       button={{ variant: 'pill', sx: buttonSx }}
+  //       startIcon={backIcon}
+  //       aria-label={up.title}
+  //       color='inherit'
+  //       {...props}
+  //     >
+  //       <Box component='span' sx={{ display: { xs: 'none', md: 'inline' } }}>
+  //         {up.title}
+  //       </Box>
+  //     </LinkOrButton>
+  //   )
 
   return null
 }

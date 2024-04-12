@@ -41,8 +41,8 @@ export function LayoutHeaderContent(props: LayoutHeaderContentProps) {
     children,
     right,
     divider,
-    floatingMd = false,
-    floatingSm = false,
+    floatingMd = true,
+    floatingSm = true,
     switchPoint = 50,
     sx = [],
     sxBg = [],
@@ -64,9 +64,10 @@ export function LayoutHeaderContent(props: LayoutHeaderContentProps) {
         sx={[
           (theme) => ({
             position: 'absolute',
+            top: 0,
             left: 0,
             width: '100%',
-            backgroundColor: theme.palette.background[bgColor],
+            backgroundColor: 'theme.palette.background[bgColor]',
             boxShadow: theme.shadows[1],
 
             height: theme.appShell.headerHeightSm,
@@ -116,7 +117,7 @@ export function LayoutHeaderContent(props: LayoutHeaderContentProps) {
             gridTemplateColumns: '1fr auto 1fr',
             alignItems: 'center',
             gap: theme.page.horizontal,
-
+            backgroundColor: '',
             height: theme.appShell.headerHeightSm,
             px: theme.page.horizontal,
             [theme.breakpoints.up('md')]: {
@@ -196,9 +197,9 @@ export function LayoutHeaderContent(props: LayoutHeaderContentProps) {
             },
           })}
         >
-          <MotionDiv sx={{ minWidth: 0 }} layout={layout} layoutDependency={layoutDependency}>
+          {/* <MotionDiv sx={{ minWidth: 0 }} layout={layout} layoutDependency={layoutDependency}>
             {children}
-          </MotionDiv>
+          </MotionDiv> */}
         </Box>
         <Box
           className={classes.right}
