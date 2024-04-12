@@ -5,8 +5,6 @@ import { RowLinksFragment } from '../RowLinks.gql'
 
 export type RowLinksFragmentVar = RowLinksFragment & ContainerProps & {
   pageLinks: React.ReactNode;
-  imageSrc: string; // Update prop name for image source
-  children: React.ReactNode;
   sx?: SxProps<Theme>;
 };
 
