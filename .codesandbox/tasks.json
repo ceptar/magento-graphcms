@@ -1,0 +1,81 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "command": "yarn install",
+      "name": "y"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "eslint:lint": {
+      "name": "eslint:lint",
+      "command": "yarn eslint:lint"
+    },
+    "eslint:fix": {
+      "name": "eslint:fix",
+      "command": "yarn eslint:fix"
+    },
+    "prettier:fix": {
+      "name": "prettier:fix",
+      "command": "yarn prettier:fix"
+    },
+    "tsc:lint": {
+      "name": "tsc:lint",
+      "command": "yarn tsc:lint"
+    },
+    "tsc:perf": {
+      "name": "tsc:perf",
+      "command": "yarn tsc:perf"
+    },
+    "playwright": {
+      "name": "playwright",
+      "command": "yarn playwright"
+    },
+    "postinstall": {
+      "name": "postinstall",
+      "command": "yarn postinstall"
+    },
+    "release": {
+      "name": "release",
+      "command": "yarn release"
+    },
+    "packages": {
+      "name": "packages",
+      "command": "yarn packages"
+    },
+    "packages:1": {
+      "name": "packages:1",
+      "command": "yarn packages:1"
+    },
+    "packages:2": {
+      "name": "packages:2",
+      "command": "yarn packages:2"
+    },
+    "packages:3": {
+      "name": "packages:3",
+      "command": "yarn packages:3"
+    },
+    "packages:4": {
+      "name": "packages:4",
+      "command": "yarn packages:4"
+    },
+    "packages:5": {
+      "name": "packages:5",
+      "command": "yarn packages:5"
+    },
+    "packages:6": {
+      "name": "packages:6",
+      "command": "yarn packages:6"
+    },
+    "packages:7": {
+      "name": "packages:7",
+      "command": "yarn packages:7"
+    },
+    "create-patch": {
+      "name": "create-patch",
+      "command": "yarn create-patch"
+    }
+  }
+}
