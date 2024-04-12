@@ -12,6 +12,12 @@ const config = {
   storefront: [
     { locale: 'en', magentoStoreCode: 'default', defaultLocale: true },
   ],
+  productFiltersPro: true,
+  productFiltersLayout: 'DEFAULT',
+  robotsAllow: false,
+
+  demoMode: true,
+  limitSsg: true,
 }
 
 module.exports = config

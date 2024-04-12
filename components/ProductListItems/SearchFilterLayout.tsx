@@ -9,16 +9,16 @@ import {
   ProductFiltersProSortChip,
   ProductListCount,
   ProductListFilters,
-  ProductListFiltersContainer,
   ProductListItemsBase,
   ProductListPagination,
   ProductListParamsProvider,
   ProductListSort,
 } from '@graphcommerce/magento-search'
-import { StickyBelowHeader } from '@graphcommerce/next-ui'
+import { StickyBelowHeader } from './StickyBelowHeader'
 import { Container } from '@mui/material'
 import { ProductListFilterLayoutProps } from './CategoryFilterLayout'
 import { productListRenderer } from './productListRenderer'
+import { ProductListFiltersContainer } from './ProductListFiltersContainer'
 
 export function SearchFilterLayout(props: ProductListFilterLayoutProps) {
   const { params, filters, products, filterTypes, title, id } = props

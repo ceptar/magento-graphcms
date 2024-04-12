@@ -73,6 +73,7 @@ export function LayoutDefault(props: LayoutDefaultProps) {
           component='header'
           className={classes.header}
           sx={(theme) => ({
+            top: 0,
             zIndex: theme.zIndex.appBar - 1,
             display: 'flex',
             alignItems: 'center',

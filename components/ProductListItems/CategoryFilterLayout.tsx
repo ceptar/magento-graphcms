@@ -11,7 +11,6 @@ import {
   ProductFiltersQuery,
   ProductListCount,
   ProductListFilters,
-  ProductListFiltersContainer,
   ProductListPagination,
   ProductListParams,
   ProductListParamsProvider,
@@ -21,6 +20,7 @@ import {
 import { StickyBelowHeader } from '@graphcommerce/next-ui'
 import { Container } from '@mui/material'
 import { ProductListItems } from './ProductListItems'
+import { ProductListFiltersContainer } from './ProductListFiltersContainer'
 
 export type ProductListFilterLayoutProps = ProductListQuery &
   ProductFiltersQuery & {

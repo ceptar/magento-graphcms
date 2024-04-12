@@ -9,14 +9,16 @@ class Document extends NextDocument<EmotionCacheProps & LinguiDocumentProps> {
     return (
       <Html lang={normalizeLocale(this.props.locale)}>
         <Head>
+        <link
+    rel='stylesheet'
+    type='text/css'
+    media='all'
+    href='http://localhost:3000/fonts/_fonts.css'
+  />
           {/* Inject MUI styles first to match with the prepend: true configuration. */}
           <meta name='emotion-insertion-point' content='' />
           {this.props.emotionStyleTags}
           {this.props.linguiScriptTag}
-
-          <link rel='preconnect' href='https://fonts.googleapis.com' />
-          <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin='' />
-          <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet" />
         </Head>
         <body>
           <Main />

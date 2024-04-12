@@ -95,7 +95,8 @@ const createThemeWithPalette = (palette: PaletteOptions) =>
     ...themeBaseDefaults,
     shape: { borderRadius: 3 },
     typography: {
-      fontFamily: '"Mulish", "Helvetica", "Arial", sans-serif',
+      fontFamily: '"Metro", "Helvetica", "Arial", sans-serif',
+      // fontFamily: '"Mulish", "Helvetica", "Arial", sans-serif',
       // @see docs typography.md
       h1: {
         ...fontSize(28, 64),

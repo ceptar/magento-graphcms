@@ -41,8 +41,8 @@ export function LayoutHeaderContent(props: LayoutHeaderContentProps) {
     children,
     right,
     divider,
-    floatingMd = true,
-    floatingSm = true,
+    floatingMd = false,
+    floatingSm = false,
     switchPoint = 50,
     sx = [],
     sxBg = [],
@@ -64,7 +64,7 @@ export function LayoutHeaderContent(props: LayoutHeaderContentProps) {
         sx={[
           (theme) => ({
             position: 'absolute',
-            top: 0,
+
             left: 0,
             width: '100%',
             backgroundColor: 'theme.palette.background[bgColor]',

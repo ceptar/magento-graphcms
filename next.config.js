@@ -27,6 +27,7 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+
 }
 
 module.exports = withGraphCommerce(withPWA(nextConfig), __dirname)
