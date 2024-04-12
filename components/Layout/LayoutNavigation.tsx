@@ -7,11 +7,11 @@ import { WishlistFab, WishlistMenuFabItem } from '@graphcommerce/magento-wishlis
 import { LayoutDefault, LayoutDefaultProps } from './LayoutDefault'
 import { DesktopNavBar } from './DesktopNavbar'
 import { NavigationOverlay } from './NavigationOverlay'
+import { NavigationFab } from './NavigationFab'
 import {
   DesktopNavActions,
   iconCustomerService,
   iconHeart,
-  NavigationFab,
   MenuFabSecondaryItem,
   PlaceholderFab,
   IconSvg,
@@ -128,7 +128,7 @@ export function LayoutNavigation(props: LayoutNavigationProps) {
           variantMd='left'
           sizeMd='full'
           justifyMd='start'
-          itemWidthMd='230px'
+          itemWidthMd='400px'
           mouseEvent='hover'
           itemPadding='md'
         />

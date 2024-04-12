@@ -358,38 +358,41 @@ export function OverlayBase(incomingProps: LayoutOverlayBaseProps) {
     [closeOverlay, snap, scrollerRef],
   )
 
-  return (
-    <>
-      <MotionDiv
-        inert={active ? undefined : true}
-        className={classes.backdrop}
-        style={{ opacity: positions.open.visible }}
-        sx={[
-          {
-            zIndex: -1,
-            position: 'fixed',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            right: 0,
-            bottom: 0,
-            top: 0,
-            left: 0,
-            backgroundColor: 'rgba(0, 0, 0, 0.2)',
-            WebkitTapHighlightColor: 'transparent',
-            willChange: 'opacity',
-          },
-          ...(Array.isArray(sxBackdrop) ? sxBackdrop : [sxBackdrop]),
-        ]}
-      />
-      <Scroller
-        inert={active ? undefined : true}
-        className={`${classes.scroller} ${className ?? ''}`}
-        grid={false}
-        onClick={onClickAway}
-        hideScrollbar
-        sx={[
-          (theme) => ({
+ 
+  let motionDivProps = {
+    className: classes.backdrop,
+    style: { opacity: positions.open.visible },
+    sx: [
+      {
+        zIndex: -1,
+        position: 'fixed',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        right: 0,
+        bottom: 0,
+        top: 0,
+        left: 0,
+        backgroundColor: 'rgba(0, 0, 0, 0.2)',
+        WebkitTapHighlightColor: 'transparent',
+        willChange: 'opacity',
+      },
+      ...(Array.isArray(sxBackdrop) ? sxBackdrop : [sxBackdrop]),
+    ],
+  };
+  
+  if (!active) {
+    motionDivProps = { ...motionDivProps, inert: '' };
+  }
+
+  let hideScrollbar = true; // or false, depending on your needs
+  let scrollerProps = {
+    className: `${classes.scroller} ${className ?? ''}`,
+    grid: false,
+    onClick: onClickAway,
+    hideScrollbar,
+    sx: [
+      (theme) => ({
             overscrollBehavior: 'contain',
             display: 'grid',
             '&.canGrab': {
@@ -452,9 +455,15 @@ export function OverlayBase(incomingProps: LayoutOverlayBaseProps) {
             },
           }),
           ...(Array.isArray(sx) ? sx : [sx]),
-        ]}
-      >
-        <Box
+        ],
+      };
+     
+
+  return (
+    <>
+      <MotionDiv {...motionDivProps} />
+      <Scroller {...scrollerProps}>
+      <Box
           className={classes.beforeOverlay}
           ref={beforeRef}
           sx={(theme) => ({
@@ -661,6 +670,7 @@ kein effekt
           </MotionDiv>
         </Box>
       </Scroller>
+      
     </>
   )
 }
