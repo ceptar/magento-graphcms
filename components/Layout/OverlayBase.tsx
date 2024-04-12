@@ -359,33 +359,31 @@ export function OverlayBase(incomingProps: LayoutOverlayBaseProps) {
   )
 
  
-  let motionDivProps = {
-    className: classes.backdrop,
-    style: { opacity: positions.open.visible },
-    sx: [
-      {
-        zIndex: -1,
-        position: 'fixed',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        right: 0,
-        bottom: 0,
-        top: 0,
-        left: 0,
-        backgroundColor: 'rgba(0, 0, 0, 0.2)',
-        WebkitTapHighlightColor: 'transparent',
-        willChange: 'opacity',
-      },
-      ...(Array.isArray(sxBackdrop) ? sxBackdrop : [sxBackdrop]),
-    ],
-  };
-  
-  if (!active) {
-    motionDivProps = { ...motionDivProps, inert: '' };
-  }
-
   let hideScrollbar = true; // or false, depending on your needs
+
+let motionDivProps = {
+  className: classes.backdrop,
+  style: { opacity: positions.open.visible },
+  sx: [
+    {
+      zIndex: -1,
+      position: 'fixed',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      right: 0,
+      bottom: 0,
+      top: 0,
+      left: 0,
+      backgroundColor: 'rgba(0, 0, 0, 0.2)',
+      WebkitTapHighlightColor: 'transparent',
+      willChange: 'opacity',
+    },
+    ...(Array.isArray(sxBackdrop) ? sxBackdrop : [sxBackdrop]),
+  ],
+};
+
+
   let scrollerProps = {
     className: `${classes.scroller} ${className ?? ''}`,
     grid: false,
@@ -461,7 +459,22 @@ export function OverlayBase(incomingProps: LayoutOverlayBaseProps) {
 
   return (
     <>
-      <MotionDiv {...motionDivProps} />
+      
+      <div>
+    <MotionDiv {...motionDivProps} />
+    {!active && (
+      <div
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          pointerEvents: 'none',
+        }}
+      />
+    )}
+  </div>
       <Scroller {...scrollerProps}>
       <Box
           className={classes.beforeOverlay}
