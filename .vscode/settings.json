@@ -22,5 +22,8 @@
     ".yarn": true,
     "yarn.lock": true
   },
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  }
 }

@@ -15,6 +15,12 @@ class Document extends NextDocument<EmotionCacheProps & LinguiDocumentProps> {
     media='all'
     href='http://localhost:3000/fonts/_fonts.css'
   />
+        <link
+    rel='stylesheet'
+    type='text/css'
+    media='all'
+    href='https://discobabes.store/fonts/_fonts.css'
+  />
           {/* Inject MUI styles first to match with the prepend: true configuration. */}
           <meta name='emotion-insertion-point' content='' />
           {this.props.emotionStyleTags}

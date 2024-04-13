@@ -1,6 +1,6 @@
 import { RichText } from '@graphcommerce/graphcms-ui'
 import { breakpointVal } from '@graphcommerce/next-ui'
-import { Box, Button } from '@mui/material'
+import { Box, Button  } from '@mui/material'
 import { BannerFragment } from './Banner.gql'
 import { BannerLayout } from './BannerLayout'
 
@@ -11,7 +11,7 @@ export function Banner(props: BannerFragment) {
   return (
     <BannerLayout
       pageLinks={pageLinks.map(({ url, title }) => (
-        <Button key={url} href={url} variant='outlined' size='large' color='inherit'>
+        <Button key={url} href={url} variant='contained' size='large' color='primary'>
           {title}
         </Button>
       ))}

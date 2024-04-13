@@ -180,7 +180,7 @@ export function LayoutHeaderContent(props: LayoutHeaderContentProps) {
             transition: `opacity 150ms`,
             opacity: 0,
             '&.scrolled': {
-              opacity: 1,
+              opacity: 0,
               '& > *': { pointerEvents: 'all' },
             },
 
@@ -197,9 +197,9 @@ export function LayoutHeaderContent(props: LayoutHeaderContentProps) {
             },
           })}
         >
-          {/* <MotionDiv sx={{ minWidth: 0 }} layout={layout} layoutDependency={layoutDependency}>
+          <MotionDiv sx={{ minWidth: 0 }} layout={layout} layoutDependency={layoutDependency}>
             {children}
-          </MotionDiv> */}
+          </MotionDiv>
         </Box>
         <Box
           className={classes.right}

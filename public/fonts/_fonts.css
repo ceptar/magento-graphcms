@@ -4,7 +4,21 @@
   format: ("woff");
   font-display: swap;
 }
+
 @font-face {
+  font-family: MediumFont;
+  src: url("/fonts/Medium.woff2");
+  format: ("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: MetroLight;
+  src: url("/fonts/Metropolitano-Light.woff2");
+  format: ("woff2");
+  font-display: swap;
+}
+/* @font-face {
   font-family: MetroBold;
   src: url("/fonts/Metropolitano-Bold.woff2");
   format: ("woff2");
@@ -22,3 +36,46 @@
   format: ("woff2");
   font-display: swap;
 }
+@font-face {
+  font-family: Mulish;
+  src: url("/fonts/mulishVar.woff2");
+  format: ("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: NohemiLight;
+  src: url("/fonts/Nohemi-Light.woff2");
+  format: ("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: LoveloBlack;
+  src: url("/fonts/Lovelo-Black.woff2");
+  format: ("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: LibreFranklin;
+  src: url("/fonts/libreVar.woff2");
+  format: ("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: BigJohn;
+  src: url("/fonts/BigJohnPRO-Regular.woff2");
+  format: ("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: NavolastyLight;
+  src: url("/fonts/NevolastyLight.woff2");
+  format: ("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: LoveloLight;
+  src: url("/fonts/Lovelo-LineLight.woff2");
+  format: ("woff2");
+  font-display: swap;
+} */

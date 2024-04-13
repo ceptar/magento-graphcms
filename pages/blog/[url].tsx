@@ -7,10 +7,10 @@ import {
   GetStaticProps,
   Row,
   LayoutTitle,
-  LayoutHeader,
 } from '@graphcommerce/next-ui'
 import { GetStaticPaths } from 'next'
 import {
+  LayoutHeader,
   BlogAuthor,
   BlogHeader,
   BlogList,

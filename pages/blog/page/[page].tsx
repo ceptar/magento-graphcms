@@ -6,13 +6,13 @@ import {
   GetStaticProps,
   Pagination,
   LayoutTitle,
-  LayoutHeader,
 } from '@graphcommerce/next-ui'
 import { Container, Link } from '@mui/material'
 import { GetStaticPaths } from 'next'
 import { useRouter } from 'next/router'
 import React from 'react'
 import {
+  LayoutHeader,
   BlogList,
   BlogListDocument,
   BlogListQuery,

@@ -48,7 +48,7 @@ export function LayoutHeader(props: LayoutHeaderProps) {
   const {
     children,
     divider,
-    hideBackButton = false,
+    hideBackButton = true,
     primary,
     secondary,
     noAlign = false,
@@ -105,8 +105,8 @@ export function LayoutHeader(props: LayoutHeaderProps) {
             left: 0,
             // cc, neue Anordnung backbutton sticky overlay small
             marginLeft: 0,
-            marginTop: `calc(${theme.appShell.headerHeightSm} * -1)`,
-
+            // marginTop: `calc(${theme.appShell.headerHeightSm} * -1)`,
+            marginTop: 0,
             height: theme.appShell.headerHeightSm,
             '&.noAlign': {
               position: 'sticky',
@@ -126,10 +126,12 @@ export function LayoutHeader(props: LayoutHeaderProps) {
           [theme.breakpoints.up('md')]: {
             top: 0,
             height: theme.appShell.appBarHeightMd,
-            marginTop: `calc((${theme.appShell.appBarHeightMd} - ${theme.appShell.appBarInnerHeightMd}) * -0.5)`,
+            // marginTop: `calc((${theme.appShell.appBarHeightMd} - ${theme.appShell.appBarInnerHeightMd}) * -0.5)`,
+            marginTop: 0,
             marginBottom: `calc(${theme.appShell.appBarHeightMd} * -1 - calc((${theme.appShell.appBarHeightMd} - ${theme.appShell.appBarInnerHeightMd}) * -0.5))`,
             '&.floatingMd': {
-              marginTop: `calc(${theme.appShell.headerHeightSm} * -1)`,
+              // marginTop: `calc(${theme.appShell.headerHeightSm} * -1)`,
+              marginTop: 0,
               // cc neue anordnung
               top: 0,
             },
@@ -143,6 +145,8 @@ export function LayoutHeader(props: LayoutHeaderProps) {
               marginBottom: `calc(${theme.appShell.appBarHeightMd} * -1)`,
               '&.sizeSmall': {
                 height: theme.appShell.headerHeightSm,
+                top: 0,
+                marginTop: 0,
               },
             },
             '&.divider': {
@@ -157,7 +161,7 @@ export function LayoutHeader(props: LayoutHeaderProps) {
         size={size}
         left={left}
         right={right}
-        divider={divider}
+        divider={false}
         floatingMd={floatingMd}
         floatingSm={floatingSm}
         switchPoint={switchPoint}

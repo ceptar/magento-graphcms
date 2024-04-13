@@ -34,7 +34,7 @@ const lightPalette: PaletteOptions = {
     paper: '#ffffff',
     image: '#ffffff',
   },
-  divider: '#00000015',
+  divider: 'transparent',
   action: {
     hoverOpacity: 0.12,
   },
@@ -74,7 +74,7 @@ const darkPalette: PaletteOptions = {
     paper: '#424242',
     image: '#ffffff',
   },
-  divider: '#ffffff30',
+  divider: 'transparent',
   action: {
     hoverOpacity: 0.16,
   },
@@ -95,10 +95,11 @@ const createThemeWithPalette = (palette: PaletteOptions) =>
     ...themeBaseDefaults,
     shape: { borderRadius: 3 },
     typography: {
-      fontFamily: '"Metro", "Helvetica", "Arial", sans-serif',
+      fontFamily: '"MetroLight", "Helvetica", "Arial", sans-serif',
       // fontFamily: '"Mulish", "Helvetica", "Arial", sans-serif',
       // @see docs typography.md
       h1: {
+        fontFamily: '"MediumFont", "Helvetica", "Arial", sans-serif',
         ...fontSize(28, 64),
         fontWeight: 700,
         fontVariationSettings: "'wght' 660",
@@ -159,7 +160,9 @@ const createThemeWithPalette = (palette: PaletteOptions) =>
         // https://web.dev/font-size/#how-the-lighthouse-font-size-audit-fails
         ...fontSize(12, 13),
       },
-      button: {},
+      button: {
+
+      },
       overline: {
         // https://web.dev/font-size/#how-the-lighthouse-font-size-audit-fails
         ...fontSize(12, 14),
@@ -237,13 +240,19 @@ const createOverrides = (theme: Theme): Components<Theme> => ({
       },
     },
   },
-
   MuiButton: {
     defaultProps: { color: 'inherit' },
     variants: [
       ...MuiButtonResponsive,
       ...MuiButtonPill,
       ...MuiButtonInline,
+      {
+        props: { variant: 'contained' },
+        style: { 
+          textTransform: 'uppercase', 
+          letterSpacing: '0.12rem',
+        },
+      },
       {
         props: { variant: 'contained', color: 'inherit' },
         style: { backgroundColor: theme.palette.background.paper },

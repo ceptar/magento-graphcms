@@ -199,6 +199,7 @@ export function LayoutNavigation(props: LayoutNavigationProps) {
               <CustomerFab guestHref='/account/signin' authHref='/account' />
               {/* The placeholder exists because the CartFab is sticky but we want to reserve the space for the <CartFab /> */}
               <PlaceholderFab />
+              <PlaceholderFab />
             </DesktopNavActions>
             </Box>
           </>
