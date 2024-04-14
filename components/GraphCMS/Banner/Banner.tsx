@@ -18,7 +18,8 @@ export function Banner(props: BannerFragment) {
       imageSrc={heroAsset.url}
       sx={(theme) => ({
         '& .BannerLayout-copy': {
-          minHeight: { xs: 'min(80vh,600px)', md: 'min(80vh,1080px)' },
+          minHeight: { xs: 'min(100%,600px)', md: 'min(100%,1080px)' },
+          width: '100%',
 
           [theme.breakpoints.up('sm')]: {
             // display: 'flex', // Apply Flexbox

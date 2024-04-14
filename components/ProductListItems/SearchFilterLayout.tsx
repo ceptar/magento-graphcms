@@ -4,19 +4,19 @@ import {
   ProductFiltersProAllFiltersSidebar,
   ProductFiltersProClearAll,
   ProductFiltersProFilterChips,
-  ProductFiltersProLayoutSidebar,
   ProductFiltersProLimitChip,
   ProductFiltersProSortChip,
   ProductListCount,
   ProductListFilters,
-  ProductListFiltersContainer,
-  ProductListItemsBase,
   ProductListPagination,
   ProductListParamsProvider,
   ProductListSort,
 } from '@graphcommerce/magento-search'
 import { StickyBelowHeader } from '@graphcommerce/next-ui'
 import { Container } from '@mui/material'
+import { ProductListItemsBase } from './ProductListItemsBase'
+import { ProductListFiltersContainer } from './ProductListFiltersContainer'
+import { ProductFiltersProLayoutSidebar } from './ProductFiltersProLayoutSidebar'
 import { ProductListFilterLayoutProps } from './CategoryFilterLayout'
 import { productListRenderer } from './productListRenderer'
 

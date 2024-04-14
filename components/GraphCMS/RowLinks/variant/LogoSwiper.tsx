@@ -9,6 +9,7 @@ export function LogoSwiper(props: RowLinksFragment) {
   return (
     <VariantLogoSwiper
       title={title}
+      maxWidth={false}
       sx={(theme) => ({ my: `calc(${theme.spacings.xxl} +  ${theme.spacings.md})` })}
     >
       {pageLinks.map((pageLink) => (

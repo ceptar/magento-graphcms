@@ -220,14 +220,18 @@ const createOverrides = (theme: Theme): Components<Theme> => ({
 
   MuiContainer: {
     styleOverrides: {
+      root: {
+        disableGutters: true,
+      },
       maxWidthLg: {
           [theme.breakpoints.up('lg')]: {
-              maxWidth: false
+              maxWidth: false,
           },
+
 
     variants: [
       {
-        props: { disableGutters: false },
+        props: { disableGutters: true },
         style: {
           paddingLeft: theme.page.horizontal,
           paddingRight: theme.page.horizontal,
