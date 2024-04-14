@@ -43,7 +43,10 @@ export function ProductFiltersProLayoutSidebar(props: ProductFiltersProLayoutSid
       <FormAutoSubmit control={form.control} submit={submit} />
 
       <StickyBelowHeader
-      >{horizontalFilters}</StickyBelowHeader>
+        sx={{ marginTop: 0, }}
+      >
+        {horizontalFilters}
+      </StickyBelowHeader>
 
       <Container
         maxWidth={false}

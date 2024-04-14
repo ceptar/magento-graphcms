@@ -42,7 +42,7 @@ export function LayoutNavigation(props: LayoutNavigationProps) {
 
   const selection = useNavigationSelection()
   const router = useRouter()
-  
+
 
   return (
     <>
@@ -143,13 +143,13 @@ export function LayoutNavigation(props: LayoutNavigationProps) {
           <>
 
             {/* <DesktopNavBar> */}
-              {/* {menu?.items?.[0]?.children?.slice(0, 2).map((item) => (
+            {/* {menu?.items?.[0]?.children?.slice(0, 2).map((item) => (
                 <DesktopNavItem key={item?.uid} href={`/${item?.url_path}`}>
                   {item?.name}
                 </DesktopNavItem>
               ))} */}
 
-              {/* <DesktopNavItem
+            {/* <DesktopNavItem
                 onClick={() => selection.set([menu?.items?.[0]?.uid || ''])}
                 onKeyUp={(evt) => {
                   if (evt.key === 'Enter') {
@@ -167,6 +167,8 @@ export function LayoutNavigation(props: LayoutNavigationProps) {
               </DesktopNavItem>
             </DesktopNavBar> */}
             {/* cc, neu angeordnet*/}
+            <PageLink href='/'> <Logo /></PageLink>
+
             <Box
               sx={{
                 width: '33%',
@@ -178,8 +180,8 @@ export function LayoutNavigation(props: LayoutNavigationProps) {
               }}
             >
             </Box>
-            <PageLink href='/'> <Logo /></PageLink>
-           
+
+
             <Box
               sx={{
                 width: '33%',
@@ -189,16 +191,16 @@ export function LayoutNavigation(props: LayoutNavigationProps) {
                 zIndex: '200',
               }}
             >
-            <DesktopNavActions>
-     
-     
-            {!router.pathname.startsWith('/search') && (
-                
-                <SearchLink
-                  href='/search'
-                  aria-label={i18n._(/* i18n */ 'Search...')}
-                />
-              )}
+              <DesktopNavActions>
+                {!router.pathname.startsWith('/search') && (
+
+                  <SearchLink
+                    href='/search'
+                    aria-label={i18n._(/* i18n */ 'Search...')}
+                  />
+                )}
+
+
 
 
                 {/* 
@@ -211,13 +213,14 @@ export function LayoutNavigation(props: LayoutNavigationProps) {
                   */}
 
 
-              {/* cc hier war service link */}
-              <WishlistFab icon={<IconSvg src={iconHeart} size='large' />} />
-              <CustomerFab guestHref='/account/signin' authHref='/account' />
-              {/* The placeholder exists because the CartFab is sticky but we want to reserve the space for the <CartFab /> */}
-              <PlaceholderFab />
+                {/* cc hier war service link */}
+                <WishlistFab icon={<IconSvg src={iconHeart} size='large' />} />
+                <CustomerFab guestHref='/account/signin' authHref='/account' />
+                {/* The placeholder exists because the CartFab is sticky but we want to reserve the space for the <CartFab /> */}
+                <PlaceholderFab />
+                <PlaceholderFab />
 
-            </DesktopNavActions>
+              </DesktopNavActions>
             </Box>
           </>
         }
@@ -226,7 +229,7 @@ export function LayoutNavigation(props: LayoutNavigationProps) {
         menuFab={<NavigationFab onClick={() => selection.set([])} />}
       >
         {children}
-        
+
       </LayoutDefault>
     </>
   )

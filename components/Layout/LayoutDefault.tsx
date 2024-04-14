@@ -1,6 +1,6 @@
 import { useScrollOffset } from '@graphcommerce/framer-next-pages'
 import { dvh } from '@graphcommerce/framer-utils'
-import { Box, SxProps, Theme } from '@mui/material'
+import { Box, SxProps, Theme, autocompleteClasses } from '@mui/material'
 import { useTransform, useScroll } from 'framer-motion'
 import { LayoutProvider, SkipLink, extendableComponent, useFabSize } from '@graphcommerce/next-ui'
 
@@ -62,7 +62,7 @@ export function LayoutDefault(props: LayoutDefaultProps) {
           gridTemplateColumns: '100%',
           background: theme.palette.background.default,
         }),
-        
+
         ...(Array.isArray(sx) ? sx : [sx]),
       ]}
     >
@@ -73,7 +73,7 @@ export function LayoutDefault(props: LayoutDefaultProps) {
           component='header'
           className={classes.header}
           sx={(theme) => ({
-            top: 0,
+
             zIndex: theme.zIndex.appBar - 1,
             display: 'flex',
             alignItems: 'center',
@@ -140,20 +140,38 @@ export function LayoutDefault(props: LayoutDefaultProps) {
 
             })}
           >
-            {cartFab}
             <Box
-              sx={(theme) => ({
-                display: 'flex',
-                flexDirection: 'row-reverse',
-                gap: theme.spacings.sm,
-                [theme.breakpoints.up('md')]: {
-                  flexDirection: 'column',
-                  alignItems: 'flex-end',
-                },
-              })}
-            >
-              {/* cc, switch menubutton/cartbutton */}
-              {menuFab}
+              sx={{
+                width: '100vw',
+                alignItems: 'space-between'
+              }}>
+              <Box
+                sx={{
+                  flexDirection: 'flex-grow'
+                }}>
+                <Box
+                  sx={(theme) => ({
+
+                    width: 'auto',
+                    display: 'flex',
+                    flexDirection: 'row-reverse',
+                    gap: theme.spacings.xxs,
+                    [theme.breakpoints.up('md')]: {
+                      flexDirection: 'row-reverse',
+                      alignItems: 'flex-end',
+                    },
+                  })}
+                >
+                  <Box sx={{ flexDirection: 'column' }}>
+                    {menuFab}
+                  </Box>
+
+                  <Box sx={{ flexDirection: 'column' }}>
+                    {cartFab}
+
+                  </Box>
+                </Box>
+              </Box>
             </Box>
           </Box>
         ) : (
