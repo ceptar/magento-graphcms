@@ -1,11 +1,10 @@
 import {
+  ProductFiltersProClearAll,
   FilterTypes,
   ProductFiltersPro,
   ProductFiltersProAllFiltersChip,
   ProductFiltersProAllFiltersSidebar,
-  ProductFiltersProClearAll,
   ProductFiltersProFilterChips,
-  ProductFiltersProLayoutSidebar,
   ProductFiltersProLimitChip,
   ProductFiltersProSortChip,
   ProductFiltersQuery,
@@ -19,6 +18,7 @@ import {
 } from '@graphcommerce/magento-product'
 import { StickyBelowHeader } from '@graphcommerce/next-ui'
 import { Container } from '@mui/material'
+import { ProductFiltersProLayoutSidebar } from './ProductFiltersProLayoutSidebar'
 import { ProductListItems } from './ProductListItems'
 import { ProductListFiltersContainer } from './ProductListFiltersContainer'
 
@@ -41,12 +41,9 @@ export function CategoryFilterLayout(props: ProductListFilterLayoutProps) {
 
   if (import.meta.graphCommerce.productFiltersPro) {
     const horizontalFilters = (
-      <ProductListFiltersContainer>
-        <ProductFiltersProFilterChips />
-        <ProductFiltersProSortChip total_count={total_count} sort_fields={sort_fields} />
-        <ProductFiltersProLimitChip />
-        <ProductFiltersProAllFiltersChip total_count={total_count} sort_fields={sort_fields} />
-      </ProductListFiltersContainer>
+
+      <ProductFiltersProAllFiltersChip total_count={total_count} sort_fields={sort_fields} />
+
     )
 
     return (
@@ -57,7 +54,7 @@ export function CategoryFilterLayout(props: ProductListFilterLayoutProps) {
         appliedAggregations={products?.aggregations}
         filterTypes={filterTypes}
       >
-        {import.meta.graphCommerce.productFiltersLayout === 'SIDEBAR' ? (
+        {import.meta.graphCommerce.productFiltersLayout === 'DEFAULT' ? (
           <ProductFiltersProLayoutSidebar
             clearAll={<ProductFiltersProClearAll />}
             horizontalFilters={horizontalFilters}
@@ -74,7 +71,7 @@ export function CategoryFilterLayout(props: ProductListFilterLayoutProps) {
         ) : (
           <>
             <StickyBelowHeader>{horizontalFilters}</StickyBelowHeader>
-            <Container maxWidth={false}>
+            <Container>
               <ProductListCount total_count={total_count} />
               {items}
               <ProductListPagination page_info={page_info} params={params} />
@@ -96,7 +93,7 @@ export function CategoryFilterLayout(props: ProductListFilterLayoutProps) {
             </ProductListFiltersContainer>
           </ProductListParamsProvider>
         </StickyBelowHeader>
-        <Container maxWidth={false}>
+        <Container>
           <ProductListCount total_count={total_count} />
           {items}
           <ProductListPagination page_info={page_info} params={params} />

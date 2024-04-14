@@ -73,7 +73,7 @@ export function SearchLink(props: SearchLinkProps) {
             border: 1,
             borderColor: 'divider',
             py: 1,
-            px: 1.5,
+            px: 1,
             '&:hover': {
               borderColor: 'text.secondary',
             },
@@ -86,10 +86,10 @@ export function SearchLink(props: SearchLinkProps) {
         <IconSvg
           src={iconSearch}
           className={classes.svg}
-          sx={{ color: 'text.primary', }}
+          sx={{ color: 'text.primary', fontSize: '1.1rem' }}
 
           // !!! size wichtig sonst hat das symbol nicht die gleiche größe
-          size= 'large' 
+          size='large'
         />
       </Link>
       {breakpoint && (

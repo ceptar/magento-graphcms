@@ -1,6 +1,6 @@
 import { RichText } from '@graphcommerce/graphcms-ui'
 import { breakpointVal } from '@graphcommerce/next-ui'
-import { Box, Button  } from '@mui/material'
+import { Box, Button } from '@mui/material'
 import { BannerFragment } from './Banner.gql'
 import { BannerLayout } from './BannerLayout'
 

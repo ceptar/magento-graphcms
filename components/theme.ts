@@ -12,7 +12,7 @@ import {
   MuiButtonInline,
   NextLink,
 } from '@graphcommerce/next-ui'
-import { SearchLink } from '@graphcommerce/magento-search'
+
 import { MuiChip } from './MuiChip'
 import { createTheme, Theme, alpha, LinkProps } from '@mui/material'
 import { Components, PaletteOptions } from '@mui/material/styles'
@@ -34,7 +34,7 @@ const lightPalette: PaletteOptions = {
     paper: '#ffffff',
     image: '#ffffff',
   },
-  divider: 'transparent',
+  divider: '#00000015',
   action: {
     hoverOpacity: 0.12,
   },
@@ -74,7 +74,7 @@ const darkPalette: PaletteOptions = {
     paper: '#424242',
     image: '#ffffff',
   },
-  divider: 'transparent',
+  divider: '#ffffff30',
   action: {
     hoverOpacity: 0.16,
   },
@@ -219,6 +219,12 @@ const createOverrides = (theme: Theme): Components<Theme> => ({
   MuiButtonBase: { defaultProps: { LinkComponent: NextLink } },
 
   MuiContainer: {
+    styleOverrides: {
+      maxWidthLg: {
+          [theme.breakpoints.up('lg')]: {
+              maxWidth: false
+          },
+
     variants: [
       {
         props: { disableGutters: false },
@@ -233,6 +239,9 @@ const createOverrides = (theme: Theme): Components<Theme> => ({
       },
     ],
   },
+},
+  },
+  
 
   MuiInputBase: {
     styleOverrides: {
@@ -241,6 +250,7 @@ const createOverrides = (theme: Theme): Components<Theme> => ({
       },
     },
   },
+  
   MuiButton: {
     defaultProps: { color: 'inherit' },
     variants: [
