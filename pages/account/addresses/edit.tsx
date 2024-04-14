@@ -11,7 +11,8 @@ import {
   iconAddresses,
   IconHeader,
   SectionContainer,
-  LayoutOverlayHeader
+  LayoutOverlayHeader,
+  LayoutTitle,
 } from '@graphcommerce/next-ui'
 import { i18n } from '@lingui/core'
 import { Trans } from '@lingui/react'
