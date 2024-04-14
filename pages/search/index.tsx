@@ -22,11 +22,12 @@ import {
   SearchForm,
 } from '@graphcommerce/magento-search'
 import { PageMeta, StoreConfigDocument } from '@graphcommerce/magento-store'
-import { GetStaticProps, LayoutTitle, LayoutHeader, FormRow } from '@graphcommerce/next-ui'
+import { GetStaticProps, LayoutTitle, FormRow } from '@graphcommerce/next-ui'
 import { i18n } from '@lingui/core'
 import { Trans } from '@lingui/react'
 import { Container } from '@mui/material'
 import {
+  LayoutHeader, 
   LayoutDocument,
   LayoutNavigation,
   LayoutNavigationProps,

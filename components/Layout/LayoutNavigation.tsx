@@ -1,13 +1,14 @@
 import { CartFab } from '@graphcommerce/magento-cart'
 import { magentoMenuToNavigation } from '@graphcommerce/magento-category'
 import { CustomerFab, CustomerMenuFabItem } from '@graphcommerce/magento-customer'
-import { SearchLink } from '@graphcommerce/magento-search'
+import { SearchLink } from '../Layout/SearchLink'
 import PageLink, { LinkProps as PageLinkProps } from 'next/link'
 import { WishlistFab, WishlistMenuFabItem } from '@graphcommerce/magento-wishlist'
 import { LayoutDefault, LayoutDefaultProps } from './LayoutDefault'
 import { DesktopNavBar } from './DesktopNavbar'
 import { NavigationOverlay } from './NavigationOverlay'
 import { NavigationFab } from './NavigationFab'
+import { MenuFab } from './MenuFab'
 import {
   DesktopNavActions,
   iconCustomerService,
@@ -41,6 +42,7 @@ export function LayoutNavigation(props: LayoutNavigationProps) {
 
   const selection = useNavigationSelection()
   const router = useRouter()
+  
 
   return (
     <>
@@ -176,7 +178,8 @@ export function LayoutNavigation(props: LayoutNavigationProps) {
               }}
             >
             </Box>
-            <Logo />
+            <PageLink href='/'> <Logo /></PageLink>
+           
             <Box
               sx={{
                 width: '33%',
@@ -187,19 +190,33 @@ export function LayoutNavigation(props: LayoutNavigationProps) {
               }}
             >
             <DesktopNavActions>
-              {!router.pathname.startsWith('/search') && (
+     
+     
+            {!router.pathname.startsWith('/search') && (
+                
                 <SearchLink
                   href='/search'
                   aria-label={i18n._(/* i18n */ 'Search...')}
-                  breakpoint='lg'
                 />
               )}
+
+
+                {/* 
+                <Fab
+                  href='/search'
+                  color= 'inherit'
+                  size='large'>
+                  <IconSvg src={iconSearch} size='large'/>
+                  </Fab> 
+                  */}
+
+
               {/* cc hier war service link */}
               <WishlistFab icon={<IconSvg src={iconHeart} size='large' />} />
               <CustomerFab guestHref='/account/signin' authHref='/account' />
               {/* The placeholder exists because the CartFab is sticky but we want to reserve the space for the <CartFab /> */}
               <PlaceholderFab />
-              <PlaceholderFab />
+
             </DesktopNavActions>
             </Box>
           </>

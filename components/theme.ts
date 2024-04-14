@@ -9,10 +9,10 @@ import {
   MuiSnackbar,
   MuiFabSizes,
   MuiSlider,
-
   MuiButtonInline,
   NextLink,
 } from '@graphcommerce/next-ui'
+import { SearchLink } from '@graphcommerce/magento-search'
 import { MuiChip } from './MuiChip'
 import { createTheme, Theme, alpha, LinkProps } from '@mui/material'
 import { Components, PaletteOptions } from '@mui/material/styles'
@@ -143,7 +143,7 @@ const createThemeWithPalette = (palette: PaletteOptions) =>
       },
       fontWeightBold: 600,
       body1: {
-        ...fontSize(14, 18),
+        ...fontSize(16, 18),
         lineHeight: 1.7,
       },
       subtitle2: {
@@ -153,7 +153,7 @@ const createThemeWithPalette = (palette: PaletteOptions) =>
         lineHeight: 1.7,
       },
       body2: {
-        ...fontSize(13, 15),
+        ...fontSize(14, 16),
         lineHeight: 1.7,
       },
       caption: {
@@ -165,7 +165,7 @@ const createThemeWithPalette = (palette: PaletteOptions) =>
       },
       overline: {
         // https://web.dev/font-size/#how-the-lighthouse-font-size-audit-fails
-        ...fontSize(12, 14),
+        ...fontSize(14, 16),
         fontWeight: 500,
         letterSpacing: 1,
         lineHeight: 1.2,
@@ -195,6 +195,7 @@ const createThemeWithPalette = (palette: PaletteOptions) =>
 
 // todo: move most of the styles to the graphcommerce library while still allowing for extensibility.
 const createOverrides = (theme: Theme): Components<Theme> => ({
+
   MuiCssBaseline: {
     styleOverrides: {
       body: {
