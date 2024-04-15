@@ -167,6 +167,7 @@ export function LayoutNavigation(props: LayoutNavigationProps) {
               </DesktopNavItem>
             </DesktopNavBar> */}
             {/* cc, neu angeordnet*/}
+
             <PageLink href='/'> <Logo /></PageLink>
 
             <Box

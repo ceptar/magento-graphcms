@@ -21,7 +21,7 @@ import {
   ProductListQuery,
 } from '@graphcommerce/magento-product'
 import { redirectOrNotFound, StoreConfigDocument } from '@graphcommerce/magento-store'
-import { GetStaticProps, MetaRobots, LayoutTitle } from '@graphcommerce/next-ui'
+import { GetStaticProps, MetaRobots } from '@graphcommerce/next-ui'
 import { Container } from '@mui/material'
 import { GetStaticPaths } from 'next'
 import {
@@ -32,6 +32,7 @@ import {
   LayoutNavigationProps,
   RowProduct,
   RowRenderer,
+  LayoutTitle,
 } from '../components'
 import { CategoryPageDocument, CategoryPageQuery } from '../graphql/CategoryPage.gql'
 import { graphqlSharedClient, graphqlSsrClient } from '../lib/graphql/graphqlSsrClient'
