@@ -1,26 +1,27 @@
 import { useMotionValueValue, useMotionSelector, dvw } from '@graphcommerce/framer-utils'
+import {
+  useFabSize,
+  useMatchMedia,
+  IconSvg,
+  useIconSvgSize,
+  iconClose,
+  iconChevronLeft,
+  useNavigation,
+  extendableComponent,
+} from '@graphcommerce/next-ui'
 import { i18n } from '@lingui/core'
 import { useTheme, Box, Fab, SxProps, Theme, useEventCallback, styled } from '@mui/material'
 import { m } from 'framer-motion'
 import React, { useEffect, useRef } from 'react'
 import type { LiteralUnion } from 'type-fest'
-import { 
-    LayoutHeaderContent, 
-    OverlaySsr,
-    NavigationList,
-    NavigationTitle,
-    mouseEventPref,
- } from '../Layout'
-import { 
-    LayoutTitle,
-    useFabSize,
-    useMatchMedia,
-    IconSvg,
-    useIconSvgSize,
-    iconClose,
-    iconChevronLeft,
-    useNavigation,
-    extendableComponent } from '@graphcommerce/next-ui'
+import {
+  LayoutTitle,
+  LayoutHeaderContent,
+  OverlaySsr,
+  NavigationList,
+  NavigationTitle,
+  mouseEventPref,
+} from './index'
 
 type LayoutOverlayVariant = 'left' | 'bottom' | 'right'
 type LayoutOverlaySize = 'floating' | 'minimal' | 'full'
@@ -143,7 +144,7 @@ export const NavigationOverlay = React.memo((props: NavigationOverlayProps) => {
             top: 0,
             justifyContent: 'space-between',
             position: 'sticky',
-            height: { xs: theme.appShell.headerHeightSm, md: theme.appShell.appBarHeightMd },
+            height: { xs: theme.appShell.headerHeightMd, md: theme.appShell.appBarHeightMd },
             zIndex: 1,
           })}
         >

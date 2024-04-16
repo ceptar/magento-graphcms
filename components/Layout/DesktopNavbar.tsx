@@ -1,7 +1,13 @@
 import { Scroller, ScrollerButton, ScrollerProvider } from '@graphcommerce/framer-scroller'
+import {
+  IconSvg,
+  IconSvgProps,
+  extendableComponent,
+  iconChevronLeft,
+  iconChevronRight,
+} from '@graphcommerce/next-ui'
 import { Box, BoxProps } from '@mui/material'
 import React from 'react'
-import { IconSvg, IconSvgProps, extendableComponent, iconChevronLeft, iconChevronRight } from '@graphcommerce/next-ui'
 
 export type MenuTabsProps = {
   children: React.ReactNode

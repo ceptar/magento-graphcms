@@ -101,7 +101,7 @@ export function LayoutDefault(props: LayoutDefaultProps) {
               width: '100%',
               justifyContent: 'flex-end',
               alignItems: 'center',
-              padding: `0 ${theme.page.horizontal}`,
+              // padding: `0 ${theme.page.horizontal}`,
 
               zIndex: 'speedDial',
               position: 'sticky',
@@ -113,13 +113,13 @@ export function LayoutDefault(props: LayoutDefaultProps) {
             })}
           >
             <Box
-              sx={{
+              sx={(theme) => ({
                 display: 'grid',
-                direction: 'flex-row',
                 gridTemplateColumns: `auto auto`,
-
-                gap: '6px',
-              }}
+                columnGap: theme.spacings.sm,
+                paddingLeft: theme.spacings.sm,
+                paddingRight: theme.spacings.sm,
+              })}
             >
               {cartFab}
               {menuFab}

@@ -1,6 +1,6 @@
+import { extendableComponent } from '@graphcommerce/next-ui'
 import { Container, SxProps, Theme } from '@mui/material'
 import React from 'react'
-import { extendableComponent } from '@graphcommerce/next-ui'
 
 export type StickyBelowHeaderProps = {
   children: React.ReactNode
@@ -20,7 +20,10 @@ export function StickyBelowHeader(props: StickyBelowHeaderProps) {
       sx={[
         (theme) => ({
           position: 'sticky',
-          top: { xs: theme.appShell.headerHeightSm, md: `${theme.page.vertical} !important` },
+          top: {
+            xs: theme.appShell.headerHeightSm,
+            md: `${theme.spacing[8]} !important`, // Replace with a calculated offset
+          },
           zIndex: 96,
           pointerEvents: 'none',
           '& > *': {

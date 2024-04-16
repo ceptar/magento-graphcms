@@ -4,9 +4,6 @@ import {
   ProductFiltersPro,
   ProductFiltersProAllFiltersChip,
   ProductFiltersProAllFiltersSidebar,
-  ProductFiltersProFilterChips,
-  ProductFiltersProLimitChip,
-  ProductFiltersProSortChip,
   ProductFiltersQuery,
   ProductListCount,
   ProductListFilters,
@@ -16,11 +13,12 @@ import {
   ProductListQuery,
   ProductListSort,
 } from '@graphcommerce/magento-product'
-import { StickyBelowHeader } from '@graphcommerce/next-ui'
 import { Container } from '@mui/material'
+
 import { ProductFiltersProLayoutSidebar } from './ProductFiltersProLayoutSidebar'
-import { ProductListItems } from './ProductListItems'
 import { ProductListFiltersContainer } from './ProductListFiltersContainer'
+import { ProductListItems } from './ProductListItems'
+import { StickyBelowHeader } from './StickyBelowHeader'
 
 export type ProductListFilterLayoutProps = ProductListQuery &
   ProductFiltersQuery & {
@@ -41,9 +39,7 @@ export function CategoryFilterLayout(props: ProductListFilterLayoutProps) {
 
   if (import.meta.graphCommerce.productFiltersPro) {
     const horizontalFilters = (
-
       <ProductFiltersProAllFiltersChip total_count={total_count} sort_fields={sort_fields} />
-
     )
 
     return (

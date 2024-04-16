@@ -1,5 +1,15 @@
 import { useMotionValueValue } from '@graphcommerce/framer-utils'
 import {
+  IconSvg,
+  useScrollY,
+  extendableComponent,
+  responsiveVal,
+  useFabSize,
+  iconMenu,
+  iconClose,
+  useFabAnimation,
+} from '@graphcommerce/next-ui'
+import {
   Divider,
   Fab,
   ListItem,
@@ -14,7 +24,6 @@ import {
 import { m } from 'framer-motion'
 import { useRouter } from 'next/router'
 import React, { useEffect } from 'react'
-import { IconSvg, useScrollY, extendableComponent, responsiveVal, useFabSize, iconMenu, iconClose, useFabAnimation } from '@graphcommerce/next-ui'
 
 const MotionDiv = styled(m.div)({})
 
@@ -156,7 +165,7 @@ export function MenuFab(props: MenuFabProps) {
               </ListItem>
             ) : null,
             ...React.Children.toArray(children),
-            <Divider key='divider' variant='middle' sx={{ my: '6px' }} />,
+            // <Divider key='divider' variant='middle' sx={{ my: '6px' }} />,
             ...React.Children.toArray(secondary),
           ]}
         </Menu>

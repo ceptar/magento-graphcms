@@ -18,7 +18,7 @@ import {
   LazyHydrate,
   iconSearch,
 } from '@graphcommerce/next-ui'
-import { NavigationOverlay } from './NavigationOverlay'
+
 import { i18n } from '@lingui/core'
 import { Trans } from '@lingui/react'
 import { Box, Divider, Fab } from '@mui/material'
@@ -32,6 +32,7 @@ import { LayoutDefault, LayoutDefaultProps } from './LayoutDefault'
 import { Logo } from './Logo'
 import { MenuFab } from './MenuFab'
 import { NavigationFab } from './NavigationFab'
+import { NavigationOverlay } from './NavigationOverlay'
 import { SearchLink } from './SearchLink'
 
 export type LayoutNavigationProps = LayoutQuery &

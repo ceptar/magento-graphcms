@@ -71,6 +71,7 @@ export function LayoutHeaderContent(props: LayoutHeaderContentProps) {
             boxShadow: theme.shadows[1],
 
             height: theme.appShell.headerHeightSm,
+
             [theme.breakpoints.up('md')]: {
               height: theme.appShell.appBarHeightMd,
             },
@@ -124,7 +125,7 @@ export function LayoutHeaderContent(props: LayoutHeaderContentProps) {
               height: theme.appShell.appBarHeightMd,
             },
             '&.sizeSmall': {
-              height: theme.appShell.headerHeightSm,
+              height: theme.appShell.appBarHeightMd,
 
               [theme.breakpoints.up('md')]: {},
             },

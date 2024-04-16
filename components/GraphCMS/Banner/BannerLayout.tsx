@@ -1,24 +1,24 @@
-import { clientSize } from '@graphcommerce/framer-utils';
-import { useScrollY, extendableComponent, responsiveVal, Row } from '@graphcommerce/next-ui';
-import { ContainerProps, Box, styled, Theme, SxProps } from '@mui/material';
-import { m, useTransform } from 'framer-motion';
-import React from 'react';
+import { clientSize } from '@graphcommerce/framer-utils'
+import { useScrollY, extendableComponent, responsiveVal, Row } from '@graphcommerce/next-ui'
+import { ContainerProps, Box, styled, Theme, SxProps } from '@mui/material'
+import { m, useTransform } from 'framer-motion'
+import React from 'react'
 
 export type BannerLayoutProps = ContainerProps & {
-  pageLinks: React.ReactNode;
-  imageSrc: string; // Update prop name for image source
-  children: React.ReactNode;
-  sx?: SxProps<Theme>;
-};
+  pageLinks: React.ReactNode
+  imageSrc: string // Update prop name for image source
+  children: React.ReactNode
+  sx?: SxProps<Theme>
+}
 
-const compName = 'BannerLayout' as const;
-const parts = ['root', 'wrapper', 'copy', 'asset', 'animated', 'image'] as const; // Update part name
-const { classes } = extendableComponent(compName, parts);
+const compName = 'BannerLayout' as const
+const parts = ['root', 'wrapper', 'copy', 'asset', 'animated', 'image'] as const // Update part name
+const { classes } = extendableComponent(compName, parts)
 const MotionImage = styled(m.img)({})
 // Create a styled component for the image
 
 export function BannerLayout(props: BannerLayoutProps) {
-  const { pageLinks, imageSrc, children, sx = [], ...containerProps } = props;
+  const { pageLinks, imageSrc, children, sx = [], ...containerProps } = props
   const scrollY = useScrollY()
   const scale = useTransform([scrollY, clientSize.y], ([scrollYCurr, clientSizeYCurr]: number[]) =>
     clientSizeYCurr ? (scrollYCurr / clientSizeYCurr) * 1.7 + 1 : 1,
@@ -64,9 +64,8 @@ export function BannerLayout(props: BannerLayoutProps) {
           }}
         >
           <MotionImage
-
             src={imageSrc} // Use the image source prop
-            alt="Hero banner image" // Provide an alt attribute for accessibility
+            alt='Hero banner image' // Provide an alt attribute for accessibility
             className={classes.image} // Use the new class name
             style={{ scale }}
             // layout='fill'
@@ -81,5 +80,5 @@ export function BannerLayout(props: BannerLayoutProps) {
         </Box>
       </Box>
     </Row>
-  );
+  )
 }

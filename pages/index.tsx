@@ -3,14 +3,8 @@ import { hygraphPageContent, HygraphPagesQuery } from '@graphcommerce/graphcms-u
 import { ProductListDocument, ProductListQuery } from '@graphcommerce/magento-product'
 import { StoreConfigDocument } from '@graphcommerce/magento-store'
 import { GetStaticProps, MetaRobots, PageMeta } from '@graphcommerce/next-ui'
-import { LayoutHeader } from '../components/Layout/LayoutHeader'
-import {
-  LayoutDocument,
-  LayoutNavigation,
-  LayoutNavigationProps,
-  RowProduct,
-  RowRenderer,
-} from '../components'
+import { LayoutHeader, LayoutDocument, RowProduct, RowRenderer } from '../components'
+import { LayoutNavigation, LayoutNavigationProps } from '../components/Layout/LayoutNavigation'
 import { graphqlSharedClient, graphqlSsrClient } from '../lib/graphql/graphqlSsrClient'
 
 type Props = HygraphPagesQuery & {

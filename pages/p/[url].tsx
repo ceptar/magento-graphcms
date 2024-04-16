@@ -39,15 +39,13 @@ import { Trans } from '@lingui/react'
 import { Divider, Link, Typography } from '@mui/material'
 import { GetStaticPaths } from 'next'
 import {
-
   LayoutDocument,
-  LayoutNavigation,
-  LayoutNavigationProps,
   productListRenderer,
   RowProduct,
   RowRenderer,
-  Usps
+  Usps,
 } from '../../components'
+import { LayoutNavigation, LayoutNavigationProps } from '../../components/Layout/LayoutNavigation'
 import { UspsDocument, UspsQuery } from '../../components/Usps/Usps.gql'
 import { ProductPage2Document, ProductPage2Query } from '../../graphql/ProductPage2.gql'
 import { graphqlSharedClient, graphqlSsrClient } from '../../lib/graphql/graphqlSsrClient'
@@ -225,8 +223,8 @@ export const getStaticProps: GetPageStaticProps = async ({ params, locale }) => 
   const productPage = staticClient.query({ query: ProductPage2Document, variables: { urlKey } })
   const layout = staticClient.query({ query: LayoutDocument, fetchPolicy: 'cache-first' })
 
-  const product = productPage.then(
-    (pp) => pp.data.products?.items?.find((p) => p?.url_key === urlKey),
+  const product = productPage.then((pp) =>
+    pp.data.products?.items?.find((p) => p?.url_key === urlKey),
   )
 
   const pages = hygraphPageContent(staticClient, 'product/global', product, true)
