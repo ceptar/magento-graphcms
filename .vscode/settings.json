@@ -9,7 +9,7 @@
   "javascript.suggest.names": false,
   "typescript.tsdk": "node_modules/typescript/lib",
   "[typescriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -24,6 +24,6 @@
   },
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "[css]": {
-    "editor.defaultFormatter": "vscode.css-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }

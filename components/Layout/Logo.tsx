@@ -8,15 +8,14 @@ export function Logo() {
         '& .GcLogo-logo': {
           width: 'auto',
           height: { xs: '60px', md: '60px' },
-          paddingLeft: { xs: '10px', md: 0 },
-          marginTop: { xs: 0, md: '-5px' },
-          marginLeft: { xs: 0, md: 'auto' },
-          marginRight: { xs: 0, md: 'auto' },
+          paddingLeft: { xs: '10px', md: '10px' },
+          marginTop: { xs: 0, md: 0 },
+          marginLeft: { xs: 0, md: 0 },
+          marginRight: { xs: 0, md: 0 },
 
           // filter: (theme) => (theme.palette.mode === 'dark' ? 'invert(100%)' : 'none'),
         },
-      }
-      }
+      }}
       image={{ alt: 'Logo', src: svgLogo, unoptimized: true }}
     />
   )

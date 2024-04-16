@@ -43,22 +43,12 @@ export function LayoutNavigation(props: LayoutNavigationProps) {
   const selection = useNavigationSelection()
   const router = useRouter()
 
-
   return (
     <>
       <NavigationProvider
         selection={selection}
         items={useMemoDeep(
           () => [
-
-
-            //  cc, nur Lupe ohne Texteingabe
-            //   <PageLink href='/search' passHref>
-            //   <Fab aria-label={i18n._(/* i18n */ 'Search...')} size='large' color='inherit'>
-            //     <IconSvg src={iconSearch} size='large' />
-            //   </Fab>
-            // </PageLink>,
-
             <SearchLink
               href='/search'
               onClick={() => selection.set(false)}
@@ -93,22 +83,6 @@ export function LayoutNavigation(props: LayoutNavigationProps) {
             >
               <Trans id='Account' />
             </CustomerMenuFabItem>,
-            // Service Var1
-            // <MenuFabSecondaryItem
-            //   key='service'
-            //   icon={<IconSvg src={iconCustomerService} size='medium' />}
-            //   href='/service'
-            // >
-            //   <Trans id='Customer Service' />
-            // </MenuFabSecondaryItem>,
-
-            // Service Var2
-            //             <PageLink href='/service' passHref>
-            //   <Fab size='large' color='inherit'>
-            //     <IconSvg src={iconCustomerService} size='large' />
-            //     <Trans id='Customer Service' />
-            //   </Fab>
-            // </PageLink>,
             <WishlistMenuFabItem
               onClick={() => selection.set(false)}
               key='wishlist'
@@ -137,86 +111,26 @@ export function LayoutNavigation(props: LayoutNavigationProps) {
       </NavigationProvider>
 
       <LayoutDefault
-        sx={(theme) => ({ my: theme.spacings.xs })}
-        {...uiProps}
-
         noSticky={router.asPath.split('?')[0] === '/'}
         header={
-
-
           <>
-
-            {/* <DesktopNavBar> */}
-            {/* {menu?.items?.[0]?.children?.slice(0, 2).map((item) => (
-                <DesktopNavItem key={item?.uid} href={`/${item?.url_path}`}>
-                  {item?.name}
-                </DesktopNavItem>
-              ))} */}
-
-            {/* <DesktopNavItem
-                onClick={() => selection.set([menu?.items?.[0]?.uid || ''])}
-                onKeyUp={(evt) => {
-                  if (evt.key === 'Enter') {
-                    selection.set([menu?.items?.[0]?.uid || ''])
-                  }
-                }}
-                tabIndex={0}
-              >
-                {menu?.items?.[0]?.name}
-                <IconSvg src={iconChevronDown} />
-              </DesktopNavItem>
-
-              <DesktopNavItem href='/blog'>
-                <Trans id='Blog' />
-              </DesktopNavItem>
-            </DesktopNavBar> */}
-            {/* cc, neu angeordnet*/}
-
-            <PageLink href='/'> <Logo /></PageLink>
-
-
-
-
-            <Box
-              sx={{
-                width: '33%',
-                display: 'flex',
-                justifyContent: 'end',
-                pointerEvents: 'none',
-                zIndex: '200',
-              }}
-            >
-              <DesktopNavActions>
-                {!router.pathname.startsWith('/search') && (
-
-                  <SearchLink
-                    href='/search'
-                    aria-label={i18n._(/* i18n */ 'Search...')}
-                  />
-                )}
-
-
-
-
-                {/* 
-                <Fab
-                  href='/search'
-                  color= 'inherit'
-                  size='large'>
-                  <IconSvg src={iconSearch} size='large'/>
-                  </Fab> 
-                  */}
-
-
-                {/* cc hier war service link */}
-                <WishlistFab icon={<IconSvg src={iconHeart} size='large' />} />
-                <CustomerFab guestHref='/account/signin' authHref='/account' />
-                {/* The placeholder exists because the CartFab is sticky but we want to reserve the space for the <CartFab /> */}
-                <PlaceholderFab />
-                <PlaceholderFab />
-
-              </DesktopNavActions>
+            <PageLink href='/'>
+              <Logo />
+            </PageLink>
+            <Box>
+              <PlaceholderFab />
             </Box>
+            <DesktopNavActions>
+              {!router.pathname.startsWith('/search') && (
+                <SearchLink href='/search' aria-label={i18n._(/* i18n */ 'Search...')} />
+              )}
+
+              <WishlistFab icon={<IconSvg src={iconHeart} size='large' />} />
+              <CustomerFab guestHref='/account/signin' authHref='/account' />
+              {/* The placeholder exists because the CartFab is sticky but we want to reserve the space for the <CartFab /> */}
+              <PlaceholderFab size='large' />
+              <PlaceholderFab size='large' />
+            </DesktopNavActions>
           </>
         }
         footer={<Footer footer={footer} />}
@@ -224,7 +138,6 @@ export function LayoutNavigation(props: LayoutNavigationProps) {
         menuFab={<NavigationFab onClick={() => selection.set([])} />}
       >
         {children}
-
       </LayoutDefault>
     </>
   )

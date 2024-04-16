@@ -12,10 +12,9 @@ import {
   MuiButtonInline,
   NextLink,
 } from '@graphcommerce/next-ui'
-
-import { MuiChip } from './MuiChip'
 import { createTheme, Theme, alpha, LinkProps } from '@mui/material'
 import { Components, PaletteOptions } from '@mui/material/styles'
+import { MuiChip } from './MuiChip'
 
 const lightPalette: PaletteOptions = {
   mode: 'light',
@@ -160,9 +159,7 @@ const createThemeWithPalette = (palette: PaletteOptions) =>
         // https://web.dev/font-size/#how-the-lighthouse-font-size-audit-fails
         ...fontSize(12, 13),
       },
-      button: {
-
-      },
+      button: {},
       overline: {
         // https://web.dev/font-size/#how-the-lighthouse-font-size-audit-fails
         ...fontSize(14, 16),
@@ -195,7 +192,6 @@ const createThemeWithPalette = (palette: PaletteOptions) =>
 
 // todo: move most of the styles to the graphcommerce library while still allowing for extensibility.
 const createOverrides = (theme: Theme): Components<Theme> => ({
-
   MuiCssBaseline: {
     styleOverrides: {
       body: {
@@ -224,28 +220,26 @@ const createOverrides = (theme: Theme): Components<Theme> => ({
         disableGutters: true,
       },
       maxWidthLg: {
-          [theme.breakpoints.up('lg')]: {
-              maxWidth: false,
-          },
-
-
-    variants: [
-      {
-        props: { disableGutters: true },
-        style: {
-          paddingLeft: theme.page.horizontal,
-          paddingRight: theme.page.horizontal,
-          [theme.breakpoints.up('sm')]: {
-            paddingLeft: theme.page.horizontal,
-            paddingRight: theme.page.horizontal,
-          },
+        [theme.breakpoints.up('lg')]: {
+          maxWidth: false,
         },
+
+        variants: [
+          {
+            props: { disableGutters: true },
+            style: {
+              paddingLeft: theme.page.horizontal,
+              paddingRight: theme.page.horizontal,
+              [theme.breakpoints.up('sm')]: {
+                paddingLeft: theme.page.horizontal,
+                paddingRight: theme.page.horizontal,
+              },
+            },
+          },
+        ],
       },
-    ],
+    },
   },
-},
-  },
-  
 
   MuiInputBase: {
     styleOverrides: {
@@ -254,7 +248,7 @@ const createOverrides = (theme: Theme): Components<Theme> => ({
       },
     },
   },
-  
+
   MuiButton: {
     defaultProps: { color: 'inherit' },
     variants: [
@@ -263,8 +257,8 @@ const createOverrides = (theme: Theme): Components<Theme> => ({
       ...MuiButtonInline,
       {
         props: { variant: 'contained' },
-        style: { 
-          textTransform: 'uppercase', 
+        style: {
+          textTransform: 'uppercase',
           letterSpacing: '0.12rem',
         },
       },

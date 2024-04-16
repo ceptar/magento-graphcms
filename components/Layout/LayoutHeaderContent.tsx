@@ -115,7 +115,7 @@ export function LayoutHeaderContent(props: LayoutHeaderContentProps) {
             display: 'grid',
             gridTemplateAreas: `"left center right"`,
             gridTemplateColumns: '1fr auto 1fr',
-            alignItems: 'center',
+            alignItems: 'between',
             gap: theme.page.horizontal,
             backgroundColor: '',
             height: theme.appShell.headerHeightSm,
@@ -125,22 +125,18 @@ export function LayoutHeaderContent(props: LayoutHeaderContentProps) {
             },
             '&.sizeSmall': {
               height: theme.appShell.headerHeightSm,
-              px: 2,
-              [theme.breakpoints.up('md')]: {
-                px: 2,
-              },
+
+              [theme.breakpoints.up('md')]: {},
             },
 
             '&.floatingSm': {
               [theme.breakpoints.down('md')]: {
-                px: theme.page.horizontal,
                 background: 'none',
                 pointerEvents: 'none',
               },
             },
             '&.floatingMd': {
               [theme.breakpoints.up('md')]: {
-                px: theme.page.horizontal,
                 background: 'none',
                 pointerEvents: 'none',
               },

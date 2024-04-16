@@ -1,5 +1,6 @@
 import { LazyHydrate, RenderType, TypeRenderer } from '@graphcommerce/next-ui'
 import { RowBlogContent } from '../Blog'
+import { Banner } from './Banner/Banner'
 import { PageContentQueryFragment } from './PageContentQueryFragment.gql'
 import { RowButtonLinkList } from './RowButtonLinkList/RowButtonLinkList'
 import { RowColumnOne } from './RowColumnOne/RowColumnOne'
@@ -13,7 +14,6 @@ import { RowQuote } from './RowQuote/RowQuote'
 import { RowRendererFragment } from './RowRenderer.gql'
 import { RowServiceOptions } from './RowServiceOptions/RowServiceOptions'
 import { RowSpecialBanner } from './RowSpecialBanner/RowSpecialBanner'
-import { Banner } from './Banner/Banner'
 
 type ContentTypeRenderer = TypeRenderer<PageContentQueryFragment['pages'][0]['content'][0]>
 

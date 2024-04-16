@@ -98,61 +98,13 @@ export function LayoutHeader(props: LayoutHeaderProps) {
           zIndex: children ? theme.zIndex.appBar : theme.zIndex.appBar - 2,
           position: 'sticky',
           pointerEvents: 'none',
-          marginLeft: 0,
 
-          [theme.breakpoints.down('md')]: {
-            top: 0,
-            left: 0,
-            // cc, neue Anordnung backbutton sticky overlay small
-            marginLeft: 0,
-            // marginTop: `calc(${theme.appShell.headerHeightSm} * -1)`,
-            marginTop: 0,
-            height: theme.appShell.headerHeightSm,
-            '&.noAlign': {
-              position: 'sticky',
-              left: 0,
-
-              right: 0,
-              top: 0,
-              marginTop: 0,
-              height: theme.appShell.headerHeightSm,
-              marginBottom: `calc(${theme.appShell.headerHeightSm} * -1)`,
-            },
-            '&.divider': {
-              marginBottom: 0,
-            },
+          '&.noAlign': {
+            top: '0',
+            marginTop: '0',
+            position: 'sticky',
           },
-
-          [theme.breakpoints.up('md')]: {
-            top: 0,
-            height: theme.appShell.appBarHeightMd,
-            // marginTop: `calc((${theme.appShell.appBarHeightMd} - ${theme.appShell.appBarInnerHeightMd}) * -0.5)`,
-            marginTop: 0,
-            marginBottom: `calc(${theme.appShell.appBarHeightMd} * -1 - calc((${theme.appShell.appBarHeightMd} - ${theme.appShell.appBarInnerHeightMd}) * -0.5))`,
-            '&.floatingMd': {
-              // marginTop: `calc(${theme.appShell.headerHeightSm} * -1)`,
-              marginTop: 0,
-              // cc neue anordnung
-              top: 0,
-            },
-            '&.noAlign': {
-              position: 'sticky',
-              left: 0,
-              right: 0,
-              top: 0,
-              marginTop: 0,
-              height: theme.appShell.appBarHeightMd,
-              marginBottom: `calc(${theme.appShell.appBarHeightMd} * -1)`,
-              '&.sizeSmall': {
-                height: theme.appShell.headerHeightSm,
-                top: 0,
-                marginTop: 0,
-              },
-            },
-            '&.divider': {
-              marginBottom: 0,
-            },
-          },
+          '&.divider': {},
         }),
         ...(Array.isArray(sx) ? sx : [sx]),
       ]}

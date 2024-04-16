@@ -1,6 +1,6 @@
+import { IconSvg, IconSvgProps, extendableComponent, responsiveVal } from '@graphcommerce/next-ui'
 import { Box, SxProps, Theme, Typography, TypographyProps } from '@mui/material'
 import React from 'react'
-import { IconSvg, IconSvgProps, extendableComponent, responsiveVal } from '@graphcommerce/next-ui'
 
 type OwnerState = {
   size?: 'small' | 'medium'
@@ -37,7 +37,6 @@ export const LayoutTitle = React.forwardRef<HTMLDivElement, TitleProps>((props, 
         (theme) => ({
           display: 'flex',
           // alignItems: 'center',
-          justifyContent: 'center',
           gap: `6px`,
           flexFlow: 'unset',
           [theme.breakpoints.up('md')]: {
