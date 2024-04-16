@@ -20,10 +20,10 @@ export function StickyBelowHeader(props: StickyBelowHeaderProps) {
       sx={[
         (theme) => ({
           position: 'sticky',
-          top: {
-            xs: theme.appShell.headerHeightSm,
-            md: `${theme.spacing[8]} !important`, // Replace with a calculated offset
-          },
+          top: 0,
+          height: theme.appShell.appBarHeightMd,
+          // top: `calc(${theme.appShell.appBarHeightMd} / 2)`,
+          // marginTop: `calc(${theme.appShell.headerHeightMd} * -1)`,
           zIndex: 96,
           pointerEvents: 'none',
           '& > *': {

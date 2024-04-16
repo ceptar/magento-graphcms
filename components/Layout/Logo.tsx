@@ -8,7 +8,7 @@ export function Logo() {
         '& .GcLogo-logo': {
           width: 'auto',
           height: { xs: '60px', md: '60px' },
-          paddingLeft: { xs: '10px', md: '10px' },
+          paddingLeft: { xs: 0, md: 0 },
           marginTop: { xs: 0, md: 0 },
           marginLeft: { xs: 0, md: 0 },
           marginRight: { xs: 0, md: 0 },

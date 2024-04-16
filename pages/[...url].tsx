@@ -1,8 +1,8 @@
 import { PageOptions } from '@graphcommerce/framer-next-pages'
 import { Asset, hygraphPageContent, HygraphPagesQuery } from '@graphcommerce/graphcms-ui'
 import { flushMeasurePerf } from '@graphcommerce/graphql'
+
 import {
-  CategoryChildren,
   CategoryDescription,
   CategoryHeroNav,
   CategoryHeroNavTitle,
@@ -35,6 +35,7 @@ import {
 import { LayoutNavigation, LayoutNavigationProps } from '../components/Layout/LayoutNavigation'
 import { CategoryPageDocument, CategoryPageQuery } from '../graphql/CategoryPage.gql'
 import { graphqlSharedClient, graphqlSsrClient } from '../lib/graphql/graphqlSsrClient'
+import { CategoryChildren } from './c/CategoryChildren'
 
 export type CategoryProps = CategoryPageQuery &
   HygraphPagesQuery &
@@ -72,9 +73,12 @@ function CategoryPage(props: CategoryProps) {
         <Container maxWidth={false}>
           <LayoutTitle
             variant='h1'
-            gutterTop
+            // gutterTop
             sx={(theme) => ({
               marginBottom: category?.description && theme.spacings.md,
+              paddingTop: '10px',
+              paddingBottom: '10px',
+              backgroundColor: '#FD009F',
               // marginBottom: category?.description && theme.spacings.md,
             })}
             gutterBottom={

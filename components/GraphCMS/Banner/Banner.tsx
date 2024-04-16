@@ -4,7 +4,6 @@ import { Box, Button } from '@mui/material'
 import { BannerFragment } from './Banner.gql'
 import { BannerLayout } from './BannerLayout'
 
-
 export function Banner(props: BannerFragment) {
   const { heroAsset, copy, pageLinks } = props
 
@@ -29,7 +28,7 @@ export function Banner(props: BannerFragment) {
             alignContent: 'center',
             textAlign: 'left',
             width: '50%',
-          }
+          },
         },
         '& .BannerLayout-image': {
           objectFit: 'cover',
@@ -37,16 +36,14 @@ export function Banner(props: BannerFragment) {
         },
       })}
     >
-
       <RichText
         {...copy}
         sxRenderer={{
-
           paragraph: {
             typography: 'overline',
           },
           'heading-one': (theme) => ({
-            paddingBottom: '10vh',
+            paddingBottom: '5vh',
             textTransform: 'uppercase',
             mt: 1,
             mb: theme.spacings.sm,

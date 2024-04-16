@@ -2,7 +2,7 @@ import { FormAutoSubmit } from '@graphcommerce/ecommerce-ui'
 import { useProductFiltersPro } from '@graphcommerce/magento-product'
 
 import { extendableComponent } from '@graphcommerce/next-ui'
-import { Box, Button, Container, Theme, useMediaQuery } from '@mui/material'
+import { Box, Container } from '@mui/material'
 import React from 'react'
 import { StickyBelowHeader } from './StickyBelowHeader'
 
@@ -44,7 +44,17 @@ export function ProductFiltersProLayoutSidebar(props: ProductFiltersProLayoutSid
 
       <FormAutoSubmit control={form.control} submit={submit} />
 
-      <StickyBelowHeader>{horizontalFilters}</StickyBelowHeader>
+      <StickyBelowHeader>
+        <Box
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+            height: '100%',
+          }}
+        >
+          {horizontalFilters}
+        </Box>
+      </StickyBelowHeader>
 
       <Container maxWidth={false}>
         <Box gridArea='beforeContent'>{count}</Box>

@@ -40,7 +40,7 @@ export const LayoutTitle = React.forwardRef<HTMLDivElement, TitleProps>((props, 
           gap: `6px`,
           flexFlow: 'unset',
           [theme.breakpoints.up('md')]: {
-            flexFlow: 'column',
+            flexFlow: 'unset',
           },
           '&.sizeSmall': {
             flexFlow: 'unset',

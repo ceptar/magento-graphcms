@@ -63,16 +63,7 @@ export function LayoutNavigation(props: LayoutNavigationProps) {
               <Trans id='Search...' />
             </SearchLink>,
             { id: 'home', name: <Trans id='Home' />, href: '/' },
-            // {
-            //   id: 'manual-item-one',
-            //   href: `/${menu?.items?.[0]?.children?.[0]?.url_path}`,
-            //   name: menu?.items?.[0]?.children?.[0]?.name ?? '',
-            // },
-            // {
-            //   id: 'manual-item-two',
-            //   href: `/${menu?.items?.[0]?.children?.[1]?.url_path}`,
-            //   name: menu?.items?.[0]?.children?.[1]?.name ?? '',
-            // },
+
             ...magentoMenuToNavigation(menu, true),
             { id: 'blog', name: 'Blog', href: '/blog' },
             <Divider sx={(theme) => ({ my: theme.spacings.xs })} />,
