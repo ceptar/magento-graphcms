@@ -99,7 +99,6 @@ export function LayoutDefault(props: LayoutDefaultProps) {
             sx={(theme) => ({
               display: 'grid',
               width: '100%',
-              direction: 'row-reverse',
               justifyContent: 'flex-end',
               alignItems: 'center',
               padding: `0 ${theme.page.horizontal}`,
@@ -114,16 +113,13 @@ export function LayoutDefault(props: LayoutDefaultProps) {
             })}
           >
             <Box
-              sx={[
-                (theme) => ({
-                  [theme.breakpoints.up('sm')]: {
-                    display: 'grid',
-                    gridTemplateColumns: `auto auto`,
+              sx={{
+                display: 'grid',
+                direction: 'flex-row',
+                gridTemplateColumns: `auto auto`,
 
-                    gap: '6px',
-                  },
-                }),
-              ]}
+                gap: '6px',
+              }}
             >
               {cartFab}
               {menuFab}
