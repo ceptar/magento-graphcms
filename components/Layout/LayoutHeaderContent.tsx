@@ -1,8 +1,8 @@
 import { useMotionValueValue } from '@graphcommerce/framer-utils'
+import { extendableComponent, useScrollY } from '@graphcommerce/next-ui'
 import { Box, styled, SxProps, Theme } from '@mui/material'
 import { LayoutProps, m } from 'framer-motion'
 import React, { useRef } from 'react'
-import { extendableComponent, useScrollY } from '@graphcommerce/next-ui'
 import { FloatingProps } from './LayoutHeadertypes'
 
 const MotionDiv = styled(m.div)({})
@@ -227,6 +227,7 @@ export function LayoutHeaderContent(props: LayoutHeaderContentProps) {
               bottom: 0,
               left: 0,
               right: 0,
+              display: 'none',
 
               '&.floatingSm': {
                 [theme.breakpoints.down('md')]: {

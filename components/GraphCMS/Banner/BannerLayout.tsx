@@ -48,7 +48,7 @@ export function BannerLayout(props: BannerLayoutProps) {
             display: 'grid',
             justifyItems: 'center',
             alignContent: 'center',
-            textAlign: 'center',
+            textAlign: 'left',
             p: theme.spacings.md,
             color: theme.palette.secondary.contrastText,
           })}

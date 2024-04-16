@@ -46,7 +46,7 @@ export function LayoutDefault(props: LayoutDefaultProps) {
 
   const classes = withState({ noSticky })
 
-  const fabIconSize = useFabSize('responsive')
+  const fabIconSize = useFabSize('large')
 
   return (
     <Box
@@ -84,11 +84,12 @@ export function LayoutDefault(props: LayoutDefaultProps) {
               pointerEvents: 'all',
             },
             [theme.breakpoints.up('md')]: {
+              // navbox
               height: theme.appShell.headerHeightMd,
               padding: `0 ${theme.page.horizontal} 0`,
               top: 0,
               display: 'flex',
-              //navbox
+
               justifyContent: 'space-between',
               width: '100%',
             },
@@ -107,14 +108,16 @@ export function LayoutDefault(props: LayoutDefaultProps) {
             className={classes.fabs}
             sx={(theme) => ({
               display: 'flex',
+              alignItems: 'center',
               justifyContent: 'space-between',
-              width: '100%',
-              height: 0,
+              height: theme.appShell.headerHeightSm,
+              top: 0,
+
               zIndex: 'speedDial',
               [theme.breakpoints.up('sm')]: {
                 padding: `0 ${theme.page.horizontal}`,
                 position: 'sticky',
-                marginTop: `calc(${theme.appShell.headerHeightMd} * -1 - calc(${fabIconSize} / 2))`,
+                marginTop: `calc(${theme.appShell.headerHeightSm} * -1 - calc(${fabIconSize} / 2))`,
                 top: `calc(${theme.appShell.headerHeightMd} / 2 - (${fabIconSize} / 2))`,
               },
 
@@ -142,8 +145,9 @@ export function LayoutDefault(props: LayoutDefaultProps) {
           >
             <Box
               sx={{
-                width: '100vw',
-                alignItems: 'space-between'
+                width: '100%',
+                alignItems: 'space-between',
+                top: 0,
               }}>
               <Box
                 sx={{
@@ -157,16 +161,23 @@ export function LayoutDefault(props: LayoutDefaultProps) {
                     flexDirection: 'row-reverse',
                     gap: theme.spacings.xxs,
                     [theme.breakpoints.up('md')]: {
+                      height: theme.appShell.headerHeightSm,
+                      // padding: `0 ${theme.page.horizontal} 0`,
+                      top: 0,
+                      display: 'flex',
+                      // navbox
+                      // justifyContent: 'space-between',
+                      width: '100%',
                       flexDirection: 'row-reverse',
-                      alignItems: 'flex-end',
+                      alignItems: 'center',
                     },
                   })}
                 >
-                  <Box sx={{ flexDirection: 'column' }}>
+                  <Box sx={{ flexDirection: 'column', alignItems: 'center' }}>
                     {menuFab}
                   </Box>
 
-                  <Box sx={{ flexDirection: 'column' }}>
+                  <Box sx={{ flexDirection: 'column', alignItems: 'center' }}>
                     {cartFab}
 
                   </Box>

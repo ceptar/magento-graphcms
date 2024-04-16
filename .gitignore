@@ -5,7 +5,7 @@ node_modules
 .next/
 out/
 .vercel
-next-env.d.ts
+# next-env.d.ts
 ._tmp*
 .swc
 

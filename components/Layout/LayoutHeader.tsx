@@ -1,6 +1,6 @@
+import { extendableComponent } from '@graphcommerce/next-ui'
 import { Box, SxProps, Theme } from '@mui/material'
 import React from 'react'
-import { extendableComponent } from '@graphcommerce/next-ui'
 import { LayoutHeaderBack, useShowBack } from './LayoutHeaderBack'
 import { LayoutHeaderClose, useShowClose } from './LayoutHeaderClose'
 import { LayoutHeaderContent, LayoutHeaderContentProps } from './LayoutHeaderContent'

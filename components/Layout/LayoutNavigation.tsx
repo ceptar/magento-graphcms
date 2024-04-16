@@ -1,14 +1,7 @@
 import { CartFab } from '@graphcommerce/magento-cart'
 import { magentoMenuToNavigation } from '@graphcommerce/magento-category'
 import { CustomerFab, CustomerMenuFabItem } from '@graphcommerce/magento-customer'
-import { SearchLink } from '../Layout/SearchLink'
-import PageLink, { LinkProps as PageLinkProps } from 'next/link'
 import { WishlistFab, WishlistMenuFabItem } from '@graphcommerce/magento-wishlist'
-import { LayoutDefault, LayoutDefaultProps } from './LayoutDefault'
-import { DesktopNavBar } from './DesktopNavbar'
-import { NavigationOverlay } from './NavigationOverlay'
-import { NavigationFab } from './NavigationFab'
-import { MenuFab } from './MenuFab'
 import {
   DesktopNavActions,
   iconCustomerService,
@@ -25,14 +18,21 @@ import {
   LazyHydrate,
   iconSearch,
 } from '@graphcommerce/next-ui'
+import { NavigationOverlay } from './NavigationOverlay'
 import { i18n } from '@lingui/core'
 import { Trans } from '@lingui/react'
 import { Box, Divider, Fab } from '@mui/material'
+import PageLink, { LinkProps as PageLinkProps } from 'next/link'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
+import { DesktopNavBar } from './DesktopNavbar'
 import { Footer } from './Footer'
 import { LayoutQuery } from './Layout.gql'
+import { LayoutDefault, LayoutDefaultProps } from './LayoutDefault'
 import { Logo } from './Logo'
+import { MenuFab } from './MenuFab'
+import { NavigationFab } from './NavigationFab'
+import { SearchLink } from './SearchLink'
 
 export type LayoutNavigationProps = LayoutQuery &
   Omit<LayoutDefaultProps, 'footer' | 'header' | 'cartFab' | 'menuFab'>
@@ -137,9 +137,13 @@ export function LayoutNavigation(props: LayoutNavigationProps) {
       </NavigationProvider>
 
       <LayoutDefault
+        sx={(theme) => ({ my: theme.spacings.xs })}
         {...uiProps}
+
         noSticky={router.asPath.split('?')[0] === '/'}
         header={
+
+
           <>
 
             {/* <DesktopNavBar> */}
@@ -170,17 +174,7 @@ export function LayoutNavigation(props: LayoutNavigationProps) {
 
             <PageLink href='/'> <Logo /></PageLink>
 
-            <Box
-              sx={{
-                width: '33%',
-                display: 'flex',
-                justifyContent: 'center',
-                justifySelf: 'center',
-                pointerEvents: 'none',
-                zIndex: '200',
-              }}
-            >
-            </Box>
+
 
 
             <Box
