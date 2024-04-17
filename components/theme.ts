@@ -29,7 +29,7 @@ const lightPalette: PaletteOptions = {
     contrastText: '#ffffff',
   },
   background: {
-    default: '#E5E5E5',
+    default: '#F3F3F3',
     paper: '#ffffff',
     image: '#ffffff',
   },
