@@ -19,8 +19,6 @@ import {
   BlogPostPathsDocument,
   BlogTags,
   LayoutDocument,
-  LayoutNavigation,
-  LayoutNavigationProps,
   RowRenderer,
 } from '../../components'
 import { LayoutNavigation, LayoutNavigationProps } from '../../components/Layout/LayoutNavigation'
