@@ -32,10 +32,10 @@ import {
   RowRenderer,
   LayoutTitle,
 } from '../components'
+import { CategoryChildren } from '../components/Layout/CategoryChildren'
 import { LayoutNavigation, LayoutNavigationProps } from '../components/Layout/LayoutNavigation'
 import { CategoryPageDocument, CategoryPageQuery } from '../graphql/CategoryPage.gql'
 import { graphqlSharedClient, graphqlSsrClient } from '../lib/graphql/graphqlSsrClient'
-import { CategoryChildren } from './c/CategoryChildren'
 
 export type CategoryProps = CategoryPageQuery &
   HygraphPagesQuery &
