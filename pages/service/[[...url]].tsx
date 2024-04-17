@@ -13,9 +13,9 @@ import {
   LayoutDocument,
   LayoutOverlay,
   LayoutOverlayProps,
-  LayoutNavigationProps,
   RowRenderer,
 } from '../../components'
+import { LayoutNavigationProps } from '../../components/Layout/LayoutNavigation'
 import { graphqlSsrClient, graphqlSharedClient } from '../../lib/graphql/graphqlSsrClient'
 
 type Props = HygraphPagesQuery

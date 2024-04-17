@@ -9911,7 +9911,7 @@ typescript@^5.4.2:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.4.5.tgz#42ccef2c571fdbd0f6718b1d1f5e6e5ef006f611"
   integrity sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==
 
-"uWebSockets.js@github:uNetworking/uWebSockets.js#semver:^20":
+"uWebSockets.js@uNetworking/uWebSockets.js#semver:^20":
   version "20.43.0"
   resolved "https://codeload.github.com/uNetworking/uWebSockets.js/tar.gz/1977b5039938ad863d42fc4958d48c17e5a1fa06"
 

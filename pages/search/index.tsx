@@ -29,10 +29,9 @@ import { Container } from '@mui/material'
 import {
   LayoutHeader, 
   LayoutDocument,
-  LayoutNavigation,
-  LayoutNavigationProps,
   SearchFilterLayout,
 } from '../../components'
+import { LayoutNavigation, LayoutNavigationProps } from '../../components/Layout/LayoutNavigation'
 import { graphqlSharedClient, graphqlSsrClient } from '../../lib/graphql/graphqlSsrClient'
 
 type SearchResultProps = ProductListQuery &

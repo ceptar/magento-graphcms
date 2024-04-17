@@ -19,10 +19,9 @@ import {
   BlogPathsDocument,
   BlogPathsQuery,
   LayoutDocument,
-  LayoutNavigation,
-  LayoutNavigationProps,
   RowRenderer,
 } from '../../../components'
+import { LayoutNavigation, LayoutNavigationProps } from '../../../components/Layout/LayoutNavigation'
 import { graphqlSsrClient, graphqlSharedClient } from '../../../lib/graphql/graphqlSsrClient'
 
 type Props = HygraphPagesQuery & BlogListQuery & BlogPathsQuery

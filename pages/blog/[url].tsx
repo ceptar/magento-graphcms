@@ -23,6 +23,7 @@ import {
   LayoutNavigationProps,
   RowRenderer,
 } from '../../components'
+import { LayoutNavigation, LayoutNavigationProps } from '../../components/Layout/LayoutNavigation'
 import { graphqlSharedClient, graphqlSsrClient } from '../../lib/graphql/graphqlSsrClient'
 
 type Props = HygraphPagesQuery & BlogListQuery

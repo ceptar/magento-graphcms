@@ -18,9 +18,9 @@ import { useRouter } from 'next/router'
 import {
   LayoutDocument,
   LayoutMinimal,
-  LayoutNavigationProps,
   LayoutMinimalProps,
 } from '../../components'
+import { LayoutNavigation, LayoutNavigationProps } from '../../components/Layout/LayoutNavigation'
 import { graphqlSsrClient, graphqlSharedClient } from '../../lib/graphql/graphqlSsrClient'
 
 type Props = Record<string, unknown>

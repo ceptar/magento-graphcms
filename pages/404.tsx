@@ -5,7 +5,8 @@ import { GetStaticProps, Separator, icon404, IconSvg } from '@graphcommerce/next
 import { Trans } from '@lingui/react'
 import { Box, Container, Typography, Link } from '@mui/material'
 import React from 'react'
-import { LayoutDocument, LayoutNavigation, LayoutNavigationProps } from '../components'
+import { LayoutNavigation, LayoutNavigationProps } from '../components/Layout/LayoutNavigation'
+import { LayoutDocument } from '../components'
 import { graphqlSsrClient, graphqlSharedClient } from '../lib/graphql/graphqlSsrClient'
 
 type Props = Record<string, unknown>
