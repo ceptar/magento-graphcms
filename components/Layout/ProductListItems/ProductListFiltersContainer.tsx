@@ -105,7 +105,7 @@ export function ProductListFiltersContainer(props: ProductListFiltersContainerPr
           [theme.breakpoints.down('md')]: {
             display: 'flex',
             justifyContent: 'center',
-            top: 0,
+            
             textAlign: 'center',
             maxWidth: 'unset',
             marginX: 8,

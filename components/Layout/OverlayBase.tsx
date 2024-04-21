@@ -649,7 +649,7 @@ kein effekt
                 backgroundColor: theme.palette.background[bgColor],
                 paddingBottom: '0.1px',
                 [theme.breakpoints.down('md')]: {
-                  minHeight: '100%',
+                  minHeight: '90%',
                   '&.variantSmBottom': {
                     borderTopLeftRadius: theme.shape.borderRadius * 3,
                     borderTopRightRadius: theme.shape.borderRadius * 3,
@@ -657,12 +657,12 @@ kein effekt
                   '&.sizeSmFull': {
                     minHeight: dvh(100),
                     '&.variantSmBottom': {
-                      minHeight: '100%',
+                      minHeight: '90%',
                     },
                   },
                 },
                 [theme.breakpoints.up('md')]: {
-                  minHeight: '100%',
+                  minHeight: '90%',
                   '&.variantMdBottom': {
                     borderTopLeftRadius: theme.shape.borderRadius * 4,
                     borderTopRightRadius: theme.shape.borderRadius * 4,
@@ -670,7 +670,7 @@ kein effekt
                   '&.sizeMdFull': {
                     minHeight: dvh(100),
                     '&.variantMdBottom': {
-                      minHeight: '100%',
+                      minHeight: '90%',
                     },
                   },
                 },

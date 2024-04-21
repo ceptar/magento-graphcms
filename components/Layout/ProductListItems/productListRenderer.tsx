@@ -1,25 +1,25 @@
+import { ProductListItem } from './ProductListItem'
+import { ProductListItemRenderer } from './productListItemRenderer'
 import {
-  AddProductsToCartFab,
-  ProductListItem,
-  ProductListItemRenderer,
+  AddProductsToCartFab
 } from '@graphcommerce/magento-product'
 import { ProductListItemBundle } from '@graphcommerce/magento-product-bundle'
 import { ProductListItemConfigurable } from '@graphcommerce/magento-product-configurable'
 import { ProductListItemDownloadable } from '@graphcommerce/magento-product-downloadable'
 import { ProductListItemGrouped } from '@graphcommerce/magento-product-grouped'
-import { ProductListItemSimple } from '@graphcommerce/magento-product-simple'
+import { ProductListItemSimple } from './ProductListItemSimple'
 import { ProductListItemVirtual } from '@graphcommerce/magento-product-virtual'
 import { ProductReviewSummary } from '@graphcommerce/magento-review'
 import { ProductWishlistChip } from '@graphcommerce/magento-wishlist'
 
 export const productListRenderer: ProductListItemRenderer = {
-  Skeleton: (props) => <ProductListItem {...props} aspectRatio={[1, 1]} />,
+  Skeleton: (props) => <ProductListItem {...props} aspectRatio={[0.8, 1]} />,
   SimpleProduct: (props) => {
     const { sku } = props
     return (
       <ProductListItemSimple
         {...props}
-        aspectRatio={[1, 1]}
+        aspectRatio={[0.8, 1]}
         bottomLeft={<ProductReviewSummary {...props} />}
         topRight={<ProductWishlistChip {...props} />}
         bottomRight={<AddProductsToCartFab sku={sku} />}

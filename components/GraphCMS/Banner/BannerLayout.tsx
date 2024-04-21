@@ -5,7 +5,7 @@ import { m, useTransform } from 'framer-motion'
 import React from 'react'
 
 export type BannerLayoutProps = ContainerProps & {
-  pageLinks: React.ReactNode
+  bannerLink: React.ReactNode
   imageSrc: string // Update prop name for image source
   children: React.ReactNode
   sx?: SxProps<Theme>
@@ -18,7 +18,7 @@ const MotionImage = styled(m.img)({})
 // Create a styled component for the image
 
 export function BannerLayout(props: BannerLayoutProps) {
-  const { pageLinks, imageSrc, children, sx = [], ...containerProps } = props
+  const { bannerLink, imageSrc, children, sx = [], ...containerProps } = props
   const scrollY = useScrollY()
   const scale = useTransform([scrollY, clientSize.y], ([scrollYCurr, clientSizeYCurr]: number[]) =>
     clientSizeYCurr ? (scrollYCurr / clientSizeYCurr) * 1.7 + 1 : 1,
@@ -54,7 +54,7 @@ export function BannerLayout(props: BannerLayoutProps) {
           })}
         >
           {children}
-          {pageLinks}
+          {bannerLink}
         </Box>
         <Box
           className={classes.asset}

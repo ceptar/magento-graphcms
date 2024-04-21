@@ -15,7 +15,7 @@ const defaultRenderer: Partial<VariantRenderer> = {
   ImageLabelSwiper,
   LogoSwiper,
   Inline,
-  Usps,
+  Usps
 }
 
 export function RowLinks(props: RowLinksProps) {

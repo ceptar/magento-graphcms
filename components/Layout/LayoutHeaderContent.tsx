@@ -68,7 +68,8 @@ export function LayoutHeaderContent(props: LayoutHeaderContentProps) {
             left: 0,
             width: '100%',
             backgroundColor: 'theme.palette.background[bgColor]',
-            boxShadow: theme.shadows[1],
+            // boxShadow: theme.shadows[1],
+            boxSchadow: 0,
 
             height: theme.appShell.headerHeightSm,
 
@@ -97,10 +98,12 @@ export function LayoutHeaderContent(props: LayoutHeaderContentProps) {
             '&.scrolled': {
               opacity: 1,
             },
-
             '&.divider': {
-              boxShadow: 'unset',
-            },
+            boxSchadow: 0,
+          },
+            // '&.divider': {
+            //   boxShadow: 'unset',
+            // },
           }),
           ...(Array.isArray(sxBg) ? sxBg : [sxBg]),
         ]}

@@ -5,11 +5,11 @@ import { BannerFragment } from './Banner.gql'
 import { BannerLayout } from './BannerLayout'
 
 export function Banner(props: BannerFragment) {
-  const { heroAsset, copy, pageLinks } = props
+  const { heroAsset, copy, bannerLink } = props
 
   return (
     <BannerLayout
-      pageLinks={pageLinks.map(({ url, title }) => (
+      bannerLink={bannerLink.map(({ url, title }) => (
         <Button key={url} href={url} variant='contained' size='large' color='primary'>
           {title}
         </Button>

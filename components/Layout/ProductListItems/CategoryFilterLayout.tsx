@@ -66,7 +66,8 @@ export function CategoryFilterLayout(props: ProductListFilterLayoutProps) {
           />
         ) : (
           <>
-            <StickyBelowHeader>{horizontalFilters}</StickyBelowHeader>
+            <StickyBelowHeader
+           >{horizontalFilters}</StickyBelowHeader>
             <Container>
               <ProductListCount total_count={total_count} />
               {items}

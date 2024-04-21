@@ -99,11 +99,14 @@
     "@types/react": "^18.2.74",
     "@types/react-dom": "^18.2.24",
     "@types/react-is": "^18.2.4",
+    "@types/uglify-es": "^3",
     "babel-plugin-macros": "^3.1.0",
     "eslint": "8.56.0",
+    "long": "^5.2.3",
     "prettier": "3.2.4",
     "type-fest": "^4.9.0",
-    "typescript": "5.3.3"
+    "typescript": "5.3.3",
+    "uglify-es": "3.3.9"
   },
   "browserslist": [
     "> 1% in alt-EU",
@@ -116,5 +119,5 @@
       "project": "./tsconfig.json"
     }
   },
-  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
+  "packageManager": "yarn@4.1.1"
 }

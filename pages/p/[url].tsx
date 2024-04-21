@@ -34,16 +34,18 @@ import { RecentlyViewedProducts } from '@graphcommerce/magento-recently-viewed-p
 import { jsonLdProductReview, ProductReviewChip } from '@graphcommerce/magento-review'
 import { redirectOrNotFound, Money, StoreConfigDocument } from '@graphcommerce/magento-store'
 import { ProductWishlistChipDetail } from '@graphcommerce/magento-wishlist'
-import { GetStaticProps, LayoutHeader, LayoutTitle, isTypename } from '@graphcommerce/next-ui'
+import { GetStaticProps, isTypename } from '@graphcommerce/next-ui'
 import { Trans } from '@lingui/react'
 import { Divider, Link, Typography } from '@mui/material'
 import { GetStaticPaths } from 'next'
 import {
+  LayoutHeader,
+  LayoutTitle,
   LayoutDocument,
   productListRenderer,
   RowProduct,
   RowRenderer,
-  Usps,
+  Usps
 } from '../../components'
 import { LayoutNavigation, LayoutNavigationProps } from '../../components/Layout/LayoutNavigation'
 import { UspsDocument, UspsQuery } from '../../components/Usps/Usps.gql'

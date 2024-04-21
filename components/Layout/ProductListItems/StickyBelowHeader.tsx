@@ -15,13 +15,19 @@ export function StickyBelowHeader(props: StickyBelowHeaderProps) {
   return (
     <Container
       className={classes.root}
-      maxWidth={false}
+
       {...props}
       sx={[
         (theme) => ({
           position: 'sticky',
-          top: 0,
-          height: theme.appShell.appBarHeightMd,
+          display: 'flex',
+          flexDirection: 'row-reverse',
+          top: `calc(${theme.appShell.appBarHeightMd} )`,
+          marginLeft: 'auto',
+          marginRight: 0,
+          maxWidth: 'fit-content',
+          width: 'auto',
+          paddingRight: theme.spacings.sm,
           // top: `calc(${theme.appShell.appBarHeightMd} / 2)`,
           // marginTop: `calc(${theme.appShell.headerHeightMd} * -1)`,
           zIndex: 96,

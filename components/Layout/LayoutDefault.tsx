@@ -116,7 +116,7 @@ export function LayoutDefault(props: LayoutDefaultProps) {
               sx={(theme) => ({
                 display: 'grid',
                 gridTemplateColumns: `auto auto`,
-                columnGap: theme.spacings.xs,
+                columnGap: theme.spacings.xxs,
                 paddingLeft: theme.spacings.sm,
                 paddingRight: theme.spacings.sm,
               })}

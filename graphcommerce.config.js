@@ -6,9 +6,9 @@
  * @type {import('@graphcommerce/next-config/src/generated/config').GraphCommerceConfig}
  */
 const config = {
-  hygraphEndpoint: 'https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clumfpeo7000008ky4q0ecrju/master',
+  hygraphEndpoint: 'https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clv429t5k000008k2918u4csw/master',
   magentoEndpoint: 'https://nonotheresnolimit.xyz/graphql',
-  canonicalBaseUrl: 'https://magento-graphcms-rosy.vercel.app/',
+  canonicalBaseUrl: 'https://discobabes.store/',
   storefront: [
     { locale: 'en', magentoStoreCode: 'default', defaultLocale: true },
   ],

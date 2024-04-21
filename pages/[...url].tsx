@@ -65,20 +65,22 @@ function CategoryPage(props: CategoryProps) {
         {...category}
       />
       <LayoutHeader floatingMd>
+                
         <LayoutTitle size='small' component='span'>
           {category?.name ?? page.title}
         </LayoutTitle>
       </LayoutHeader>
       {!isLanding && (
-        <Container maxWidth={false}>
+        <Container maxWidth={false}
+>
           <LayoutTitle
             variant='h1'
             // gutterTop
             sx={(theme) => ({
               marginBottom: category?.description && theme.spacings.md,
-              paddingTop: '10px',
-              paddingBottom: '10px',
-              backgroundColor: '#FD009F',
+              paddingTop: '2px',
+              paddingBottom: '2px',
+
               // marginBottom: category?.description && theme.spacings.md,
             })}
             gutterBottom={
