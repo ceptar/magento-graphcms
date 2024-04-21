@@ -5,11 +5,11 @@ import { m, useTransform } from 'framer-motion'
 import React from 'react'
 
 export type BannerLayoutProps = ContainerProps & {
-  bannerLink: React.ReactNode
-  imageSrc: string // Update prop name for image source
-  children: React.ReactNode
-  sx?: SxProps<Theme>
-}
+  bannerLink?: React.ReactNode; // Make bannerLink optional
+  imageSrc: string;
+  children: React.ReactNode;
+  sx?: SxProps<Theme>;
+};
 
 const compName = 'BannerLayout' as const
 const parts = ['root', 'wrapper', 'copy', 'asset', 'animated', 'image'] as const // Update part name

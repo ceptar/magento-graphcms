@@ -1,6 +1,8 @@
 import { usePrevPageRouter } from '@graphcommerce/framer-next-pages/hooks/usePrevPageRouter'
-import {   MotionImageAspect,
-  MotionImageAspectProps } from './MotionImageAspect'
+import {
+  MotionImageAspect,
+  MotionImageAspectProps
+} from './MotionImageAspect'
 import { Scroller } from './Scroller'
 import {
   ScrollerDots,
@@ -181,9 +183,8 @@ export function SidebarGallery(props: SidebarGalleryProps) {
                     width: '100vw',
                   },
                   [theme.breakpoints.up('md')]: {
-                    height: `calc(${dvh(100)} - ${theme.appShell.headerHeightMd} - ${
-                      theme.spacings.lg
-                    })`,
+                    height: `calc(${dvh(100)} - ${theme.appShell.headerHeightMd} - ${theme.spacings.lg
+                      })`,
                     position: 'sticky',
                     top: theme.appShell.headerHeightMd,
                   },
@@ -214,6 +215,7 @@ export function SidebarGallery(props: SidebarGalleryProps) {
                     gridAutoColumns: `100%`,
                     gridTemplateRows: `100%`,
                     cursor: disableZoom ? 'auto' : 'zoom-in',
+
                   },
                   zoomed && {
                     height: `var(--client-size-y)`,
@@ -230,7 +232,11 @@ export function SidebarGallery(props: SidebarGalleryProps) {
                     width={image.width}
                     height={image.height}
                     loading={idx === 0 ? 'eager' : 'lazy'}
-                    sx={{ display: 'block', objectFit: 'cover' }}
+                    sx={{
+                      display: 'block',
+                      objectFit: 'cover',
+                      backgroundColor: 'rgba(255, 255, 255, 0.7)',
+                    }}
                     sizes={{
                       0: '100vw',
                       [theme.breakpoints.values.md]: zoomed ? '100vw' : '60vw',
@@ -330,7 +336,7 @@ export function SidebarGallery(props: SidebarGalleryProps) {
                 }}
               >
                 {import.meta.graphCommerce.sidebarGallery?.paginationVariant ===
-                'THUMBNAILS_BOTTOM' ? (
+                  'THUMBNAILS_BOTTOM' ? (
                   <ScrollerThumbnails images={images} />
                 ) : (
                   <ScrollerDots />
@@ -349,19 +355,16 @@ export function SidebarGallery(props: SidebarGalleryProps) {
                 alignContent: 'center',
                 position: 'relative',
                 [theme.breakpoints.up('md')]: {
-                  width: `calc(${responsiveVal(300, 500, theme.breakpoints.values.lg)} + ${
-                    theme.page.horizontal
-                  } * 2)`,
+                  width: `calc(${responsiveVal(300, 500, theme.breakpoints.values.lg)} + ${theme.page.horizontal
+                    } * 2)`,
                 },
               },
               zoomed && {
                 [theme.breakpoints.up('md')]: {
-                  marginLeft: `calc((${responsiveVal(300, 500, theme.breakpoints.values.lg)} + ${
-                    theme.page.horizontal
-                  } * 2) * -1)`,
-                  left: `calc(${responsiveVal(300, 500, theme.breakpoints.values.lg)} + ${
-                    theme.page.horizontal
-                  } * 2)`,
+                  marginLeft: `calc((${responsiveVal(300, 500, theme.breakpoints.values.lg)} + ${theme.page.horizontal
+                    } * 2) * -1)`,
+                  left: `calc(${responsiveVal(300, 500, theme.breakpoints.values.lg)} + ${theme.page.horizontal
+                    } * 2)`,
                 },
               },
             ]}

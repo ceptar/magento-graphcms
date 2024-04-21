@@ -31,7 +31,7 @@ export type ProductListItemImageProps = {
 }
 
 export function ProductListItemImageSkeleton(props: ProductListItemImageProps) {
-  const { aspectRatio = [4, 3], classes } = props
+  const { aspectRatio = [4, 5], classes } = props
   return (
     <PlaceHolderContainer className={`${classes.placeholder} ${classes.image}`}>
       <Skeleton

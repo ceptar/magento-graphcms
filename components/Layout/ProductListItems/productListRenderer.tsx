@@ -23,6 +23,11 @@ export const productListRenderer: ProductListItemRenderer = {
         bottomLeft={<ProductReviewSummary {...props} />}
         topRight={<ProductWishlistChip {...props} />}
         bottomRight={<AddProductsToCartFab sku={sku} />}
+        sx={{
+          backgroundColor: '#278E9D',
+          marginX: '4px',
+          paddingBottom: '12px',
+        }}
       />
     )
   },

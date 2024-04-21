@@ -18,6 +18,7 @@ export function Banner(props: BannerFragment) {
       sx={(theme) => ({
         '& .BannerLayout-copy': {
           minHeight: { xs: 'min(100%,600px)', md: 'min(100%,1080px)' },
+          // height: `calc(100vh - ${theme.appShell.headerHeightMd})`,
           width: '100%',
 
           [theme.breakpoints.up('sm')]: {

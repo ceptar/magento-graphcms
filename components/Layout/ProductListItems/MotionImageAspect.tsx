@@ -1,4 +1,5 @@
 import { Image, ImageProps } from '@graphcommerce/image'
+import { themeBaseDefaults } from '@graphcommerce/next-ui'
 import { Box } from '@mui/material'
 import { m } from 'framer-motion'
 import { forwardRef } from 'react'
@@ -19,8 +20,10 @@ export const MotionImageAspect = m(
       sx={{
         position: 'relative',
 
+
         '& > picture': {
           display: 'block',
+
         },
         '& > img': {
           display: 'block',
