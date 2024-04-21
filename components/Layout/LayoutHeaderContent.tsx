@@ -99,8 +99,8 @@ export function LayoutHeaderContent(props: LayoutHeaderContentProps) {
               opacity: 1,
             },
             '&.divider': {
-            boxSchadow: 0,
-          },
+              boxSchadow: 0,
+            },
             // '&.divider': {
             //   boxShadow: 'unset',
             // },
@@ -119,7 +119,7 @@ export function LayoutHeaderContent(props: LayoutHeaderContentProps) {
             display: 'grid',
             gridTemplateAreas: `"left center right"`,
             gridTemplateColumns: '1fr auto 1fr',
-            alignItems: 'between',
+            alignItems: 'center',
             columnGap: theme.spacings.xs,
             height: theme.appShell.headerHeightSm,
             paddingLeft: theme.spacings.sm,
@@ -219,7 +219,7 @@ export function LayoutHeaderContent(props: LayoutHeaderContentProps) {
             {right}
           </MotionDiv>
         </Box>
-        {divider && (
+        {/* {divider && (
           <Box
             className={classes.divider}
             sx={(theme) => ({
@@ -241,9 +241,9 @@ export function LayoutHeaderContent(props: LayoutHeaderContentProps) {
               },
             })}
           >
-            {divider}
-          </Box>
-        )}
+            {divider} */}
+        {/* </Box> */}
+        {/* )} */}
       </Box>
     </>
   )

@@ -57,10 +57,10 @@ export const LayoutTitle = React.forwardRef<HTMLDivElement, TitleProps>((props, 
             },
           },
           '&.gutterTop': {
-            marginTop: theme.spacings.md,
+            // marginTop: theme.spacings.md,
           },
           '&.gutterBottom': {
-            marginBottom: theme.spacings.md,
+            // marginBottom: theme.spacings.md,
           },
         }),
         ...(Array.isArray(sx) ? sx : [sx]),

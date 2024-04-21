@@ -124,6 +124,7 @@ export function LayoutDefault(props: LayoutDefaultProps) {
               {cartFab}
               {menuFab}
             </Box>
+            {/* {beforeHeader} */}
           </Box>
         ) : (
           <div />
