@@ -54,7 +54,7 @@ type ImageOrPlaceholderProps = ProductListItemImageProps &
   }
 
 export function ProductListItemImage(props: ImageOrPlaceholderProps) {
-  const { aspectRatio = [4, 3], classes, src, alt, sx = [], ...image } = props
+  const { aspectRatio = [4, 5], classes, src, alt, sx = [], ...image } = props
 
   if (src) {
     return (

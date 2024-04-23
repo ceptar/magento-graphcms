@@ -7,11 +7,14 @@ export function Logo() {
       sx={{
         '& .GcLogo-logo': {
           width: 'auto',
-          height: { xs: '60px', md: '60px' },
+          height: '100%',
           paddingLeft: { xs: 0, md: 0 },
           marginTop: { xs: 0, md: 0 },
           marginLeft: { xs: 0, md: 0 },
           marginRight: { xs: 0, md: 0 },
+          minWidth: '150px',
+
+          maxHeight: '60px',
 
           // filter: (theme) => (theme.palette.mode === 'dark' ? 'invert(100%)' : 'none'),
         },

@@ -20,13 +20,35 @@ export const MotionImageAspect = m(
       sx={{
         position: 'relative',
 
-
         '& > picture': {
           display: 'block',
+          '@supports (aspect-ratio: 1 / 1)': {
+            maxWidth: '99.6%',
+            maxHeight: '100%',
+            width: 'auto',
+            height: 'auto',
 
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+
+            '&:after': {
+              display: 'block',
+              content: '""',
+              minWidth: '100vw',
+            },
+          },
+          '@supports not (aspect-ratio: 1 / 1)': {
+            width: '100% !important',
+            height: '100% !important',
+          },
         },
         '& > img': {
           display: 'block',
+          '@supports not (aspect-ratio: 1 / 1)': {
+            objectFit: 'contain',
+          },
         },
       }}
     >
@@ -39,10 +61,6 @@ export const MotionImageAspect = m(
           ...props.pictureProps,
           className: props.pictureProps?.className,
           style: { ...props.style, aspectRatio: `${props.width} / ${props.height}` },
-        }}
-        sx={{
-          justifyContent: 'center',
-          objectFit: 'cover',
         }}
       />
     </Box>

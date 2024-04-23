@@ -79,7 +79,7 @@ export function ProductListItemReal(props: ProductProps) {
     loading,
     sizes,
     dontReportWronglySizedImages,
-    aspectRatio = [4, 3],
+    aspectRatio = [4, 5],
     titleComponent = 'h2',
     sx = [],
     onClick,

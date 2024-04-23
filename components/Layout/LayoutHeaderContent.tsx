@@ -59,7 +59,7 @@ export function LayoutHeaderContent(props: LayoutHeaderContentProps) {
 
   return (
     <>
-      <Box
+      {/* <Box
         className={classes.bg}
         sx={[
           (theme) => ({
@@ -107,8 +107,8 @@ export function LayoutHeaderContent(props: LayoutHeaderContentProps) {
           }),
           ...(Array.isArray(sxBg) ? sxBg : [sxBg]),
         ]}
-      />
-      <Box
+      /> */}
+      {/* <Box
         className={classes.content}
         ref={ref}
         sx={[
@@ -148,8 +148,8 @@ export function LayoutHeaderContent(props: LayoutHeaderContentProps) {
           }),
           ...(Array.isArray(sx) ? sx : [sx]),
         ]}
-      >
-        {left && (
+      > */}
+        {/* {left && (
           <Box
             className={classes.left}
             sx={(theme) => ({
@@ -165,8 +165,8 @@ export function LayoutHeaderContent(props: LayoutHeaderContentProps) {
               {left}
             </MotionDiv>
           </Box>
-        )}
-        <Box
+        )} */}
+        {/* <Box
           className={classes.center}
           sx={(theme) => ({
             display: 'grid',
@@ -200,8 +200,8 @@ export function LayoutHeaderContent(props: LayoutHeaderContentProps) {
           <MotionDiv sx={{ minWidth: 0 }} layout={layout} layoutDependency={layoutDependency}>
             {children}
           </MotionDiv>
-        </Box>
-        <Box
+        </Box> */}
+        {/* <Box
           className={classes.right}
           sx={(theme) => ({
             '& > *': {
@@ -218,7 +218,7 @@ export function LayoutHeaderContent(props: LayoutHeaderContentProps) {
           <MotionDiv layout={layout} layoutDependency={layoutDependency}>
             {right}
           </MotionDiv>
-        </Box>
+        </Box> */}
         {/* {divider && (
           <Box
             className={classes.divider}
@@ -244,7 +244,7 @@ export function LayoutHeaderContent(props: LayoutHeaderContentProps) {
             {divider} */}
         {/* </Box> */}
         {/* )} */}
-      </Box>
+      {/* </Box> */}
     </>
   )
 }
