@@ -15,7 +15,7 @@ import { i18n } from '@lingui/core'
 import { Trans } from '@lingui/react'
 import { Box, Container, Divider, Typography } from '@mui/material'
 import { useEffect, useRef } from 'react'
-import { LayoutOverlay, LayoutOverlayProps, productListRenderer } from '../../components'
+import { LayoutOverlay, LayoutOverlayProps, ProductListRenderer } from '../../components'
 import { graphqlSharedClient } from '../../lib/graphql/graphqlSsrClient'
 
 type Props = Record<string, unknown>
@@ -133,7 +133,7 @@ function CheckoutAdded() {
             redirect={import.meta.graphCommerce.crossSellsRedirectItems ? 'added' : false}
           >
             <ProductScroller
-              productListRenderer={productListRenderer}
+              ProductListRenderer={ProductListRenderer}
               items={crossSellItems}
               sx={(theme) => ({ mb: theme.page.vertical })}
             />

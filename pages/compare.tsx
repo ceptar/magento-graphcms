@@ -24,7 +24,7 @@ import {
 import { i18n } from '@lingui/core'
 import { Trans } from '@lingui/react'
 import { Box, CircularProgress, Container, Typography } from '@mui/material'
-import { productListRenderer } from '../components'
+import { ProductListRenderer } from '../components'
 import { graphqlSharedClient } from '../lib/graphql/graphqlSsrClient'
 
 type Props = Record<string, unknown>
@@ -70,7 +70,7 @@ export function ComparePage() {
             <CompareListSelect />
             <Container>
               <CompareListItems
-                renderers={productListRenderer}
+                renderers={ProductListRenderer}
                 sx={(theme) => ({ mb: theme.spacings.lg })}
               />
               <CompareListAttributes

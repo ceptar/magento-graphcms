@@ -6,7 +6,7 @@ import {
   SidebarSliderProps,
 } from '@graphcommerce/next-ui'
 import { Typography } from '@mui/material'
-import { productListRenderer } from '../../../Layout/ProductListItems/productListRenderer'
+import { ProductListRenderer } from '../../../Layout/ProductListItems/ProductListRenderer'
 import { RowProductFragment } from '../RowProduct.gql'
 
 type UpsellsProps = RowProductFragment & UpsellProductsFragment & Pick<SidebarSliderProps, 'sx'>
@@ -23,7 +23,7 @@ export function Upsells(props: UpsellsProps) {
           item ? (
             <RenderType
               key={item.uid ?? ''}
-              renderer={productListRenderer}
+              renderer={ProductListRenderer}
               sizes={responsiveVal(200, 400)}
               titleComponent='h3'
               {...item}

@@ -17,7 +17,7 @@
 // import { Container } from '@mui/material'
 // import { ProductListItemsBase } from './ProductListItemsBase'
 // import { ProductListFilterLayoutProps } from './CategoryFilterLayout'
-// import { productListRenderer } from './productListRenderer'
+// import { ProductListRenderer } from './ProductListRenderer'
 // import { ProductListFiltersContainer } from './ProductListFiltersContainer'
 
 // export function SearchFilterLayout(props: ProductListFilterLayoutProps) {
@@ -29,7 +29,7 @@
 
 //   const items = (
 //     <ProductListItemsBase
-//       renderers={productListRenderer}
+//       renderers={ProductListRenderer}
 //       items={products.items}
 //       loadingEager={6}
 //       title={title}

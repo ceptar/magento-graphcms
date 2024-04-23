@@ -1,7 +1,7 @@
 import { LazyHydrate, RenderType, extendableComponent, responsiveVal } from '@graphcommerce/next-ui'
 import { Box, BoxProps } from '@mui/material'
 import { ProductListItemFragment, AddProductsToCartForm } from '@graphcommerce/magento-product'
-import { ProductListItemRenderer } from './productListItemRenderer'
+import { ProductListItemRenderer } from './ProductListItemRenderer'
 import { ProductListItemProps } from './ProductListItem'
 
 type ComponentState = {
@@ -54,9 +54,9 @@ export function ProductListItemsBase(props: ProductItemsGridProps) {
             '&.sizeNormal': {
               gridTemplateColumns: {
                 xs: `repeat(1, 1fr)`,
-                md: `repeat(2, 1fr)`,
-                lg: `repeat(3, 1fr)`,
-                xl: `repeat(auto-fill, minmax(400px, 1fr))`, // Adjust minmax values for XL and above
+                sm: `repeat(2, 1fr)`,
+                md: `repeat(3, 1fr)`,
+                lg: `repeat(auto-fill, minmax(300px, 500px))`, // Adjust minmax values for XL and above
               },
             },
           }),

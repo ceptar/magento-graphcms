@@ -73,7 +73,7 @@
 - [#2103](https://github.com/graphcommerce-org/graphcommerce/pull/2103) [`23392ba`](https://github.com/graphcommerce-org/graphcommerce/commit/23392babb89ce3e77dc98713ee897f72ab66d6a1) - Prevent + / - qty buttons from being render over the “Start Checkout” button
   ([@FrankHarland](https://github.com/FrankHarland))
 
-- [#2077](https://github.com/graphcommerce-org/graphcommerce/pull/2077) [`5f4455b`](https://github.com/graphcommerce-org/graphcommerce/commit/5f4455b1cccddf1501f0279e5ca2d9277a07ff07) - New `<ProductListItemSkeleton />` component and added support to the productListRenderer. Used for the new Recently Viewed Products feature.
+- [#2077](https://github.com/graphcommerce-org/graphcommerce/pull/2077) [`5f4455b`](https://github.com/graphcommerce-org/graphcommerce/commit/5f4455b1cccddf1501f0279e5ca2d9277a07ff07) - New `<ProductListItemSkeleton />` component and added support to the ProductListRenderer. Used for the new Recently Viewed Products feature.
   ([@bramvanderholst](https://github.com/bramvanderholst))
 
 - [#2004](https://github.com/graphcommerce-org/graphcommerce/pull/2004) [`53947d3`](https://github.com/graphcommerce-org/graphcommerce/commit/53947d39f2f3ee578c14903c96a2b356d99d9475) - Implemented 'Message' variant for `<RowColumnOne/>` to show an important message which, after dismissing, will not show again
@@ -205,7 +205,7 @@
 
 - [#2077](https://github.com/graphcommerce-org/graphcommerce/pull/2077) [`eb29cbef5`](https://github.com/graphcommerce-org/graphcommerce/commit/eb29cbef56f8f7275ffe6760ef5e9f8d2598c7c4) - Added recently viewed products to product pages ([@bramvanderholst](https://github.com/bramvanderholst))
 
-- [#2077](https://github.com/graphcommerce-org/graphcommerce/pull/2077) [`5f4455b1c`](https://github.com/graphcommerce-org/graphcommerce/commit/5f4455b1cccddf1501f0279e5ca2d9277a07ff07) - Added Skeleton render type to productListRenderer ([@bramvanderholst](https://github.com/bramvanderholst))
+- [#2077](https://github.com/graphcommerce-org/graphcommerce/pull/2077) [`5f4455b1c`](https://github.com/graphcommerce-org/graphcommerce/commit/5f4455b1cccddf1501f0279e5ca2d9277a07ff07) - Added Skeleton render type to ProductListRenderer ([@bramvanderholst](https://github.com/bramvanderholst))
 
 ## 7.1.0-canary.38
 

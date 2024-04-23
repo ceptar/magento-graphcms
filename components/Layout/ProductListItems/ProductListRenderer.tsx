@@ -1,5 +1,5 @@
 import { ProductListItem } from './ProductListItem'
-import { ProductListItemRenderer } from './productListItemRenderer'
+import { ProductListItemRenderer } from './ProductListItemRenderer'
 import {
   AddProductsToCartFab
 } from '@graphcommerce/magento-product'
@@ -12,29 +12,24 @@ import { ProductListItemVirtual } from '@graphcommerce/magento-product-virtual'
 import { ProductReviewSummary } from '@graphcommerce/magento-review'
 import { ProductWishlistChip } from '@graphcommerce/magento-wishlist'
 
-export const productListRenderer: ProductListItemRenderer = {
+export const ProductListRenderer: ProductListItemRenderer = {
   Skeleton: (props) => <ProductListItem {...props} aspectRatio={[0.8, 1]} />,
   SimpleProduct: (props) => {
     const { sku } = props
     return (
       <ProductListItemSimple
         {...props}
-        aspectRatio={[0.8, 1]}
+        aspectRatio={[4, 5]}
         bottomLeft={<ProductReviewSummary {...props} />}
         topRight={<ProductWishlistChip {...props} />}
         bottomRight={<AddProductsToCartFab sku={sku} />}
-        sx={{
-          backgroundColor: '#278E9D',
-          marginX: '4px',
-          paddingBottom: '12px',
-        }}
       />
     )
   },
   ConfigurableProduct: (props) => (
     <ProductListItemConfigurable
       {...props}
-      aspectRatio={[1, 1]}
+      aspectRatio={[4, 5]}
       swatchLocations={{
         topLeft: [],
         topRight: [],
@@ -48,7 +43,7 @@ export const productListRenderer: ProductListItemRenderer = {
   BundleProduct: (props) => (
     <ProductListItemBundle
       {...props}
-      aspectRatio={[1, 1]}
+      aspectRatio={[4, 5]}
       bottomLeft={<ProductReviewSummary {...props} />}
       topRight={<ProductWishlistChip {...props} />}
     />
@@ -58,7 +53,7 @@ export const productListRenderer: ProductListItemRenderer = {
     return (
       <ProductListItemVirtual
         {...props}
-        aspectRatio={[1, 1]}
+        aspectRatio={[4, 5]}
         bottomLeft={<ProductReviewSummary {...props} />}
         topRight={<ProductWishlistChip {...props} />}
         bottomRight={<AddProductsToCartFab sku={sku} />}
@@ -68,7 +63,7 @@ export const productListRenderer: ProductListItemRenderer = {
   DownloadableProduct: (props) => (
     <ProductListItemDownloadable
       {...props}
-      aspectRatio={[1, 1]}
+      aspectRatio={[4, 5]}
       bottomLeft={<ProductReviewSummary {...props} />}
       topRight={<ProductWishlistChip {...props} />}
     />
@@ -76,7 +71,7 @@ export const productListRenderer: ProductListItemRenderer = {
   GroupedProduct: (props) => (
     <ProductListItemGrouped
       {...props}
-      aspectRatio={[1, 1]}
+      aspectRatio={[4, 5]}
       bottomLeft={<ProductReviewSummary {...props} />}
       topRight={<ProductWishlistChip {...props} />}
     />

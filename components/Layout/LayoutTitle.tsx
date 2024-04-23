@@ -37,6 +37,7 @@ export const LayoutTitle = React.forwardRef<HTMLDivElement, TitleProps>((props, 
         (theme) => ({
           display: 'flex',
           // alignItems: 'center',
+          maxWidth:'80%',
           gap: `6px`,
           flexFlow: 'unset',
           height: theme.appShell.appBarInnerHeightMd,

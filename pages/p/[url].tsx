@@ -42,7 +42,7 @@ import {
   LayoutHeader,
   LayoutTitle,
   LayoutDocument,
-  productListRenderer,
+  ProductListRenderer,
   RowProduct,
   RowRenderer,
   Usps
@@ -193,7 +193,7 @@ function ProductPage(props: Props) {
       <RecentlyViewedProducts
         title={<Trans id='Recently viewed products' />}
         exclude={[product.sku]}
-        productListRenderer={productListRenderer}
+        ProductListRenderer={ProductListRenderer}
         sx={(theme) => ({ mb: theme.spacings.xxl })}
       />
     </>

@@ -6,7 +6,7 @@ import {
   SidebarSliderProps,
 } from '@graphcommerce/next-ui'
 import { Typography } from '@mui/material'
-import { productListRenderer } from '../../../Layout/ProductListItems/productListRenderer'
+import { ProductListRenderer } from '../../../Layout/ProductListItems/ProductListRenderer'
 import { RowProductFragment } from '../RowProduct.gql'
 
 type SwipeableProps = RowProductFragment & ProductListItemsFragment & Pick<SidebarSliderProps, 'sx'>
@@ -37,7 +37,7 @@ export function Swipeable(props: SwipeableProps) {
           item ? (
             <RenderType
               key={item.uid ?? ''}
-              renderer={productListRenderer}
+              renderer={ProductListRenderer}
               {...item}
               imageOnly
               sizes={responsiveVal(180, 900)}

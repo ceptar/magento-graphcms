@@ -18,7 +18,7 @@ import { ProductListFiltersContainer } from './ProductListFiltersContainer'
 import { ProductListItemsBase } from './ProductListItemsBase'
 
 import { StickyBelowHeader } from './StickyBelowHeader'
-import { productListRenderer } from './productListRenderer'
+import { ProductListRenderer } from './ProductListRenderer'
 
 export function SearchFilterLayout(props: ProductListFilterLayoutProps) {
   const { params, filters, products, filterTypes, title, id } = props
@@ -29,7 +29,7 @@ export function SearchFilterLayout(props: ProductListFilterLayoutProps) {
 
   const items = (
     <ProductListItemsBase
-      renderers={productListRenderer}
+      renderers={ProductListRenderer}
       items={products.items}
       loadingEager={6}
       title={title}

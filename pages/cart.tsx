@@ -24,7 +24,7 @@ import {
 import { i18n } from '@lingui/core'
 import { Trans } from '@lingui/react'
 import { CircularProgress, Container } from '@mui/material'
-import { LayoutOverlay, LayoutOverlayProps, productListRenderer } from '../components'
+import { LayoutOverlay, LayoutOverlayProps, ProductListRenderer } from '../components'
 import { graphqlSharedClient } from '../lib/graphql/graphqlSsrClient'
 
 type Props = Record<string, unknown>
@@ -84,7 +84,7 @@ function CartPage() {
               <ApolloCartErrorAlert error={error} />
             </Container>
             <CartCrosssellsScroller
-              renderer={productListRenderer}
+              renderer={ProductListRenderer}
               sx={(theme) => ({ mt: theme.spacings.md })}
             />
             <OverlayStickyBottom sx={{ py: 0.1 }}>

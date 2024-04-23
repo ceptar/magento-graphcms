@@ -1,6 +1,6 @@
 import { useScrollOffset } from '@graphcommerce/framer-next-pages'
 import { dvh } from '@graphcommerce/framer-utils'
-import { LayoutProvider, SkipLink, extendableComponent } from '@graphcommerce/next-ui'
+import { LayoutProvider, SkipLink, extendableComponent, useFabSize } from '@graphcommerce/next-ui'
 import { Box, SxProps, Theme } from '@mui/material'
 import { useTransform, useScroll } from 'framer-motion'
 
@@ -51,10 +51,10 @@ export function LayoutDefault(props: LayoutDefaultProps) {
       className={`${classes.root} ${className ?? ''}`}
       sx={[
         (theme) => ({
-          minHeight: dvh(100),
-          '@supports (-webkit-touch-callout: none)': {
-            minHeight: '-webkit-fill-available',
-          },
+          // minHeight: dvh(100),
+          // '@supports (-webkit-touch-callout: none)': {
+          //   minHeight: '-webkit-fill-available',
+          // },
           display: 'grid',
           gridTemplateRows: `auto 1fr auto`,
           gridTemplateColumns: '100%',
@@ -102,7 +102,7 @@ export function LayoutDefault(props: LayoutDefaultProps) {
               justifyContent: 'flex-end',
               alignItems: 'center',
               // padding: `0 ${theme.page.horizontal}`,
-
+              height: theme.appShell.headerHeightMd,
               zIndex: 'speedDial',
               position: 'sticky',
               top: 0,
