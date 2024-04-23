@@ -1,8 +1,9 @@
 import { Asset, RichText } from '@graphcommerce/graphcms-ui'
-import { AddProductsToCartForm, ProductListItemsFragment } from '@graphcommerce/magento-product'
+import { AddProductsToCartForm } from '@graphcommerce/magento-product'
+import { ProductListItemsFragment } from '@graphcommerce/magento-product/components/ProductListItems/ProductListItems.gql'
 import { ParagraphWithSidebarSlide, RenderType } from '@graphcommerce/next-ui'
 import { useTheme } from '@mui/material'
-import { productListRenderer } from '../../../Layout/ProductListItems'
+import { productListRenderer } from '../../../Layout/ProductListItems/ProductListRenderer'
 import { RowProductFragment } from '../RowProduct.gql'
 
 type BackstoryProps = RowProductFragment & ProductListItemsFragment

@@ -1,4 +1,5 @@
-import { AddProductsToCartForm, UpsellProductsFragment } from '@graphcommerce/magento-product'
+import { AddProductsToCartForm } from '@graphcommerce/magento-product'
+import { UpsellProductsFragment } from '@graphcommerce/magento-product/components/ProductUpsells/UpsellProducts.gql'
 import {
   SidebarSlider,
   RenderType,
@@ -6,7 +7,7 @@ import {
   SidebarSliderProps,
 } from '@graphcommerce/next-ui'
 import { Typography } from '@mui/material'
-import { productListRenderer } from '../../../Layout/ProductListItems/productListRenderer'
+import { productListRenderer } from '../../../Layout/ProductListItems/ProductListRenderer'
 import { RowProductFragment } from '../RowProduct.gql'
 
 type UpsellsProps = RowProductFragment & UpsellProductsFragment & Pick<SidebarSliderProps, 'sx'>

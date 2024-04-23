@@ -1,5 +1,5 @@
 import { ProductListItem } from './ProductListItem'
-import { ProductListItemRenderer } from './ProductListItemRenderer'
+import { ProductListItemRenderer } from './renderer'
 import {
   AddProductsToCartFab
 } from '@graphcommerce/magento-product'
@@ -12,8 +12,8 @@ import { ProductListItemVirtual } from '@graphcommerce/magento-product-virtual'
 import { ProductReviewSummary } from '@graphcommerce/magento-review'
 import { ProductWishlistChip } from '@graphcommerce/magento-wishlist'
 
-export const ProductListRenderer: ProductListItemRenderer = {
-  Skeleton: (props) => <ProductListItem {...props} aspectRatio={[0.8, 1]} />,
+export const productListRenderer: ProductListItemRenderer = {
+  Skeleton: (props) => <ProductListItem {...props} aspectRatio={[4, 5]} />,
   SimpleProduct: (props) => {
     const { sku } = props
     return (

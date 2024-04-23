@@ -1,4 +1,5 @@
-import { AddProductsToCartForm, ProductListItemsFragment } from '@graphcommerce/magento-product'
+import { AddProductsToCartForm } from '@graphcommerce/magento-product'
+import { ProductListItemsFragment } from '@graphcommerce/magento-product/components/ProductListItems/ProductListItems.gql'
 import {
   RenderType,
   responsiveVal,
@@ -6,7 +7,7 @@ import {
   SidebarSliderProps,
 } from '@graphcommerce/next-ui'
 import { Typography } from '@mui/material'
-import { productListRenderer } from '../../../Layout/ProductListItems/productListRenderer'
+import { productListRenderer } from '../../../Layout/ProductListItems/ProductListRenderer'
 import { RowProductFragment } from '../RowProduct.gql'
 
 type SwipeableProps = RowProductFragment & ProductListItemsFragment & Pick<SidebarSliderProps, 'sx'>

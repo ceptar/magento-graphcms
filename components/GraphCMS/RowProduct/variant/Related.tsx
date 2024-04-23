@@ -1,4 +1,5 @@
-import { AddProductsToCartForm, RelatedProductsFragment } from '@graphcommerce/magento-product'
+import { AddProductsToCartForm } from '@graphcommerce/magento-product'
+import { RelatedProductsFragment } from '@graphcommerce/magento-product/components/ProductRelated/RelatedProducts.gql'
 import {
   SidebarSlider,
   RenderType,
@@ -6,7 +7,7 @@ import {
   SidebarSliderProps,
 } from '@graphcommerce/next-ui'
 import { Typography } from '@mui/material'
-import { productListRenderer } from '../../../Layout/ProductListItems/productListRenderer'
+import { productListRenderer } from '../../../Layout/ProductListItems/ProductListRenderer'
 import { RowProductFragment } from '../RowProduct.gql'
 
 type RelatedProps = RowProductFragment & RelatedProductsFragment & Pick<SidebarSliderProps, 'sx'>

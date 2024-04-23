@@ -1,5 +1,5 @@
 import { TypeRenderer } from '@graphcommerce/next-ui'
-import { ProductListItemFragment } from '@graphcommerce/magento-product'
+import { ProductListItemFragment } from '@graphcommerce/magento-product/Api/ProductListItem.gql'
 import { ProductListItem, ProductListItemSkeleton } from './ProductListItem'
 
 type SkeletonType = { __typename: 'Skeleton'; uid: string }

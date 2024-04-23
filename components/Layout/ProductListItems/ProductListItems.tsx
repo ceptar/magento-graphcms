@@ -1,5 +1,5 @@
 import { ProductListItemsBase, ProductItemsGridProps } from './ProductListItemsBase'
-import { productListRenderer } from './productListRenderer'
+import { productListRenderer } from './ProductListRenderer'
 
 export type ProductListItemsProps = Omit<ProductItemsGridProps, 'renderers'>
 

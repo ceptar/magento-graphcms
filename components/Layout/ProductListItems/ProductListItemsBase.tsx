@@ -1,7 +1,7 @@
 import { LazyHydrate, RenderType, extendableComponent, responsiveVal } from '@graphcommerce/next-ui'
 import { Box, BoxProps } from '@mui/material'
 import { ProductListItemFragment, AddProductsToCartForm } from '@graphcommerce/magento-product'
-import { ProductListItemRenderer } from './ProductListItemRenderer'
+import { ProductListItemRenderer } from './renderer'
 import { ProductListItemProps } from './ProductListItem'
 
 type ComponentState = {
