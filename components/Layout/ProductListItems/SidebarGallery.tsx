@@ -183,8 +183,8 @@ export function SidebarGallery(props: SidebarGalleryProps) {
                     width: '100vw',
                   },
                   [theme.breakpoints.up('md')]: {
-                    height: `calc(${dvh(100)} - ${theme.appShell.headerHeightMd} - ${theme.spacings.lg
-                      })`,
+                    // height: `calc(${dvh(100)} - ${theme.appShell.headerHeightMd} - ${theme.spacings.lg
+                    //   })`,
                     position: 'sticky',
                     top: theme.appShell.headerHeightMd,
                   },

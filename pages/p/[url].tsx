@@ -16,7 +16,6 @@ import {
   ProductPageAddToCartQuantityRow,
   productPageCategory,
   ProductPageDescription,
-  ProductPageGallery,
   ProductPageJsonLd,
   ProductPageMeta,
   ProductPagePrice,
@@ -45,7 +44,8 @@ import {
   productListRenderer,
   RowProduct,
   RowRenderer,
-  Usps
+  Usps,
+  ProductPageGallery
 } from '../../components'
 import { LayoutNavigation, LayoutNavigationProps } from '../../components/Layout/LayoutNavigation'
 import { UspsDocument, UspsQuery } from '../../components/Usps/Usps.gql'

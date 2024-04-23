@@ -72,8 +72,8 @@ export function LayoutDefault(props: LayoutDefaultProps) {
           className={classes.header}
           sx={(theme) => ({
             zIndex: theme.zIndex.appBar - 1,
-            display: 'grid',
-            gridTemplateColumns: `auto 1fr auto auto`,
+            display: 'flex',
+            // gridTemplateColumns: `auto 1fr auto auto`,
             gap: theme.page.horizontal,
             px: theme.page.horizontal,
             height: theme.appShell.headerHeightMd,
