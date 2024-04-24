@@ -77,7 +77,8 @@ export function LayoutDefault(props: LayoutDefaultProps) {
             gap: theme.page.horizontal,
             px: theme.page.horizontal,
             height: theme.appShell.headerHeightMd,
-
+            width: '100%',
+            justifyContent: 'space-between',
             pointerEvents: 'none',
             '& > *': {
               pointerEvents: 'all',
