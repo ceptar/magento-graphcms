@@ -21,7 +21,7 @@ import {
 
 import { i18n } from '@lingui/core'
 import { Trans } from '@lingui/react'
-import { Box, Divider, Fab, MuiLink } from '@mui/material'
+import { Box, Divider, Fab } from '@mui/material'
 import PageLink, { LinkProps as PageLinkProps } from 'next/link'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
@@ -110,10 +110,25 @@ export function LayoutNavigation(props: LayoutNavigationProps) {
           <>
 
              
+<PageLink
 
-            <Logo 
+href= '/'
 
-              />
+>
+  <Box
+  sx={{
+    marginRight: 'auto',
+    marginLeft: '0'
+  
+  }}
+  >
+  <Logo   
+
+/>
+</Box>
+
+</PageLink>
+            
             
             <DesktopNavActions>
               {!router.pathname.startsWith('/search') && (
