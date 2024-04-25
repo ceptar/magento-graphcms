@@ -4,10 +4,13 @@ import svgLogo from './graphcommerce.svg'
 export function Logo() {
   return (
     <LogoBase
+    href='/'
     sx={(theme) => ({
         '& .GcLogo-logo': {
-          height: '60px',
-          width: 'max-content',
+          minHeight: '30px',
+          maxHeight: '50px',
+          minWidth: '100px',
+          maxWidth: 'max-content',
           
 
 

@@ -72,24 +72,26 @@ export function LayoutDefault(props: LayoutDefaultProps) {
           className={classes.header}
           sx={(theme) => ({
             zIndex: theme.zIndex.appBar - 1,
-            display: 'flex',
-
-            // gridTemplateColumns: '',
+            display: 'grid',
+// justifyContent: 'flex-end',
+          gridTemplateColumns: 'max-content 1fr auto',
             gap: theme.page.horizontal,
             px: theme.page.horizontal,
             height: theme.appShell.headerHeightMd,
 
 
 
-
             pointerEvents: 'none',
             '& > *': {
               pointerEvents: 'all',
+              maxWidth: '50vw',
+              minWidth: '80px',
             },
             [theme.breakpoints.up('md')]: {},
             '&.sticky': {
               [theme.breakpoints.down('md')]: {
                 position: 'sticky',
+
               },
             },
           })}

@@ -10,7 +10,7 @@ const config = {
   magentoEndpoint: 'https://nonotheresnolimit.xyz/graphql',
   canonicalBaseUrl: 'https://discobabes.store/',
   storefront: [
-    { locale: 'en', magentoStoreCode: 'default', defaultLocale: true },
+    { locale: 'en', magentoStoreCode: 'en_US', defaultLocale: true },
   ],
   productFiltersPro: true,
   productFiltersLayout: 'DEFAULT',
