@@ -24,10 +24,10 @@
     jsonpointer "^5.0.0"
     leven "^3.1.0"
 
-"@apollo/client@~3.2.5 || ~3.3.0 || ~3.4.0 || ~3.5.0 || ~3.6.0 || ~3.7.0 || ~3.8.0 || ~3.9.0":
-  version "3.9.11"
-  resolved "https://registry.yarnpkg.com/@apollo/client/-/client-3.9.11.tgz#737e5c35c21d6f3b78423033ad81837a8a6992e0"
-  integrity sha512-H7e9m7cRcFO93tokwzqrsbnfKorkpV24xU30hFH5u2g6B+c1DMo/ouyF/YrBPdrTzqxQCjTUmds/FLmJ7626GA==
+"@apollo/client@~3.2.5 || ~3.3.0 || ~3.4.0 || ~3.5.0 || ~3.6.0 || ~3.7.0 || ~3.8.0 || ~3.9.0 || ~3.10.0":
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/@apollo/client/-/client-3.10.1.tgz#4c8eec28fcce25b96f27c1f1e443ec5c676e4de0"
+  integrity sha512-QNacQBZzJla5UQ/LLBXJWM7/1v1C5cfpMQPAFjW4hg4T54wHWbg4Dr+Dp6N+hy/ygu8tepdM+/y/5VFLZhovlQ==
   dependencies:
     "@graphql-typed-document-node/core" "^3.1.1"
     "@wry/caches" "^1.0.0"
@@ -37,7 +37,7 @@
     hoist-non-react-statics "^3.3.2"
     optimism "^0.18.0"
     prop-types "^15.7.2"
-    rehackt "0.0.6"
+    rehackt "^0.1.0"
     response-iterator "^0.2.6"
     symbol-observable "^4.0.0"
     ts-invariant "^0.10.3"
@@ -185,10 +185,10 @@
     regexpu-core "^5.3.1"
     semver "^6.3.1"
 
-"@babel/helper-define-polyfill-provider@^0.6.1":
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/@babel/helper-define-polyfill-provider/-/helper-define-polyfill-provider-0.6.1.tgz#fadc63f0c2ff3c8d02ed905dcea747c5b0fb74fd"
-  integrity sha512-o7SDgTJuvx5vLKD6SFvkydkSMBvahDKGiNJzG22IZYXhiqoe9efY7zocICBgzHV4IRg5wdgl2nEL/tulKIEIbA==
+"@babel/helper-define-polyfill-provider@^0.6.1", "@babel/helper-define-polyfill-provider@^0.6.2":
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/@babel/helper-define-polyfill-provider/-/helper-define-polyfill-provider-0.6.2.tgz#18594f789c3594acb24cfdb4a7f7b7d2e8bd912d"
+  integrity sha512-LV76g+C502biUK6AyZ3LK10vDpDyCzZnhZFXkH1L75zHPj68+qc8Zfpx2th+gzwA2MzyK+1g/3EPl62yFnVttQ==
   dependencies:
     "@babel/helper-compilation-targets" "^7.22.6"
     "@babel/helper-plugin-utils" "^7.22.5"
@@ -1118,6 +1118,13 @@
     workbox-webpack-plugin "7.0.0"
     workbox-window "7.0.0"
 
+"@emnapi/runtime@^0.45.0":
+  version "0.45.0"
+  resolved "https://registry.yarnpkg.com/@emnapi/runtime/-/runtime-0.45.0.tgz#e754de04c683263f34fd0c7f32adfe718bbe4ddd"
+  integrity sha512-Txumi3td7J4A/xTTwlssKieHKTGl3j4A1tglBx72auZ49YK7ePY6XZricgIg9mnZT4xPfA+UPCUdnhRuEFDL+w==
+  dependencies:
+    tslib "^2.4.0"
+
 "@emotion/babel-plugin@^11.11.0":
   version "11.11.0"
   resolved "https://registry.yarnpkg.com/@emotion/babel-plugin/-/babel-plugin-11.11.0.tgz#c2d872b6a7767a9d176d007f5b31f7d504bb5d6c"
@@ -1455,10 +1462,10 @@
   resolved "https://registry.yarnpkg.com/@floating-ui/utils/-/utils-0.2.1.tgz#16308cea045f0fc777b6ff20a9f25474dd8293d2"
   integrity sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==
 
-"@graphcommerce/cli@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/cli/-/cli-8.0.5-canary.4.tgz#91143015d8663ffa52f7c1652f78de6897cc0d5f"
-  integrity sha512-vgtOqhiHm+AiPN4e3rJbX526AnapVGt4Qc6hq+G6kkNiW/JC8RO1jx94BVym6TcxD+tc1uAZV+2tc0Y2UBPkaQ==
+"@graphcommerce/cli@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/cli/-/cli-8.0.4.tgz#a01a84692f30ae39b90997be7b5ae47bee5715b3"
+  integrity sha512-KC881OySsWd438M2Jlg/9DNshq9krCqjplIa1HihQhKPnxmQO3YtxjhA3a/Oe9F9ah6TbJJITxDRdQAhCMzdkA==
   dependencies:
     "@graphql-codegen/cli" "5.0.1"
     "@graphql-mesh/cli" latest
@@ -1475,22 +1482,22 @@
     rimraf "^5.0.5"
     tslib "^2.6.2"
 
-"@graphcommerce/demo-magento-graphcommerce@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/demo-magento-graphcommerce/-/demo-magento-graphcommerce-8.0.5-canary.4.tgz#67323b17646c44444a77ba1682fa54bf9cad1409"
-  integrity sha512-5WgtByJWXktQEm24A/DQHOir+HlV1C9jKGwVCrmoUz0SqPk8OXI7LLMnhAP3fMRAYs8C5QUMWfx3oeThORKqGw==
+"@graphcommerce/demo-magento-graphcommerce@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/demo-magento-graphcommerce/-/demo-magento-graphcommerce-8.0.4.tgz#c31391f0b84634912cf497b3327626ffa35fd08c"
+  integrity sha512-hRN6njKRMajlZjgcc4TBMDo414W1rssQ6m/+Su809ub8rVsvbgRbjqZA+m3IfWNrLBbauwdFeaBe004OZNRVew==
 
-"@graphcommerce/ecommerce-ui@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/ecommerce-ui/-/ecommerce-ui-8.0.5-canary.4.tgz#c1af9364cca1c428fc3cbd5fcfffc4499f17ee87"
-  integrity sha512-dl1kCMMJju7oNWpPkd28UqryYGYAgf+zS7LbmtCQhtOJYF4ASXG0u87XV69SopOVvRrM7bPopy1CztFx6JLZgg==
+"@graphcommerce/ecommerce-ui@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/ecommerce-ui/-/ecommerce-ui-8.0.4.tgz#805d0eae408f850cafb52019d3ba71fff32c7095"
+  integrity sha512-1IsXL08Q9F7vLopNAxoulq0Z2srFAOBf/SwtbaEBp5r3B3QCeShxI2WqBglC+Og96DOdwgRR83bdm+txpB8brQ==
 
-"@graphcommerce/eslint-config-pwa@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/eslint-config-pwa/-/eslint-config-pwa-8.0.5-canary.4.tgz#b5c9432f50f2c48ead39599149b385467aa74516"
-  integrity sha512-X193MnG6+eb65Y/JUuyFbMgY2Niq5GC2v1k/hQ3fxPvXKujAvOtyWU0pablNntcDs+LKO28F+p07otBfaJh77g==
+"@graphcommerce/eslint-config-pwa@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/eslint-config-pwa/-/eslint-config-pwa-8.0.4.tgz#6746bea0051e203e6d40c8fd6623a496f3f9de74"
+  integrity sha512-vQGbgdc3Ruvy63GQrOsEeusSz6BYtC12EaNqvkzYgrSTI5+4NznnI8yqSCsIwOg06yLhL7dxiY4Gvzq5dJsjyw==
   dependencies:
-    "@graphcommerce/typescript-config-pwa" "8.0.5-canary.4"
+    "@graphcommerce/typescript-config-pwa" "8.0.4"
     "@next/eslint-plugin-next" "14.1.0"
     "@typescript-eslint/eslint-plugin" "^6.19.0"
     "@typescript-eslint/parser" "^6.19.0"
@@ -1502,60 +1509,58 @@
     eslint-plugin-react "^7.33.2"
     eslint-plugin-react-hooks "4.6.0"
 
-"@graphcommerce/framer-next-pages@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/framer-next-pages/-/framer-next-pages-8.0.5-canary.4.tgz#afacc37d0362b544576198cd2deaf380b488f689"
-  integrity sha512-ZrCqjd4gb0L+KM+85RcXRNA4Q3MjzvPUjSOiLnocSk0Su/2FD9woJbNWDYitKDIdEqqvhL0RkioY7/9H3EIghA==
+"@graphcommerce/framer-next-pages@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/framer-next-pages/-/framer-next-pages-8.0.4.tgz#29d856a4a5085f5e7c2cd63e354c862bd11eedd6"
+  integrity sha512-4PjlB7YAgl8iJbvV9XCREdXbQzt+eNFgU/2iv5Zh/beSodNDRaKS8OQ7ibrc8wUMb+FuS9XUent8UIRh+7OXuw==
 
-"@graphcommerce/framer-scroller@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/framer-scroller/-/framer-scroller-8.0.5-canary.4.tgz#a0d508a2f3cbf1baa6c4f19b9a48a7ef3071e6ed"
-  integrity sha512-eiWEpg2P6/tHCE0KjSHAUpgt0Bo7N/rSq4ciICSrok4N2DSKXbisYUgkfOQj+sbOoGaXHUlUs+cn160uZ3DY6w==
+"@graphcommerce/framer-scroller@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/framer-scroller/-/framer-scroller-8.0.4.tgz#ea0ce995e2f10b73ea5326a3952e06f1b26e6192"
+  integrity sha512-MkU3y8rmpAw2kAWB3BxWlKOBhOWuMCmIgRaPFa26+aY09cXfiT2fF4cXgSJ/zCLJVcvJ/xAdiloU50vs4gUVug==
   dependencies:
     popmotion "11.0.5"
 
-"@graphcommerce/framer-utils@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/framer-utils/-/framer-utils-8.0.5-canary.4.tgz#b47ceabbb7284dbc1860c60df31cdcdc0a4093d1"
-  integrity sha512-EW8d+gTaeUcj4+1meZ2kkq8ReTPiuFCALEzfHH6OXmTOnKH+Yxp5OoPjlqb+JOZU7DC0lINA46vNOlUZjHFRPg==
+"@graphcommerce/framer-utils@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/framer-utils/-/framer-utils-8.0.4.tgz#fc8ddc62f4c06fb0214b130bdc9bdca483abaee2"
+  integrity sha512-s1pYyPBjsdnrAqhF+YsRlWqnMKigrGPO9fyq/rvyp11dLaYLk9ni0iBHnECD+0rGXxd7BfEok4UBpa49D2VQ7g==
   dependencies:
     framesync "^6.1.2"
 
-"@graphcommerce/google-datalayer@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/google-datalayer/-/google-datalayer-8.0.5-canary.4.tgz#a1e5aaedbf12fbfbce5b21e8e3e0f725e2ecfa51"
-  integrity sha512-eW1WwvCZytYSLnB9ZbzmZ57A3EqoRSAaD5eZrHQt5LhRlsBR1KSBILATTshxk9UiAM9EXAjxMDJbEkRXjR1vXA==
+"@graphcommerce/google-datalayer@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/google-datalayer/-/google-datalayer-8.0.4.tgz#4e0b61081040ef07251bd4090a0aa7edd26e1044"
+  integrity sha512-0p1V263orff0XYjgXM7P0mLn/G/lyFuzeIHlcJdKQM+RUJdGKqaLzYnbe6NRE2zpnxVjmey3gYrdyzJRRwK52w==
+
+"@graphcommerce/googleanalytics@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/googleanalytics/-/googleanalytics-8.0.4.tgz#4c8e139c411607331d6515d6081b9a8cf2daff87"
+  integrity sha512-iRDhv+o+/kQ17el1Tfu5ZzYPDlvZzAYhfmzoDQ/XwFvurQ4uHfX/r3nfWRhlXCoATGtRPxKsTAvIIxpQn39LDA==
   dependencies:
-    web-vitals "^3.5.2"
+    "@graphcommerce/google-datalayer" "8.0.4"
 
-"@graphcommerce/googleanalytics@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/googleanalytics/-/googleanalytics-8.0.5-canary.4.tgz#74b5fcd41c409a790356733a02c49ee531b1fa17"
-  integrity sha512-WvBpPUtymwmk2GVOqr2efISnEUUocNWpLc7rBPJ6jCLqG4W8X9kPJm5tFCOPjk01mYG8CZI+yvT66GYHRxTldg==
+"@graphcommerce/googlerecaptcha@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/googlerecaptcha/-/googlerecaptcha-8.0.4.tgz#e7ac39247282a650e492b90380f6116ef5fda5a8"
+  integrity sha512-urS6kjdfDl6DaG2QMwA9TnD+rimzZZwCegYfOYEqdn7grKyG4j262eYXjKyMpFGHwxhdplI3zhmrg4HeGYj1bA==
+
+"@graphcommerce/googletagmanager@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/googletagmanager/-/googletagmanager-8.0.4.tgz#012d20bb5f452281361a2a9da547e5738a61208e"
+  integrity sha512-ToB3mPfiI5NR3iqsXY+354JL4cferhuJGelK/QNCIKbyvjUu7PdAM5LddjiYCkPNzoW9KHW6IvnK5Vp3qF6U8w==
   dependencies:
-    "@graphcommerce/google-datalayer" "8.0.5-canary.4"
+    "@graphcommerce/google-datalayer" "8.0.4"
 
-"@graphcommerce/googlerecaptcha@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/googlerecaptcha/-/googlerecaptcha-8.0.5-canary.4.tgz#276e06a5df1e6d5945b38d59a7e7a605b62a5ed3"
-  integrity sha512-UZnDfpJFFDHEzujSYE80ztgwpD3NYzqWs8SChH3PKmVMFxpkOTCtK+qN/7rqUM/BgeNagXN8sLge733pvB6/pg==
+"@graphcommerce/graphcms-ui@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/graphcms-ui/-/graphcms-ui-8.0.4.tgz#68c91bff9ce67b9956dfa01b8bbf574e0899fcd0"
+  integrity sha512-YA9K6zw6stjLbFaFn8E+VO/mnoi3ff5i841MMUz+uHJ1QcjfSZNPgiWgpCkvB/qzgLHpR/0Nh4li54zTB7LjfQ==
 
-"@graphcommerce/googletagmanager@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/googletagmanager/-/googletagmanager-8.0.5-canary.4.tgz#ebf543b1480989ecb07492625805e38963e4b663"
-  integrity sha512-iIqcZA7hT0/XbUzzRz575i1jU4K5+soNFnur0JTG/jNqVdyElstA5IMk5/p2zRGrCgVxvtD/neNAJBlU0ta2NA==
-  dependencies:
-    "@graphcommerce/google-datalayer" "8.0.5-canary.4"
-
-"@graphcommerce/graphcms-ui@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/graphcms-ui/-/graphcms-ui-8.0.5-canary.4.tgz#4b737f59228ca9362526eb997f5a74d06a74cba4"
-  integrity sha512-wV9r/0Nr496nzamD2r0a0WZB9VP/0xxnrtlKtqPrkJBLs5Wti4gL75MMoHUuCT2TN0BMkXqu4BewFEIvCedBiw==
-
-"@graphcommerce/graphql-codegen-near-operation-file@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/graphql-codegen-near-operation-file/-/graphql-codegen-near-operation-file-8.0.5-canary.4.tgz#9a2e30d1330974203a7f83b641e56a62e885d986"
-  integrity sha512-KbwDtzHz7rp/godXeN6rgg222bYGIoOc26vZj3sQ3dcXhkFSaUWZaeLY+FRfYYD1mHctVbIBhjd+eZbDhvEPog==
+"@graphcommerce/graphql-codegen-near-operation-file@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/graphql-codegen-near-operation-file/-/graphql-codegen-near-operation-file-8.0.4.tgz#5f54072de99cb1a84c37038ff29d72a949f48084"
+  integrity sha512-biaGrzxRce/+McWDkJOLrjCQnBsTuhEyKTRrkdKc/wjSnuEdIJzSyTQLm0yXJ6xKfpv+74O5BFH3VYT0Kk8Bxw==
   dependencies:
     "@graphql-codegen/add" "5.0.1"
     "@graphql-codegen/plugin-helpers" "5.0.2"
@@ -1564,18 +1569,18 @@
     "@types/parse-filepath" "^1.0.2"
     parse-filepath "^1.0.2"
 
-"@graphcommerce/graphql-codegen-relay-optimizer-plugin@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/graphql-codegen-relay-optimizer-plugin/-/graphql-codegen-relay-optimizer-plugin-8.0.5-canary.4.tgz#752e691808764977ab84454c2614063d5841f01c"
-  integrity sha512-oWE2nsvuRxCPJ7crV8NBsWXdBnMAKCdG3PmxFAryJn/9pMtCO+TaPcUWs4sbvQKcO8l8oLOUtzRYUeslKs1ZuQ==
+"@graphcommerce/graphql-codegen-relay-optimizer-plugin@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/graphql-codegen-relay-optimizer-plugin/-/graphql-codegen-relay-optimizer-plugin-8.0.4.tgz#6cdc9b45b00bbcac20670733dc8aac86db18f71d"
+  integrity sha512-bi65Jkebjn79iMH1yopAWUUwKNWyPV4q9EOaLzUHurAtyjj0mO+jQbBXw2SQpZ/f38QH8LmlP6SKyObTGqtx5g==
   dependencies:
     "@ardatan/relay-compiler" "12.0.0"
     "@graphql-codegen/plugin-helpers" "5.0.2"
 
-"@graphcommerce/graphql-mesh@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/graphql-mesh/-/graphql-mesh-8.0.5-canary.4.tgz#91b754d345a4d8f8e4d35ae6d57c67a02ee684ff"
-  integrity sha512-0ghtgx0n/a7D1BrEtYXtm64OFLGpCGRqg8WWy3ACJuEioTHyREPYQ5XCnjfDQQoPDQg+lOFSu5mF6JVfdOpuSA==
+"@graphcommerce/graphql-mesh@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/graphql-mesh/-/graphql-mesh-8.0.4.tgz#4ab9b57c8f6b0253715c4ee8e837dffd00cd8b4c"
+  integrity sha512-T/p9x6CS2Kpm8HcgZyHCQ02Z3/EeXwa6sObxTA4ijhSN1JDyExhm+i7B7XE6c1SBODBuxNbAx/aDcLxkQ+yYcw==
   dependencies:
     "@graphql-mesh/apollo-link" latest
     "@graphql-mesh/config" latest
@@ -1594,13 +1599,13 @@
     fetch-retry "^5.0.6"
     tslib "^2.6.2"
 
-"@graphcommerce/graphql@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/graphql/-/graphql-8.0.5-canary.4.tgz#a7859b1dd3d3a7754948e41273c2e5307cb8a603"
-  integrity sha512-jXdR+j+7CwZDQ3/hN2XvS5Rd4YD1u5RDuMli+L2Hn/+17RxXylrve315n3JtsoSOPTbpkdfEz6SAHShp7ageBg==
+"@graphcommerce/graphql@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/graphql/-/graphql-8.0.4.tgz#89a96d2341b276ac0ee29157217968efab5a0a44"
+  integrity sha512-g4Qt3ibW62C84y9lawgRyQMWY57pPqiyh4L8sd9Aouf4gV2BTK5Z+kQWvC1lB1VvuWEMYhWKxsLSO5oe8BqQcg==
   dependencies:
-    "@graphcommerce/graphql-codegen-near-operation-file" "8.0.5-canary.4"
-    "@graphcommerce/graphql-codegen-relay-optimizer-plugin" "8.0.5-canary.4"
+    "@graphcommerce/graphql-codegen-near-operation-file" "8.0.4"
+    "@graphcommerce/graphql-codegen-relay-optimizer-plugin" "8.0.4"
     "@graphql-codegen/add" "5.0.1"
     "@graphql-codegen/fragment-matcher" "5.0.1"
     "@graphql-codegen/introspection" "4.0.1"
@@ -1612,179 +1617,179 @@
     "@graphql-codegen/typescript-operations" "4.1.0"
     apollo3-cache-persist "^0.14.1"
 
-"@graphcommerce/hygraph-cli@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/hygraph-cli/-/hygraph-cli-8.0.5-canary.4.tgz#c34fd9448fb4ae252a3578f81813fa8263e61f2b"
-  integrity sha512-GlcoQahuYOQ4Kd7qqVBKTqjPdCUBz6ssxAtk6XiCxC7C0oQ392paC7BOfRkTaMV9g2DvLbYcjc0mRY5HoPR/sA==
+"@graphcommerce/hygraph-cli@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/hygraph-cli/-/hygraph-cli-8.0.4.tgz#56d8c6cdbe5b98b6ecd26a4d5c5f4dddec0eecb1"
+  integrity sha512-Wgc0fa3KSznbVdzDKaxbEhJdg7i06lvvMJNXyau32317phHhr8cxZ9WamdE1FfUS+31kbr9M4yhOHwqBDZO/YA==
   dependencies:
     "@hygraph/management-sdk" "1.2.4"
     "@whatwg-node/fetch" "^0.9.15"
     graphql-tag "^2.12.6"
     prompts "^2.4.2"
 
-"@graphcommerce/hygraph-dynamic-rows@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/hygraph-dynamic-rows/-/hygraph-dynamic-rows-8.0.5-canary.4.tgz#f0b70240461d45dfcda40f9dde41a1879985de5e"
-  integrity sha512-RurnwyDox9FYajlE56jjQrZztFSubQu+yWQSMxcBtlox8FsV5OwfzeocV+GlxwFLEykVajI2byo6IZeLekda9g==
+"@graphcommerce/hygraph-dynamic-rows@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/hygraph-dynamic-rows/-/hygraph-dynamic-rows-8.0.4.tgz#65979554dddb14ef894209ee851725e00927709a"
+  integrity sha512-S4Cyg3gbyA8MeYW5LSVz+YOgJ4KHQjOVExZLPbl3YOI2OnGLrIUuqoidbh7uzKsOcy5qImc3zJKRHFVgGkgg4A==
 
-"@graphcommerce/image@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/image/-/image-8.0.5-canary.4.tgz#f45df278d065f8d8a501e723a759d92e57dc13bc"
-  integrity sha512-b7VkZI70ZP0bJk9BapCW75RA5WJzD9WhoZejCH/iSUhTZQAvhPkjyLIyG60Ype4UvosZkijv+Kd95ybqRno6Nw==
+"@graphcommerce/image@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/image/-/image-8.0.4.tgz#8c03f3eeef9ccc7e2cde02eae718d24d1ec7ecd3"
+  integrity sha512-oNZNgVS4nmp1065Uwg7Ughvr5ZPOjEhOQDkbxRyFp/V6dyVEXtKB33MxeTmSvEgIGFb8SvmLYT7fXJHFifVJJg==
 
-"@graphcommerce/lingui-next@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/lingui-next/-/lingui-next-8.0.5-canary.4.tgz#62f82379f7a7236c8472a61264c21acd974eaae1"
-  integrity sha512-r3HCA8sBdd6WI2n6NAm9pcTYtYUwlxTxcBwzObCOjF1krv0uKEJBRUqLoDfVgjfJk7fb+i7kPnrzVJbCKUsn/A==
+"@graphcommerce/lingui-next@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/lingui-next/-/lingui-next-8.0.4.tgz#36cf863d5a89779cbe242489d1708d10be9eb705"
+  integrity sha512-Fj3JwLHmcN1Eh8vXsnl4zl5uhteJnzFTl18q+9ShEUpiOfDLpa34aLfjrgNwuM+90Yu/U5LxWCmPh7r1q/qIeg==
 
-"@graphcommerce/magento-cart-billing-address@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-cart-billing-address/-/magento-cart-billing-address-8.0.5-canary.4.tgz#7b3d08ef735b49142f06c07eb9c3092a9b01a91c"
-  integrity sha512-LL1hiBemHbfH1+QKZ8iBG0A81GGp7qpr8Si9iFUgUVUeRPzf6Pe8b8TaBuCi8pwLjHhLMAvccuQQwErjUfJT8A==
+"@graphcommerce/magento-cart-billing-address@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-cart-billing-address/-/magento-cart-billing-address-8.0.4.tgz#9e188a176395bc814e8fc11e224df856d0164187"
+  integrity sha512-b+ejq2j4k3BLJ9oJ39VlqLa2mFHRfiqYjE/OIzFeslhjmwMW9URfeN9FPdALq0w+FPPVkwMdwXs9bXvGC4BwIw==
 
-"@graphcommerce/magento-cart-checkout@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-cart-checkout/-/magento-cart-checkout-8.0.5-canary.4.tgz#17513f37099c82ef16b9fb49e616a2b25cad846e"
-  integrity sha512-8YSPdh5wUWNolY5RSDPNVdgorwl5z50YgA+b1CBO7KyECsvuLfZsYegQvyWOjSmJCwkqSdSdcxf6ENvkUMXCoQ==
+"@graphcommerce/magento-cart-checkout@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-cart-checkout/-/magento-cart-checkout-8.0.4.tgz#4a6a060e349953e3942327f538acf69b7541b400"
+  integrity sha512-RCMgwHJ38ZygJYTK3F/TQhURGKQ2tUeoICQSoq2+sK34Omzcbq5e8oQ2TPjzSjOVuh2Otpp/3GHfG7n87nPf+g==
 
-"@graphcommerce/magento-cart-coupon@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-cart-coupon/-/magento-cart-coupon-8.0.5-canary.4.tgz#4309552d45e8c3b514b562e4909409c6cf1204f2"
-  integrity sha512-v7/o3pSN7g6tv9x7Tfhm4L2hrbYaj4yUINwDYbEKQTjq5AsgJ8bcxNL7XZOmUwqce2rtkmf3hnJPRnHJN2Rw9A==
+"@graphcommerce/magento-cart-coupon@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-cart-coupon/-/magento-cart-coupon-8.0.4.tgz#d3548290ee55a67bce41662d9552ddbf28a2c3ef"
+  integrity sha512-KzNjYP/O90U58IiYKoQiU6JJH2p/S5OvPeBAnWgkxw+BnbeWQr2uzVpJxv6l02Pz0CPw8oLUi0Mf4Aj9h6Bz5w==
 
-"@graphcommerce/magento-cart-email@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-cart-email/-/magento-cart-email-8.0.5-canary.4.tgz#85d7ac157f0e19c39fce01414c2a4503f363d89f"
-  integrity sha512-yoTV8RU/QGEdLHelksJxTsyOF4gh0R/VB9nHSI38vvVCj+LmpMIlhQZzU0RWnJtwR3kBAGSASxHa+Yp+zShm1Q==
+"@graphcommerce/magento-cart-email@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-cart-email/-/magento-cart-email-8.0.4.tgz#c8b5e0e07c3f076580756122fa01fc2dfc09a1e1"
+  integrity sha512-A0DcmYZWsiVa445u8Ky8KWvt2PG4UCSfoDmgM2MvVm1jf4n1IeH230LCGOXcIidHMWDcYhQFbTdvk0lW4tx0LA==
 
-"@graphcommerce/magento-cart-items@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-cart-items/-/magento-cart-items-8.0.5-canary.4.tgz#c4284c6ee037844abbb62fd2f834cfe77bec4b62"
-  integrity sha512-JkHPrddNOC0wwN5L8Acje1aYZ+hQ0GDTeDCXabL7/7EhAm6Ak85Dn3m8i8MzvOwNfaJxrkPWY4AD+QEHZdxWlw==
+"@graphcommerce/magento-cart-items@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-cart-items/-/magento-cart-items-8.0.4.tgz#fd57aa72bf28c3b11f086924bfdc048ce9538dfe"
+  integrity sha512-CxZyZdFr7yCT+H8ApC9x74xiqKkPJihpUWzW4AwSZrPZSM3y4Mr5j33umvoHrugs2CqcAqyy88pikESquyY1vQ==
 
-"@graphcommerce/magento-cart-payment-method@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-cart-payment-method/-/magento-cart-payment-method-8.0.5-canary.4.tgz#87e9eb04253ac29b562715221788f4b26b06cb01"
-  integrity sha512-7N6m0S365HrmYQdtijEpYnNZT0j0ziJUuVhaYzdZij/0qQm1jTn3mB3QLEN533K4TG5/Yzg6npCoAi0ZY38qdw==
+"@graphcommerce/magento-cart-payment-method@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-cart-payment-method/-/magento-cart-payment-method-8.0.4.tgz#a0b861aa61aa35cbd25338dba768e4c6775080eb"
+  integrity sha512-e5CtMOLgaoqhCl+cFIXpkjThGSeMd9NjwjyJO+0Sd8f5ZyC9VewBeioqcTc0UrkhvCyBmsaf+8ZDZDyGuBCgtQ==
 
-"@graphcommerce/magento-cart-shipping-address@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-cart-shipping-address/-/magento-cart-shipping-address-8.0.5-canary.4.tgz#1cb1ce2414a7d881b87736d0d10644b25e9d2fda"
-  integrity sha512-QVxBLs0XZfKrClMComnwORDbn+U2ukIwb07A0Z8ATPhMAlB1H1QEv3miS2aFnRUVREhxgMox2Zcz/McgOBEOWw==
+"@graphcommerce/magento-cart-shipping-address@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-cart-shipping-address/-/magento-cart-shipping-address-8.0.4.tgz#4e60c05f0f602f557fe339f013e702119a6cb5d5"
+  integrity sha512-Zit/hFUsWjCnG5QrC9jx3dIkeOqb9jSfL+mPU4TgRwosOeITE5o2gvQ+gUNA20sHYEXdzrFXREbv69hg7D5ZBA==
 
-"@graphcommerce/magento-cart-shipping-method@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-cart-shipping-method/-/magento-cart-shipping-method-8.0.5-canary.4.tgz#0976a007ad847dbf393443dde0edd7c8ecb626a9"
-  integrity sha512-s7Hdmgglv3faLtdVbWUSqQO9iVERWYrVGV60Lb+b6utC8Ss5j/m0Gtgyb46P1e+vcH62Bv5nKhQD4ecaP+A47Q==
+"@graphcommerce/magento-cart-shipping-method@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-cart-shipping-method/-/magento-cart-shipping-method-8.0.4.tgz#851d7603f1ffdb93b9f9ee0a497dec21019b0ba0"
+  integrity sha512-/5J5IbTwHczg2FDTqBJK1fhWeZgtsbiFUezhEhc8fLUgQKyvA2VbysnEJR7hoZEr8ZTz3sTzZIKUvhsNUk4l1Q==
 
-"@graphcommerce/magento-cart@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-cart/-/magento-cart-8.0.5-canary.4.tgz#1dd2911d5d0c20d3c7f9774c9bf7256081ae6de7"
-  integrity sha512-uhfL1vSQhbwdHvGRr5F0nZoOTGQg+CNV4/l5DWU2JDEOMDNBUPLkObUDG7TR9sJ338Vy4b6fgWYnWTS+NObxbA==
+"@graphcommerce/magento-cart@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-cart/-/magento-cart-8.0.4.tgz#6e33bcd9d84f82b0052fa8ee7e5e5f857b9334cc"
+  integrity sha512-q9NuUoeLfpnXqmtn3bzpo4x3jhw2K1aqoRIkCbCDW2VNJma0zalvkq2xZ7+vQZ64OMFpkWSXrgxQziGgnMNh8g==
 
-"@graphcommerce/magento-category@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-category/-/magento-category-8.0.5-canary.4.tgz#4e48f4174f2b0c90056cdf8c60f2e0e4c3dd201c"
-  integrity sha512-nHEUUZ83BWuRdVYkLJyPnVEZk+5lEvlz8jgS0P9ewHgllDGaFpZ7w6/QUMp80BDzE/VRtMHPiJEll+A6DMDqMg==
+"@graphcommerce/magento-category@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-category/-/magento-category-8.0.4.tgz#3f28c35e57e233f79aab1368cc8cdf4d463a205e"
+  integrity sha512-LddcZRVFTe55e9U9UMh13WXHHUkWmFXlADiuk4Lz4GUF3xRRKCYI25MfFrHthnL4Trv+InUMTgy1JrBF6IbuAw==
 
-"@graphcommerce/magento-cms@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-cms/-/magento-cms-8.0.5-canary.4.tgz#d563d5d47dd72ed60b8c2f50f4fde82eb054153e"
-  integrity sha512-Hx+QCgWQJqBlapZmIFSNTTPxsF2rkoPK2pEJlC80c17XeVf9yUIkjL1GEKeBM3lRUKfcot29gByqV0AmpGUyJw==
+"@graphcommerce/magento-cms@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-cms/-/magento-cms-8.0.4.tgz#5b5f07004b0e471551cb03ba5077948d58d8e4b7"
+  integrity sha512-un4BdVxzBQSCLzm1LGy3uJY6wlR49711FmRua9sTJv6OpSJXXEDsu1pc5Wxo96zFdOOKxMlUNboK9cbAgo7cyw==
 
-"@graphcommerce/magento-compare@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-compare/-/magento-compare-8.0.5-canary.4.tgz#89c9ea01dbcfde890b1107f24f53734e448beee2"
-  integrity sha512-ctaN8y4gF1/wWwrokS7E/zpPcoVogFu703AfT1jd9Q0dIENRRm6OPtpBpKNBmmRNFLQIFZ0wx6i+f8pA7JIkOQ==
+"@graphcommerce/magento-compare@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-compare/-/magento-compare-8.0.4.tgz#e64f2b583c6ac2ea7f8e3ecb0322f94cc4faf032"
+  integrity sha512-IdmEmz5F8Zugf+hSGC5sg8b6QemvTV+W9j29vICRP2gN2WJOI9hsdEO53cYSQDQIg0fOXNKeIryuU877nMjRPg==
 
-"@graphcommerce/magento-customer@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-customer/-/magento-customer-8.0.5-canary.4.tgz#1b26808a59f2e9481254c8acd0556e9291d08acf"
-  integrity sha512-hNNSccM7Vur4jGlDLIXUZ4SnUJY4k7vc3dWcWwyJDR/4zRsmZWeFpeSwJQhd/4FOv/FCAWAF7E43no/9jFnCYA==
+"@graphcommerce/magento-customer@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-customer/-/magento-customer-8.0.4.tgz#743e1f20c9c740a98fac66b321fcbe4edc13757c"
+  integrity sha512-ivxZ4fRbB44TSTuKv/BHpjGZZYgWEPinjEj4tcCsxhdLFblzpBXgnGJma0U2Pjl9NZhUrfJzt4hbVP3DjsCOXw==
 
-"@graphcommerce/magento-graphql@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-graphql/-/magento-graphql-8.0.5-canary.4.tgz#173c5882d6abd95e0287885252f580d1a5650d69"
-  integrity sha512-9fbqzMB7NzdQjl3z1W97OBYSaLbumIzEM/LAUA2s3kgD/0XE2zOx+QgJkCd6h3I0BVO4UmV4hF9J68LCkB6bpg==
+"@graphcommerce/magento-graphql@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-graphql/-/magento-graphql-8.0.4.tgz#8b55ec64412d0fe7998d9ea742d9cdf53f9f51b5"
+  integrity sha512-m4SOOVCnNd6zb+VXrt8dLg6CDKIc5fH4d0HhVW4RbfV/UCkBdM5VdoJq2UwMaHgURRXIRo2b2YlNIVVBio1ZbA==
 
-"@graphcommerce/magento-newsletter@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-newsletter/-/magento-newsletter-8.0.5-canary.4.tgz#4115c1b587e42a5f888eaf30fd0da59bec34e5ef"
-  integrity sha512-xsGK/2l1NB7C2BKsSZ6UbOU9SxPBax/5OER2XnmMQk1wGwCmCz1Cpx4j1kGZOsv18d7F9nCUfjvFxFTk4F6C2Q==
+"@graphcommerce/magento-newsletter@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-newsletter/-/magento-newsletter-8.0.4.tgz#f3df12b93be09aa7ca8350536679015ca25299fd"
+  integrity sha512-MZk0QL2F1QSIMjoOYM6NcziUfrmzM2jXVTtM6yv8oJdWxEzBdyacx20GRifzbCN07OHipVbp1fxT/4RSg7cTTQ==
 
-"@graphcommerce/magento-payment-included@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-payment-included/-/magento-payment-included-8.0.5-canary.4.tgz#0004f177874b433675eca5f36c489391b70b0f46"
-  integrity sha512-p/yvnQezoknebyNMk3gvuJw5NrPezoBoIuWQ+aCBDefLMed4kH9OGoeI7FKtMxHHNHrB9KUK2KHvKCNv/XAaLQ==
+"@graphcommerce/magento-payment-included@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-payment-included/-/magento-payment-included-8.0.4.tgz#a60dc023721de9d2957abca7835c39f186c78e3d"
+  integrity sha512-572XOGJFKWzrUIZK7KjX3nRL8/WWVNwhjj0lppFFaqIABBywusgEZ2xlCiATRMlyhGVqoUSt+rTt5BsyPGK0aw==
 
-"@graphcommerce/magento-product-bundle@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-product-bundle/-/magento-product-bundle-8.0.5-canary.4.tgz#471b4f7406bc7018dc68c12b0cae4c6461741ea7"
-  integrity sha512-q8LYuG68s03nWMTyaLIlzE+GbCUAe/J6bIGKqJJypYJOfUdo03p5QXiQqV37r9xV1iGJA3RGys4QiZj63Np31g==
+"@graphcommerce/magento-product-bundle@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-product-bundle/-/magento-product-bundle-8.0.4.tgz#b2da9ab33b394b5f1e22517850e7db728f9cbd56"
+  integrity sha512-CcxyI+dfT86UVyS3qwjfqgelJKzzwP/3Y0mT6P3c//6cDFF7/jTGe78S3jbQ35glNKyRgo4G4Cib2u81L1/U7A==
 
-"@graphcommerce/magento-product-configurable@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-product-configurable/-/magento-product-configurable-8.0.5-canary.4.tgz#c3db47f0cfca733c9c5e9c9c1872f75e3da7f1e4"
-  integrity sha512-nDdpuRNjWluJZiRRjgaUKH+DNWTZ0vgzt0Mtzr2I8YZbXRpIxxZ84rFYPEQEFg0eUqMVDaCWB6r9ttt7oP/LoA==
+"@graphcommerce/magento-product-configurable@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-product-configurable/-/magento-product-configurable-8.0.4.tgz#294e3c7e42b1195c57193ed1e253f1c8a1857272"
+  integrity sha512-g27IsdnVEcrNxP53U+ahEVhJ1H91IdzEr5s2gWcA4+9oh9p0bKn6sHoWgSj7z6JTJVuHQ1YiWNmE84v2rGrmtA==
 
-"@graphcommerce/magento-product-downloadable@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-product-downloadable/-/magento-product-downloadable-8.0.5-canary.4.tgz#a6070831dae5d276a1211591977347ef8be8b25e"
-  integrity sha512-PoCV5pKYJNM4KkeLaiJ8LFELc/1qfXz6JbAJ8eo56gOC0Y7H+8Cn2bvcy/Ra++yla/Op3qattIKuPVfAXZgo7Q==
+"@graphcommerce/magento-product-downloadable@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-product-downloadable/-/magento-product-downloadable-8.0.4.tgz#995cf998bb1c3a0b20587335bbc3a72fa6223c95"
+  integrity sha512-x3TRlGdXCZ+nHp7FdcOtAhFzAwB+M5nofsax3sUHDhrAVfN4Ii3PXmZXx8gXmaaODvwzFUbRA34ycohUO8mvdg==
 
-"@graphcommerce/magento-product-grouped@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-product-grouped/-/magento-product-grouped-8.0.5-canary.4.tgz#d60ae4440147e8cc721223f773df379efeb09805"
-  integrity sha512-z4+1YOY54KbuYWaklGVwV77tm9HVySaC79kT4J81mgZmSzVxy3hfnHEn3j2s4TfKyLpMI/IMAjLNiyTuIYtRQQ==
+"@graphcommerce/magento-product-grouped@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-product-grouped/-/magento-product-grouped-8.0.4.tgz#c41d75f61b59a14e5a94d4765314a7b7da8719b7"
+  integrity sha512-wyHGaepDKJerSisOMVQruIJS6WAoV/L6wWxxnpQRnI6fMf6poZT4OfbNTxBrbtr0bqCeMPsfaB+Ciq/glU80wg==
 
-"@graphcommerce/magento-product-simple@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-product-simple/-/magento-product-simple-8.0.5-canary.4.tgz#f073a47cbff3e19cd4ffd30fb2b7b6dd8c2c5c5a"
-  integrity sha512-t3uVCjzatRud7Ct6FESc6l9ApCOtMSGBid8mYDTjEAf6X0lqHYff3FHDEFKaeBB+j4maPytxfTqv/N8T5rhQww==
+"@graphcommerce/magento-product-simple@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-product-simple/-/magento-product-simple-8.0.4.tgz#dc4f62d5bace105a407b86ab84da4a1d379242f3"
+  integrity sha512-j+fGcemC4ADuaUp4kc6V5X4b3o/lG8BhHfo4oB/nbZClRT0yTq/wfAw+/QahNAJYvVjVCPuJuCVXAlvkhAB1hA==
 
-"@graphcommerce/magento-product-virtual@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-product-virtual/-/magento-product-virtual-8.0.5-canary.4.tgz#1ec4a5666e4360610f9945f311a71831dcc85a03"
-  integrity sha512-a1FQypJtSDBbeqHX52BnqH9oNrx2UBLGcfYAg2A76xMz1pzmfjIy11FGEU3jc+LUW6BiYOLk5X2Ie2zjFCVhwQ==
+"@graphcommerce/magento-product-virtual@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-product-virtual/-/magento-product-virtual-8.0.4.tgz#8c794e30eb2c18e9d0cf55faf250c136960f0056"
+  integrity sha512-kinEa0I8UaA30PdIjIImcudVIRAtNywRrk+yDoZcmwQ7TGPjoYKXo/O895MhDmmeFZ6oluwOYJLjjYYSFj/tGw==
 
-"@graphcommerce/magento-product@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-product/-/magento-product-8.0.5-canary.4.tgz#53516a2a71803d7a6f9d75d2ff876a9081b464ce"
-  integrity sha512-o9pBt0ZDgNO9NrXQw3ZuiEWSxMLyz0lIZFMD5p19qevAycynEj0ur/iq87rRKFUdTUc045us7g4mM1YByhS4nw==
+"@graphcommerce/magento-product@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-product/-/magento-product-8.0.4.tgz#8a50516b04daf4d635596934eafe878217905636"
+  integrity sha512-y4umtgdPwn0AoOXNFiJLG5k7n+s9Pu0FBJ3hpOnXplAO4af6wbdoEFKyevwboyge1b+4sZ1NgJJ7Gn1CQkNJ5Q==
   dependencies:
     schema-dts "^1.1.2"
 
-"@graphcommerce/magento-recently-viewed-products@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-recently-viewed-products/-/magento-recently-viewed-products-8.0.5-canary.4.tgz#4b5d5a7485f8283611533097b2ef25dcae5c202a"
-  integrity sha512-9WPLh/CiIX5m/Jz4oO1Z9Xbyo5GPWgGnderM5UC2JtDFp2xrPx/J3ZfVwzMvdtbWi8zdZ7oLjCOC10oNsPnRPQ==
+"@graphcommerce/magento-recently-viewed-products@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-recently-viewed-products/-/magento-recently-viewed-products-8.0.4.tgz#55c575a9b645ffb7cc46eb24c1b52820068850c5"
+  integrity sha512-rAnpw+7WJ5iZA+ckv1qyeAola5Pm01zA8l9TqyLGB8yYNfi8kt9iJI2jV61qRm26cF7Szh4JBVPYW7xcL3bJsg==
 
-"@graphcommerce/magento-review@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-review/-/magento-review-8.0.5-canary.4.tgz#aec7ee364d94b5d7a4b6c7b1126c5e8bd4c76e3c"
-  integrity sha512-nnPOr1EG84Pf2/YwCdHew0lnX6MMk3s4YkQrT9YGLsQ61xQP6VgOSLoO1DEH5EIzPnd3ceJK+q2elLGhhnpaVg==
+"@graphcommerce/magento-review@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-review/-/magento-review-8.0.4.tgz#c37c00e7775dfbef3a4bc14c970b20c760591807"
+  integrity sha512-rmm/I+0RnCsfNxSbFSl8KeCeeZY+OCLunSik4tFdi9JEgvOMWZKageSWc7QUVNh+B9lJNWxdOS/WrxScyFqcOg==
   dependencies:
     schema-dts "^1.1.2"
 
-"@graphcommerce/magento-search@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-search/-/magento-search-8.0.5-canary.4.tgz#7dbf3f3c9046cdaf68b5853dd2302ce291a401d7"
-  integrity sha512-ajF8F9uQcnkjR9Mkb/aEMCd65HrnQlc07QIJWixVlKB5/KhxgGQAcQzbT5bAEc6i8U8WQ0QIFUyNEH32qvPPXQ==
+"@graphcommerce/magento-search@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-search/-/magento-search-8.0.4.tgz#21a929c75e2a4c7f9b4c433ed58233221f92eb57"
+  integrity sha512-DBrEDOA294ZEjNBlK7A5fK60gOyUZh7R9oH88FygLSrrfD5VOPHHDFNu59kHzB+U2B/TWITB45mhqdzM+ByFHQ==
 
-"@graphcommerce/magento-store@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-store/-/magento-store-8.0.5-canary.4.tgz#803d9f939bfbfe49c0a47b11f0b069d8380af23b"
-  integrity sha512-L1MByDtSJsB+f7ZUTegYdN5TSQLh24cm/L6Z3qQlVYP2WQAr/RSwQTW61nDcgDcWh5/sfip8DzM4o13jnPMR+A==
+"@graphcommerce/magento-store@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-store/-/magento-store-8.0.4.tgz#1093cac74c6083321d685bab48b71633b69cbf15"
+  integrity sha512-hs5sPRjFzpXJLq4WlWQr+k7Qwjay8iSg+kw7NQZQ9K2B1L+IYgeRrJgYNcHCB0rsVyNl7bqrBODaI21E2IIKXQ==
 
-"@graphcommerce/magento-wishlist@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-wishlist/-/magento-wishlist-8.0.5-canary.4.tgz#251e7018caf5b4b585095acfd9972b9ae2192ee5"
-  integrity sha512-VeFgjD1ONkXsjY8UBHm1HRyp/Yu8MVDzTbd0x3QqrgV6GlKrmIm0YlVDlTzk6jO2B9tmElpq24nxoNs2ZvY0HA==
+"@graphcommerce/magento-wishlist@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/magento-wishlist/-/magento-wishlist-8.0.4.tgz#ae87a41799d397cfa980cdffba457b69df0e61a3"
+  integrity sha512-5tgViG82UdIfndqd5uC4O1NJPcREwaAoWQLWpcOGATZk87NK2crUOujWE9Qj8qzmTE/4bUqHaMailA00NTuMsg==
 
-"@graphcommerce/next-config@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/next-config/-/next-config-8.0.5-canary.4.tgz#5429f508e961dc532d335b1d008875bdd6efbe03"
-  integrity sha512-y37EAOC45AExioNg3st4MhJSG8JDzZKJocL2tORdprQxT7rPsre2WxWcMZijCofN6w/ScPLWoBysmjEQEKbgiw==
+"@graphcommerce/next-config@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/next-config/-/next-config-8.0.4.tgz#308c5a2ab660e854dc31eeed04d5fd5be063e456"
+  integrity sha512-mrXrHPHy6UIwvWR8GJSb3tQcrQTQSmdp10TkdXfsTahb2ByURB21DqfNAYAkiwDYoL5P+yRzTVWgJk8ZGD6CNQ==
   dependencies:
     "@graphql-mesh/cli" latest
     "@lingui/loader" "4.7.0"
@@ -1797,10 +1802,10 @@
     znv "^0.4.0"
     zod "^3.22.4"
 
-"@graphcommerce/next-ui@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/next-ui/-/next-ui-8.0.5-canary.4.tgz#a2ab449631a4d3f4031213adbd30649dec68b5bb"
-  integrity sha512-uo1kR1nolHXrAiSz9qWPTSLLPK7TKZvwHYFSii74k2N7enzVcCEnbNmlqo9W/s3RFeMPj4E55ziCuzX76Z7eDA==
+"@graphcommerce/next-ui@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/next-ui/-/next-ui-8.0.4.tgz#195bb82b6040d1f47ea3d42a7106c44068c31223"
+  integrity sha512-wABImESbNioH5qol+2fwPG+EJmpvdpuMJsio+slk5uK9GDncCavjq9wbQw7vBoyVnyQ8iyENneuYenV6LMh6Xg==
   dependencies:
     "@emotion/cache" "^11.11.0"
     "@emotion/react" "^11.11.3"
@@ -1809,22 +1814,22 @@
     cookie "^0.6.0"
     react-is "^18.2.0"
 
-"@graphcommerce/prettier-config-pwa@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/prettier-config-pwa/-/prettier-config-pwa-8.0.5-canary.4.tgz#7a25988ff1e541f7ec4ea51d9b011acae3ca88fe"
-  integrity sha512-Q9pD31g/EckfTR46mPkmBCr5M1ICGz8xt8526FwAx1o598F4TPnW79p66zIDkhS6Bb5eq7nDZsXoUE96OYkTlg==
+"@graphcommerce/prettier-config-pwa@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/prettier-config-pwa/-/prettier-config-pwa-8.0.4.tgz#f491e03d733cdbf61948a77452aee46c0b920952"
+  integrity sha512-D/8VD+KdlWMm7a+j59LWNUvAUxIIq5fvZWhol2FLC0DhcNhk03eYtiOn++0LVpCVCy39TNm/FIo6K4COBaTHFg==
   dependencies:
     prettier-plugin-jsdoc "^1.3.0"
 
-"@graphcommerce/react-hook-form@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/react-hook-form/-/react-hook-form-8.0.5-canary.4.tgz#6419d2438939d3fa51a9e0f895c2adf9a6d905b9"
-  integrity sha512-KjzZLffKeAoqmDcKOP6SNNVSrogrXTJTCPNmeSj8RRH2WiDkiD0QIzQK+d3izBMGoMUr68RAv77GeILSVUwQ/Q==
+"@graphcommerce/react-hook-form@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/react-hook-form/-/react-hook-form-8.0.4.tgz#cb8ecbe51ea10b1949ed34c4ed6c4643191e8c5a"
+  integrity sha512-UJ5XfXC+5u5Ziqr8aYJIlgTQjE6HnxDqiyYM6dbjBKNpgGuHLHBu4RWuPmv637obmYds1fYzV6kvffydRMxpXg==
 
-"@graphcommerce/typescript-config-pwa@8.0.5-canary.4":
-  version "8.0.5-canary.4"
-  resolved "https://registry.yarnpkg.com/@graphcommerce/typescript-config-pwa/-/typescript-config-pwa-8.0.5-canary.4.tgz#866d8ba9cd4acc0b3ff66500b61006a3d614b794"
-  integrity sha512-UL2qBzf9FOAokUy5bYuczwroU39MNppcKfM3DoK7aqCpqW7pbW6wikyZf1GoyFb4VUx4xyXdixYE23ZIuyVlxw==
+"@graphcommerce/typescript-config-pwa@8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@graphcommerce/typescript-config-pwa/-/typescript-config-pwa-8.0.4.tgz#2974d48c047e0a7093cf6fde9f029240324a081b"
+  integrity sha512-DuXWGCC6nymCRwfwUWgE8YSkZRF9fPKOs/S75vVhElvOIJUUXMzFsDLY1ZtvUpIU4naNgw8STkQPWOyfn2sWHQ==
 
 "@graphql-codegen/add@5.0.1":
   version "5.0.1"
@@ -2497,9 +2502,9 @@
     value-or-promise "^1.0.12"
 
 "@graphql-tools/federation@^1.1.12":
-  version "1.1.26"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/federation/-/federation-1.1.26.tgz#a62e66332e2511c8152c4dfe30178e58074f84a2"
-  integrity sha512-knBr2o2lBRi0r4VQj+uEb9q9pUDhfsHwv5IM5lt/9MtUnVi91k29W/IuojFk18pDtuyPlhAtPwTfiQppOfrR0Q==
+  version "1.1.27"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/federation/-/federation-1.1.27.tgz#ecd2e79a4aefecdfa3999ab52e7973bd1804fc48"
+  integrity sha512-cuCgppt+2RqpxE3p6w/GL1Tz5JDcd1nILFOmEPD67WqQUBr5VgUEi77rAvB3lTr68giLri4AQ50X32rUvPyPkg==
   dependencies:
     "@graphql-tools/delegate" "^10.0.4"
     "@graphql-tools/executor-http" "^1.0.9"
@@ -2511,7 +2516,7 @@
     tslib "^2.4.0"
     value-or-promise "^1.0.12"
   optionalDependencies:
-    "@apollo/client" "~3.2.5 || ~3.3.0 || ~3.4.0 || ~3.5.0 || ~3.6.0 || ~3.7.0 || ~3.8.0 || ~3.9.0"
+    "@apollo/client" "~3.2.5 || ~3.3.0 || ~3.4.0 || ~3.5.0 || ~3.6.0 || ~3.7.0 || ~3.8.0 || ~3.9.0 || ~3.10.0"
 
 "@graphql-tools/git-loader@^8.0.0":
   version "8.0.5"
@@ -2666,9 +2671,9 @@
     value-or-promise "^1.0.12"
 
 "@graphql-tools/stitch@^9.0.0", "@graphql-tools/stitch@^9.0.5":
-  version "9.1.0"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/stitch/-/stitch-9.1.0.tgz#fa65d8ae85b21b0c80992d484a0db0cc1bfa64c0"
-  integrity sha512-EEZn2BcvuOX+7DOSROv+3Td0SvuC/YnJ5+ua2xjhThOU7q8QFqL+JxgT4BOdI829ZR+rQqaX6do3VEY4UNo1Yg==
+  version "9.1.2"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/stitch/-/stitch-9.1.2.tgz#dd08e6ad52175844d9ff90e7990a3362b2b3c00f"
+  integrity sha512-X1NoeZ+K7PvOQeoCE6uyAGfBOIAsXXrXl7rUxtZY3uYTktp2HdJKZhnYYgn6dYEiMpgVDCepNpW2iTEACNwV/A==
   dependencies:
     "@graphql-tools/batch-delegate" "^9.0.1"
     "@graphql-tools/delegate" "^10.0.4"
@@ -2796,6 +2801,119 @@
   dependencies:
     graphql "^16.5.0"
     graphql-request "^4.3.0"
+
+"@img/sharp-darwin-arm64@0.33.2":
+  version "0.33.2"
+  resolved "https://registry.yarnpkg.com/@img/sharp-darwin-arm64/-/sharp-darwin-arm64-0.33.2.tgz#0a52a82c2169112794dac2c71bfba9e90f7c5bd1"
+  integrity sha512-itHBs1rPmsmGF9p4qRe++CzCgd+kFYktnsoR1sbIAfsRMrJZau0Tt1AH9KVnufc2/tU02Gf6Ibujx+15qRE03w==
+  optionalDependencies:
+    "@img/sharp-libvips-darwin-arm64" "1.0.1"
+
+"@img/sharp-darwin-x64@0.33.2":
+  version "0.33.2"
+  resolved "https://registry.yarnpkg.com/@img/sharp-darwin-x64/-/sharp-darwin-x64-0.33.2.tgz#982e26bb9d38a81f75915c4032539aed621d1c21"
+  integrity sha512-/rK/69Rrp9x5kaWBjVN07KixZanRr+W1OiyKdXcbjQD6KbW+obaTeBBtLUAtbBsnlTTmWthw99xqoOS7SsySDg==
+  optionalDependencies:
+    "@img/sharp-libvips-darwin-x64" "1.0.1"
+
+"@img/sharp-libvips-darwin-arm64@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@img/sharp-libvips-darwin-arm64/-/sharp-libvips-darwin-arm64-1.0.1.tgz#81e83ffc2c497b3100e2f253766490f8fad479cd"
+  integrity sha512-kQyrSNd6lmBV7O0BUiyu/OEw9yeNGFbQhbxswS1i6rMDwBBSX+e+rPzu3S+MwAiGU3HdLze3PanQ4Xkfemgzcw==
+
+"@img/sharp-libvips-darwin-x64@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@img/sharp-libvips-darwin-x64/-/sharp-libvips-darwin-x64-1.0.1.tgz#fc1fcd9d78a178819eefe2c1a1662067a83ab1d6"
+  integrity sha512-eVU/JYLPVjhhrd8Tk6gosl5pVlvsqiFlt50wotCvdkFGf+mDNBJxMh+bvav+Wt3EBnNZWq8Sp2I7XfSjm8siog==
+
+"@img/sharp-libvips-linux-arm64@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@img/sharp-libvips-linux-arm64/-/sharp-libvips-linux-arm64-1.0.1.tgz#26eb8c556a9b0db95f343fc444abc3effb67ebcf"
+  integrity sha512-bnGG+MJjdX70mAQcSLxgeJco11G+MxTz+ebxlz8Y3dxyeb3Nkl7LgLI0mXupoO+u1wRNx/iRj5yHtzA4sde1yA==
+
+"@img/sharp-libvips-linux-arm@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@img/sharp-libvips-linux-arm/-/sharp-libvips-linux-arm-1.0.1.tgz#2a377b959ff7dd6528deee486c25461296a4fa8b"
+  integrity sha512-FtdMvR4R99FTsD53IA3LxYGghQ82t3yt0ZQ93WMZ2xV3dqrb0E8zq4VHaTOuLEAuA83oDawHV3fd+BsAPadHIQ==
+
+"@img/sharp-libvips-linux-s390x@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@img/sharp-libvips-linux-s390x/-/sharp-libvips-linux-s390x-1.0.1.tgz#af28ac9ba929204467ecdf843330d791e9421e10"
+  integrity sha512-3+rzfAR1YpMOeA2zZNp+aYEzGNWK4zF3+sdMxuCS3ey9HhDbJ66w6hDSHDMoap32DueFwhhs3vwooAB2MaK4XQ==
+
+"@img/sharp-libvips-linux-x64@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@img/sharp-libvips-linux-x64/-/sharp-libvips-linux-x64-1.0.1.tgz#4273d182aa51912e655e1214ea47983d7c1f7f8d"
+  integrity sha512-3NR1mxFsaSgMMzz1bAnnKbSAI+lHXVTqAHgc1bgzjHuXjo4hlscpUxc0vFSAPKI3yuzdzcZOkq7nDPrP2F8Jgw==
+
+"@img/sharp-libvips-linuxmusl-arm64@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@img/sharp-libvips-linuxmusl-arm64/-/sharp-libvips-linuxmusl-arm64-1.0.1.tgz#d150c92151cea2e8d120ad168b9c358d09c77ce8"
+  integrity sha512-5aBRcjHDG/T6jwC3Edl3lP8nl9U2Yo8+oTl5drd1dh9Z1EBfzUKAJFUDTDisDjUwc7N4AjnPGfCA3jl3hY8uDg==
+
+"@img/sharp-libvips-linuxmusl-x64@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@img/sharp-libvips-linuxmusl-x64/-/sharp-libvips-linuxmusl-x64-1.0.1.tgz#e297c1a4252c670d93b0f9e51fca40a7a5b6acfd"
+  integrity sha512-dcT7inI9DBFK6ovfeWRe3hG30h51cBAP5JXlZfx6pzc/Mnf9HFCQDLtYf4MCBjxaaTfjCCjkBxcy3XzOAo5txw==
+
+"@img/sharp-linux-arm64@0.33.2":
+  version "0.33.2"
+  resolved "https://registry.yarnpkg.com/@img/sharp-linux-arm64/-/sharp-linux-arm64-0.33.2.tgz#af3409f801a9bee1d11d0c7e971dcd6180f80022"
+  integrity sha512-pz0NNo882vVfqJ0yNInuG9YH71smP4gRSdeL09ukC2YLE6ZyZePAlWKEHgAzJGTiOh8Qkaov6mMIMlEhmLdKew==
+  optionalDependencies:
+    "@img/sharp-libvips-linux-arm64" "1.0.1"
+
+"@img/sharp-linux-arm@0.33.2":
+  version "0.33.2"
+  resolved "https://registry.yarnpkg.com/@img/sharp-linux-arm/-/sharp-linux-arm-0.33.2.tgz#181f7466e6ac074042a38bfb679eb82505e17083"
+  integrity sha512-Fndk/4Zq3vAc4G/qyfXASbS3HBZbKrlnKZLEJzPLrXoJuipFNNwTes71+Ki1hwYW5lch26niRYoZFAtZVf3EGA==
+  optionalDependencies:
+    "@img/sharp-libvips-linux-arm" "1.0.1"
+
+"@img/sharp-linux-s390x@0.33.2":
+  version "0.33.2"
+  resolved "https://registry.yarnpkg.com/@img/sharp-linux-s390x/-/sharp-linux-s390x-0.33.2.tgz#9c171f49211f96fba84410b3e237b301286fa00f"
+  integrity sha512-MBoInDXDppMfhSzbMmOQtGfloVAflS2rP1qPcUIiITMi36Mm5YR7r0ASND99razjQUpHTzjrU1flO76hKvP5RA==
+  optionalDependencies:
+    "@img/sharp-libvips-linux-s390x" "1.0.1"
+
+"@img/sharp-linux-x64@0.33.2":
+  version "0.33.2"
+  resolved "https://registry.yarnpkg.com/@img/sharp-linux-x64/-/sharp-linux-x64-0.33.2.tgz#b956dfc092adc58c2bf0fae2077e6f01a8b2d5d7"
+  integrity sha512-xUT82H5IbXewKkeF5aiooajoO1tQV4PnKfS/OZtb5DDdxS/FCI/uXTVZ35GQ97RZXsycojz/AJ0asoz6p2/H/A==
+  optionalDependencies:
+    "@img/sharp-libvips-linux-x64" "1.0.1"
+
+"@img/sharp-linuxmusl-arm64@0.33.2":
+  version "0.33.2"
+  resolved "https://registry.yarnpkg.com/@img/sharp-linuxmusl-arm64/-/sharp-linuxmusl-arm64-0.33.2.tgz#10e0ec5a79d1234c6a71df44c9f3b0bef0bc0f15"
+  integrity sha512-F+0z8JCu/UnMzg8IYW1TMeiViIWBVg7IWP6nE0p5S5EPQxlLd76c8jYemG21X99UzFwgkRo5yz2DS+zbrnxZeA==
+  optionalDependencies:
+    "@img/sharp-libvips-linuxmusl-arm64" "1.0.1"
+
+"@img/sharp-linuxmusl-x64@0.33.2":
+  version "0.33.2"
+  resolved "https://registry.yarnpkg.com/@img/sharp-linuxmusl-x64/-/sharp-linuxmusl-x64-0.33.2.tgz#29e0030c24aa27c38201b1fc84e3d172899fcbe0"
+  integrity sha512-+ZLE3SQmSL+Fn1gmSaM8uFusW5Y3J9VOf+wMGNnTtJUMUxFhv+P4UPaYEYT8tqnyYVaOVGgMN/zsOxn9pSsO2A==
+  optionalDependencies:
+    "@img/sharp-libvips-linuxmusl-x64" "1.0.1"
+
+"@img/sharp-wasm32@0.33.2":
+  version "0.33.2"
+  resolved "https://registry.yarnpkg.com/@img/sharp-wasm32/-/sharp-wasm32-0.33.2.tgz#38d7c740a22de83a60ad1e6bcfce17462b0d4230"
+  integrity sha512-fLbTaESVKuQcpm8ffgBD7jLb/CQLcATju/jxtTXR1XCLwbOQt+OL5zPHSDMmp2JZIeq82e18yE0Vv7zh6+6BfQ==
+  dependencies:
+    "@emnapi/runtime" "^0.45.0"
+
+"@img/sharp-win32-ia32@0.33.2":
+  version "0.33.2"
+  resolved "https://registry.yarnpkg.com/@img/sharp-win32-ia32/-/sharp-win32-ia32-0.33.2.tgz#09456314e223f68e5417c283b45c399635c16202"
+  integrity sha512-okBpql96hIGuZ4lN3+nsAjGeggxKm7hIRu9zyec0lnfB8E7Z6p95BuRZzDDXZOl2e8UmR4RhYt631i7mfmKU8g==
+
+"@img/sharp-win32-x64@0.33.2":
+  version "0.33.2"
+  resolved "https://registry.yarnpkg.com/@img/sharp-win32-x64/-/sharp-win32-x64-0.33.2.tgz#148e96dfd6e68747da41a311b9ee4559bb1b1471"
+  integrity sha512-E4magOks77DK47FwHUIGH0RYWSgRBfGdK56kIHSVeB9uIS4pPFr4N2kIVsXdQQo4LzOsENKV5KAhRlRL7eMAdg==
 
 "@isaacs/cliui@^8.0.2":
   version "8.0.2"
@@ -3631,17 +3749,17 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.12.tgz#12bb1e2be27293c1406acb6af1c3f3a1481d98c6"
   integrity sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==
 
-"@types/react-dom@^18.2.24":
-  version "18.2.25"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.2.25.tgz#2946a30081f53e7c8d585eb138277245caedc521"
-  integrity sha512-o/V48vf4MQh7juIKZU2QGDfli6p1+OOi5oXx36Hffpc9adsHeXjVp8rHuPkjd8VT8sOJ2Zp05HR7CdpGTIUFUA==
+"@types/react-dom@^18.2.18":
+  version "18.3.0"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.3.0.tgz#0cbc818755d87066ab6ca74fbedb2547d74a82b0"
+  integrity sha512-EhwApuTmMBmXuFOikhQLIBUn6uFg81SwLMOAUgodJF14SOBOCMdU04gDoYi0WOJJHD144TL32z4yDqCW3dnkQg==
   dependencies:
     "@types/react" "*"
 
 "@types/react-is@^18.2.4":
-  version "18.2.4"
-  resolved "https://registry.yarnpkg.com/@types/react-is/-/react-is-18.2.4.tgz#95a92829de452662348ce08349ca65623c50daf7"
-  integrity sha512-wBc7HgmbCcrvw0fZjxbgz/xrrlZKzEqmABBMeSvpTvdm25u6KI6xdIi9pRE2G0C1Lw5ETFdcn4UbYZ4/rpqUYw==
+  version "18.3.0"
+  resolved "https://registry.yarnpkg.com/@types/react-is/-/react-is-18.3.0.tgz#07008aecacf9c788f68e72eecca43701d7e6eefb"
+  integrity sha512-KZJpHUkAdzyKj/kUHJDc6N7KyidftICufJfOFpiG6haL/BDQNQt5i4n1XDUL/nDZAtGLHDSWRYpLzKTAKSvX6w==
   dependencies:
     "@types/react" "*"
 
@@ -3652,10 +3770,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^18.2.74":
-  version "18.2.79"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.79.tgz#c40efb4f255711f554d47b449f796d1c7756d865"
-  integrity sha512-RwGAGXPl9kSXwdNTafkOEuFrTBD5SA2B3iEB96xi8+xu5ddUa/cpvyVCSNn+asgLCTHkb5ZxN8gbuibYJi4s1w==
+"@types/react@*", "@types/react@^18.2.48":
+  version "18.3.0"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.3.0.tgz#2e6ac50dea2f68f774b20f1bd536ef82365cd64a"
+  integrity sha512-DiUcKjzE6soLyln8NNZmyhcQjVv+WsUIFSqetMN0p8927OztKT4VTfFTqsbAi5oAGIcgOmOajlfBqyptDDjZRw==
   dependencies:
     "@types/prop-types" "*"
     csstype "^3.0.2"
@@ -3676,20 +3794,6 @@
   version "2.0.7"
   resolved "https://registry.yarnpkg.com/@types/trusted-types/-/trusted-types-2.0.7.tgz#baccb07a970b91707df3a3e8ba6896c57ead2d11"
   integrity sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==
-
-"@types/uglify-es@^3":
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/@types/uglify-es/-/uglify-es-3.0.3.tgz#406264987a3ab6f6f6dfb129bb8fbdb2ac46e58d"
-  integrity sha512-GN/YyR3J7as5tI52vlw0aWmWwtlh8cRsSl4FlbAZFazAB/CkjBBNamWIwZ/uSc1yGmpqC8nVMj/jeH2JA5uBlQ==
-  dependencies:
-    "@types/uglify-js" "*"
-
-"@types/uglify-js@*":
-  version "3.17.5"
-  resolved "https://registry.yarnpkg.com/@types/uglify-js/-/uglify-js-3.17.5.tgz#905ce03a3cbbf2e31cbefcbc68d15497ee2e17df"
-  integrity sha512-TU+fZFBTBcXj/GpDpDaBmgWk/gn96kMZ+uocaFUlV2f8a6WdMzzI44QBCmGcCiYR0Y6ZlNRiyUyKKt5nl/lbzQ==
-  dependencies:
-    source-map "^0.6.1"
 
 "@types/unist@*", "@types/unist@^3.0.0":
   version "3.0.2"
@@ -4405,12 +4509,12 @@ babel-plugin-macros@^3.0.1, babel-plugin-macros@^3.1.0:
     resolve "^1.19.0"
 
 babel-plugin-polyfill-corejs2@^0.4.10:
-  version "0.4.10"
-  resolved "https://registry.yarnpkg.com/babel-plugin-polyfill-corejs2/-/babel-plugin-polyfill-corejs2-0.4.10.tgz#276f41710b03a64f6467433cab72cbc2653c38b1"
-  integrity sha512-rpIuu//y5OX6jVU+a5BCn1R5RSZYWAl2Nar76iwaOdycqb6JPxediskWFMMl7stfwNJR4b7eiQvh5fB5TEQJTQ==
+  version "0.4.11"
+  resolved "https://registry.yarnpkg.com/babel-plugin-polyfill-corejs2/-/babel-plugin-polyfill-corejs2-0.4.11.tgz#30320dfe3ffe1a336c15afdcdafd6fd615b25e33"
+  integrity sha512-sMEJ27L0gRHShOh5G54uAAPaiCOygY/5ratXuiyb2G46FmlSpc9eFCzYVyDiPxfNbwzA7mYahmjQc5q+CZQ09Q==
   dependencies:
     "@babel/compat-data" "^7.22.6"
-    "@babel/helper-define-polyfill-provider" "^0.6.1"
+    "@babel/helper-define-polyfill-provider" "^0.6.2"
     semver "^6.3.1"
 
 babel-plugin-polyfill-corejs3@^0.10.4:
@@ -4422,11 +4526,11 @@ babel-plugin-polyfill-corejs3@^0.10.4:
     core-js-compat "^3.36.1"
 
 babel-plugin-polyfill-regenerator@^0.6.1:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/babel-plugin-polyfill-regenerator/-/babel-plugin-polyfill-regenerator-0.6.1.tgz#4f08ef4c62c7a7f66a35ed4c0d75e30506acc6be"
-  integrity sha512-JfTApdE++cgcTWjsiCQlLyFBMbTUft9ja17saCc93lgV33h4tuCVj7tlvu//qpLwaG+3yEz7/KhahGrUMkVq9g==
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/babel-plugin-polyfill-regenerator/-/babel-plugin-polyfill-regenerator-0.6.2.tgz#addc47e240edd1da1058ebda03021f382bba785e"
+  integrity sha512-2R25rQZWP63nGwaAswvDazbPXfrM3HwVoBXK6HcqeKrSrL/JqcC/rDcf95l4r7LXLyxDXc8uQDa064GubtCABg==
   dependencies:
-    "@babel/helper-define-polyfill-provider" "^0.6.1"
+    "@babel/helper-define-polyfill-provider" "^0.6.2"
 
 babel-plugin-syntax-trailing-function-commas@^7.0.0-beta.0:
   version "7.0.0-beta.0"
@@ -4829,9 +4933,9 @@ clone@^1.0.2:
   integrity sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg==
 
 clsx@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/clsx/-/clsx-2.1.0.tgz#e851283bcb5c80ee7608db18487433f7b23f77cb"
-  integrity sha512-m3iNNWpd9rl3jvvcBnu70ylMdrXt8Vlq4HYadnU5fwcOtvkSQWPmj7amUcDT2qYI7risszBjI5AUIUox9D16pg==
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/clsx/-/clsx-2.1.1.tgz#eed397c9fd8bd882bfb18deab7102049a2f32999"
+  integrity sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==
 
 color-convert@^1.9.0:
   version "1.9.3"
@@ -4852,15 +4956,31 @@ color-name@1.1.3:
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
   integrity sha512-72fSenhMw2HZMTVHeCA9KCmpEIbzWiQsjN+BHcBbS9vr1mtt+vJjPdksIBNUmKAW8TFUDPJK5SUU3QhE9NEXDw==
 
-color-name@~1.1.4:
+color-name@^1.0.0, color-name@~1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
+
+color-string@^1.9.0:
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/color-string/-/color-string-1.9.1.tgz#4467f9146f036f855b764dfb5bf8582bf342c7a4"
+  integrity sha512-shrVawQFojnZv6xM40anx4CkoDP+fZsw/ZerEMsW/pyzsRbElpsL/DBVW7q3ExxwusdNXI3lXpuhEZkzs8p5Eg==
+  dependencies:
+    color-name "^1.0.0"
+    simple-swizzle "^0.2.2"
 
 color-support@^1.1.2, color-support@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/color-support/-/color-support-1.1.3.tgz#93834379a1cc9a0c61f82f52f0d04322251bd5a2"
   integrity sha512-qiBjkpbMLO/HL68y+lh4q0/O1MZFj2RX6X/KmMa3+gJD3z+WwI1ZzDHysvqHGS3mP6mznPckpXmw1nI9cJjyRg==
+
+color@^4.2.3:
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/color/-/color-4.2.3.tgz#d781ecb5e57224ee43ea9627560107c0e0c6463a"
+  integrity sha512-1rXeuUUiGGrykh+CeBdu5Ie7OJwinCgQY0bc7GCRxy5xVHy+moaqkpL/jqQq0MtQOeYcrqEz4abc5f0KtU7W4A==
+  dependencies:
+    color-convert "^2.0.1"
+    color-string "^1.9.0"
 
 colorette@^2.0.16, colorette@^2.0.19:
   version "2.0.20"
@@ -4888,11 +5008,6 @@ commander@^2.20.0:
   version "2.20.3"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
-
-commander@~2.13.0:
-  version "2.13.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-2.13.0.tgz#6964bca67685df7c1f1430c584f07d7597885b9c"
-  integrity sha512-MVuS359B+YzaWqjCL/c+22gfryv+mCBPHAv3zyVI2GN8EY6IRP8VwtasXn8jyyhvvq84R4ImN1OKRtcbIasjYA==
 
 comment-parser@^1.4.0:
   version "1.4.1"
@@ -5204,7 +5319,7 @@ detect-libc@^1.0.3:
   resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-1.0.3.tgz#fa137c4bd698edf55cd5cd02ac559f91a4c4ba9b"
   integrity sha512-pGjwhsmsp4kL2RTz08wcOlGN83otlqHeD/Z5T8GXZB+/YcpQ/dgo+lbU8ZsGxV0HIvqqxo9l7mqYwyYMD9bKDg==
 
-detect-libc@^2.0.0:
+detect-libc@^2.0.0, detect-libc@^2.0.2:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-2.0.3.tgz#f0cd503b40f9939b894697d19ad50895e30cf700"
   integrity sha512-bwy0MGW55bG41VqxxypOsdSdGqLwXPI/focwgTYCFMbdUiBAxLg9CFzG08sz2aqzknwiX7Hkl0bQENjg8iLByw==
@@ -5300,9 +5415,9 @@ ejs@^3.1.6:
     jake "^10.8.5"
 
 electron-to-chromium@^1.4.668:
-  version "1.4.745"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.745.tgz#9c202ce9cbf18a5b5e0ca47145fd127cc4dd2290"
-  integrity sha512-tRbzkaRI5gbUn5DEvF0dV4TQbMZ5CLkWeTAXmpC9IrYT+GE+x76i9p+o3RJ5l9XmdQlI1pPhVtE9uNcJJ0G0EA==
+  version "1.4.749"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.749.tgz#9869e2e258141da26a2272b58264584c3461279d"
+  integrity sha512-LRMMrM9ITOvue0PoBrvNIraVmuDbJV5QC9ierz/z5VilMdPOVMjOtpICNld3PuXuTZ3CHH/UPxX9gHhAPwi+0Q==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -5356,7 +5471,7 @@ error-ex@^1.3.1:
   dependencies:
     is-arrayish "^0.2.1"
 
-es-abstract@^1.22.1, es-abstract@^1.22.3, es-abstract@^1.23.0, es-abstract@^1.23.1, es-abstract@^1.23.2:
+es-abstract@^1.22.1, es-abstract@^1.22.3, es-abstract@^1.23.0, es-abstract@^1.23.1, es-abstract@^1.23.2, es-abstract@^1.23.3:
   version "1.23.3"
   resolved "https://registry.yarnpkg.com/es-abstract/-/es-abstract-1.23.3.tgz#8f0c5a35cd215312573c5a27c87dfd6c881a0aa0"
   integrity sha512-e+HfNH61Bj1X9/jLc5v1owaLYuHdeHHSQlkhCBiTK8rBvKaULl/beGMxwrMXjpYrv4pz22BlY570vVePA2ho4A==
@@ -5421,13 +5536,13 @@ es-errors@^1.1.0, es-errors@^1.2.1, es-errors@^1.3.0:
   integrity sha512-Zf5H2Kxt2xjTvbJvP2ZWLEICxA6j+hAmMzIlypy4xcBg1vKVnx89Wy0GbS+kf5cwCVFFzdCFh2XSCFNULS6csw==
 
 es-iterator-helpers@^1.0.15, es-iterator-helpers@^1.0.17:
-  version "1.0.18"
-  resolved "https://registry.yarnpkg.com/es-iterator-helpers/-/es-iterator-helpers-1.0.18.tgz#4d3424f46b24df38d064af6fbbc89274e29ea69d"
-  integrity sha512-scxAJaewsahbqTYrGKJihhViaM6DDZDDoucfvzNbK0pOren1g/daDQ3IAhzn+1G14rBG7w+i5N+qul60++zlKA==
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/es-iterator-helpers/-/es-iterator-helpers-1.0.19.tgz#117003d0e5fec237b4b5c08aded722e0c6d50ca8"
+  integrity sha512-zoMwbCcH5hwUkKJkT8kDIBZSz9I6mVG//+lDCinLCGov4+r7NIy0ld8o03M0cJxl2spVf6ESYVS6/gpIfq1FFw==
   dependencies:
     call-bind "^1.0.7"
     define-properties "^1.2.1"
-    es-abstract "^1.23.0"
+    es-abstract "^1.23.3"
     es-errors "^1.3.0"
     es-set-tostringtag "^2.0.3"
     function-bind "^1.1.2"
@@ -5845,9 +5960,9 @@ fast-json-stringify@^1.21.0:
     string-similarity "^4.0.1"
 
 fast-json-stringify@^5.8.0:
-  version "5.14.1"
-  resolved "https://registry.yarnpkg.com/fast-json-stringify/-/fast-json-stringify-5.14.1.tgz#3b1aa5a823e4dd5414ec079d32f51e33dd887766"
-  integrity sha512-J1Grbf0oSXV3lKsBf3itz1AvRk43qVrx3Ac10sNvi3LZaz1by4oDdYKFrJycPhS8+Gb7y8rgV/Jqw1UZVjyNvw==
+  version "5.15.0"
+  resolved "https://registry.yarnpkg.com/fast-json-stringify/-/fast-json-stringify-5.15.0.tgz#79ea7203c8e541c744e1d59a4fb17133688c181a"
+  integrity sha512-BUEAAyDKb64u+kmkINYfXUUiKjBKerSmVu/dzotfaWSHBxR44JFrOZgkhMO6VxDhDfiuAoi8mx4drd5nvNdA4Q==
   dependencies:
     "@fastify/merge-json-schemas" "^0.1.0"
     ajv "^8.10.0"
@@ -6708,6 +6823,11 @@ is-arrayish@^0.2.1:
   resolved "https://registry.yarnpkg.com/is-arrayish/-/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
   integrity sha512-zz06S8t0ozoDXMG+ube26zeCTNXcKIPJZJi8hBrF4idCLms4CG9QtK7qBl1boi5ODzFpjswb5JPmHCbMpjaYzg==
 
+is-arrayish@^0.3.1:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/is-arrayish/-/is-arrayish-0.3.2.tgz#4574a2ae56f7ab206896fb431eaeed066fdf8f03"
+  integrity sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==
+
 is-async-function@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/is-async-function/-/is-async-function-2.0.0.tgz#8e4418efd3e5d3a6ebb0164c05ef5afb69aa9646"
@@ -7419,11 +7539,6 @@ log-update@^4.0.0:
     slice-ansi "^4.0.0"
     wrap-ansi "^6.2.0"
 
-long@^5.2.3:
-  version "5.2.3"
-  resolved "https://registry.yarnpkg.com/long/-/long-5.2.3.tgz#a3ba97f3877cf1d778eccbcb048525ebb77499e1"
-  integrity sha512-lcHwpNoggQTObv5apGNCTdJrO69eHOZMi4BNC+rTLER8iHAqGrUVeLh/irVIM7zTw2bOXA8T6uNPeujwOLg/2Q==
-
 loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
@@ -7446,9 +7561,9 @@ lower-case@^2.0.2:
     tslib "^2.0.3"
 
 lru-cache@^10.0.0, lru-cache@^10.0.1, lru-cache@^10.2.0:
-  version "10.2.0"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-10.2.0.tgz#0bd445ca57363465900f4d1f9bd8db343a4d95c3"
-  integrity sha512-2bIM8x+VAf6JT4bKAljS1qUWgMsqZRPGJS6FSahIMPVvctcNhyVp7AJu7quxOW9jwkryBReKZY5tY5JYv2n/7Q==
+  version "10.2.1"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-10.2.1.tgz#e8d901141f22937968e45a6533d52824070151e4"
+  integrity sha512-tS24spDe/zXhWbNPErCHs/AGOzbKGHT+ybSBqmdLm8WZ1xXLWvH8Qn71QPAlqVhd0qUTWjy+Kl9JmISgDdEjsA==
 
 lru-cache@^5.1.1:
   version "5.1.1"
@@ -7546,9 +7661,9 @@ meros@^1.2.1:
   integrity sha512-2BNGOimxEz5hmjUG2FwoxCt5HN7BXdaWyFqEwxPTrJzVdABtrL4TiHTcsWSFAxPQ/tOnEaQEJh3qWq71QRMY+w==
 
 micromark-core-commonmark@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/micromark-core-commonmark/-/micromark-core-commonmark-2.0.0.tgz#50740201f0ee78c12a675bf3e68ffebc0bf931a3"
-  integrity sha512-jThOz/pVmAYUtkroV3D5c1osFXAMv9e0ypGDOIZuCeAe91/sD6BoE2Sjzt30yuXtwOYUmySOhMas/PVyh02itA==
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/micromark-core-commonmark/-/micromark-core-commonmark-2.0.1.tgz#9a45510557d068605c6e9a80f282b2bb8581e43d"
+  integrity sha512-CUQyKr1e///ZODyD1U3xit6zXwy1a8q2a1S1HKtIlmgvurrEpaw/Y9y6KSIbF8P59cn/NjzHyO+Q2fAyYLQrAA==
   dependencies:
     decode-named-character-reference "^1.0.0"
     devlop "^1.0.0"
@@ -8631,14 +8746,14 @@ randombytes@^2.1.0:
     safe-buffer "^5.1.0"
 
 react-dom@^18.2.0:
-  version "18.2.0"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.2.0.tgz#22aaf38708db2674ed9ada224ca4aa708d821e3d"
-  integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
+  version "18.3.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.3.0.tgz#98a3a1cc4e471d517c2a084f38ab1d58d02cada7"
+  integrity sha512-zaKdLBftQJnvb7FtDIpZtsAIb2MZU087RM8bRDZU8LVCCFYjPTsDZJNFUWPcVz3HFSN1n/caxi0ca4B/aaVQGQ==
   dependencies:
     loose-envify "^1.1.0"
-    scheduler "^0.23.0"
+    scheduler "^0.23.1"
 
-react-hook-form@^7.51.2:
+react-hook-form@^7.49.3:
   version "7.51.3"
   resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.51.3.tgz#7486dd2d52280b6b28048c099a98d2545931cab3"
   integrity sha512-cvJ/wbHdhYx8aviSWh28w9ImjmVsb5Y05n1+FW786vEZQJV5STNM0pW6ujS+oiBecb0ARBxJFyAnXj9+GHXACQ==
@@ -8649,9 +8764,9 @@ react-is@^16.13.1, react-is@^16.7.0:
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
 react-is@^18.0.0, react-is@^18.2.0:
-  version "18.2.0"
-  resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
-  integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
+  version "18.3.0"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.3.0.tgz#6c2d9b6cdd4c2cffb7c89b1bcb57bc44d12f1993"
+  integrity sha512-wRiUsea88TjKDc4FBEn+sLvIDesp6brMbGWnJGjew2waAc9evdhja/2LvePc898HJbHw0L+MTWy7NhpnELAvLQ==
 
 react-transition-group@^4.4.5:
   version "4.4.5"
@@ -8664,9 +8779,9 @@ react-transition-group@^4.4.5:
     prop-types "^15.6.2"
 
 react@^18.2.0:
-  version "18.2.0"
-  resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
-  integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
+  version "18.3.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-18.3.0.tgz#84386d0a36fdf5ef50fa5755b7812bdfb76194a5"
+  integrity sha512-RPutkJftSAldDibyrjuku7q11d3oy6wKOyPe5K1HA/HwwrXcEqBdHsLypkC2FFYjP7bPUa6gbzSBhw4sY2JcDg==
   dependencies:
     loose-envify "^1.1.0"
 
@@ -8775,10 +8890,10 @@ regjsparser@^0.9.1:
   dependencies:
     jsesc "~0.5.0"
 
-rehackt@0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/rehackt/-/rehackt-0.0.6.tgz#7a0a2247f2295e7548915417e44fbbf03bf004f4"
-  integrity sha512-l3WEzkt4ntlEc/IB3/mF6SRgNHA6zfQR7BlGOgBTOmx7IJJXojDASav+NsgXHFjHn+6RmwqsGPFgZpabWpeOdw==
+rehackt@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/rehackt/-/rehackt-0.1.0.tgz#a7c5e289c87345f70da8728a7eb878e5d03c696b"
+  integrity sha512-7kRDOuLHB87D/JESKxQoRwv4DzbIdwkAGQ7p6QKGdVlY1IZheUnVhlk/4UZlNUVxdAXpyxikE3URsG067ybVzw==
 
 relay-runtime@12.0.0:
   version "12.0.0"
@@ -8973,10 +9088,10 @@ safe-regex-test@^1.0.3:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-scheduler@^0.23.0:
-  version "0.23.0"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.23.0.tgz#ba8041afc3d30eb206a487b6b384002e4e61fdfe"
-  integrity sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==
+scheduler@^0.23.1:
+  version "0.23.1"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.23.1.tgz#ef964a7936d7cbe8f7bc0d38fc479a823aed2923"
+  integrity sha512-5GKS5JGfiah1O38Vfa9srZE4s3wdHbwjlCrvIookrg2FO9aIwKLOJXuJQFlEfNcVSOXuaL2hzDeY20uVXcUtrw==
   dependencies:
     loose-envify "^1.1.0"
 
@@ -9078,6 +9193,35 @@ setimmediate@^1.0.5:
   resolved "https://registry.yarnpkg.com/setimmediate/-/setimmediate-1.0.5.tgz#290cbb232e306942d7d7ea9b83732ab7856f8285"
   integrity sha512-MATJdZp8sLqDl/68LfQmbP8zKPLQNV6BIZoIgrscFDQ+RsvK/BxeDQOgyxKKoh0y/8h3BqVFnCqQ/gd+reiIXA==
 
+sharp@0.33.2:
+  version "0.33.2"
+  resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.33.2.tgz#fcd52f2c70effa8a02160b1bfd989a3de55f2dfb"
+  integrity sha512-WlYOPyyPDiiM07j/UO+E720ju6gtNtHjEGg5vovUk1Lgxyjm2LFO+37Nt/UI3MMh2l6hxTWQWi7qk3cXJTutcQ==
+  dependencies:
+    color "^4.2.3"
+    detect-libc "^2.0.2"
+    semver "^7.5.4"
+  optionalDependencies:
+    "@img/sharp-darwin-arm64" "0.33.2"
+    "@img/sharp-darwin-x64" "0.33.2"
+    "@img/sharp-libvips-darwin-arm64" "1.0.1"
+    "@img/sharp-libvips-darwin-x64" "1.0.1"
+    "@img/sharp-libvips-linux-arm" "1.0.1"
+    "@img/sharp-libvips-linux-arm64" "1.0.1"
+    "@img/sharp-libvips-linux-s390x" "1.0.1"
+    "@img/sharp-libvips-linux-x64" "1.0.1"
+    "@img/sharp-libvips-linuxmusl-arm64" "1.0.1"
+    "@img/sharp-libvips-linuxmusl-x64" "1.0.1"
+    "@img/sharp-linux-arm" "0.33.2"
+    "@img/sharp-linux-arm64" "0.33.2"
+    "@img/sharp-linux-s390x" "0.33.2"
+    "@img/sharp-linux-x64" "0.33.2"
+    "@img/sharp-linuxmusl-arm64" "0.33.2"
+    "@img/sharp-linuxmusl-x64" "0.33.2"
+    "@img/sharp-wasm32" "0.33.2"
+    "@img/sharp-win32-ia32" "0.33.2"
+    "@img/sharp-win32-x64" "0.33.2"
+
 shebang-command@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/shebang-command/-/shebang-command-2.0.0.tgz#ccd0af4f8835fbdc265b82461aaf0c36663f34ea"
@@ -9119,6 +9263,13 @@ signedsource@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/signedsource/-/signedsource-1.0.0.tgz#1ddace4981798f93bd833973803d80d52e93ad6a"
   integrity sha512-6+eerH9fEnNmi/hyM1DXcRK3pWdoMQtlkQ+ns0ntzunjKqp5i3sKCc80ym8Fib3iaYhdJUOPdhlJWj1tvge2Ww==
+
+simple-swizzle@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/simple-swizzle/-/simple-swizzle-0.2.2.tgz#a4da6b635ffcccca33f70d17cb92592de95e557a"
+  integrity sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==
+  dependencies:
+    is-arrayish "^0.3.1"
 
 sisteransi@^1.0.5:
   version "1.0.5"
@@ -9206,7 +9357,7 @@ source-map@^0.5.7:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
   integrity sha512-LbrmJOMUSdEVxIKvdcJzQC+nQhe8FUZQTXQy6+I75skNgn3OoQ0DZA8YnFa7gp8tqtL3KPf1kmo0R5DoApeSGQ==
 
-source-map@^0.6.0, source-map@^0.6.1, source-map@~0.6.1:
+source-map@^0.6.0, source-map@~0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
@@ -9506,9 +9657,9 @@ terser-webpack-plugin@^5.3.7:
     terser "^5.26.0"
 
 terser@^5.0.0, terser@^5.16.8, terser@^5.26.0:
-  version "5.30.3"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-5.30.3.tgz#f1bb68ded42408c316b548e3ec2526d7dd03f4d2"
-  integrity sha512-STdUgOUx8rLbMGO9IOwHLpCqolkDITFFQSMYYwKE1N2lY6MVSaeoi10z/EhWxRc6ybqoVmKSkhKYH/XUpl7vSA==
+  version "5.30.4"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-5.30.4.tgz#62b4d16a819424e6317fd5ceffb4ee8dc769803a"
+  integrity sha512-xRdd0v64a8mFK9bnsKVdoNP9GQIKUAaJPTaqEQDL4w/J8WaW4sWXXoMZ+6SimPkfT5bElreXf8m9HnmPc3E1BQ==
   dependencies:
     "@jridgewell/source-map" "^0.3.3"
     acorn "^8.8.2"
@@ -9684,9 +9835,9 @@ type-fest@^0.21.3:
   integrity sha512-t0rzBq87m3fVcduHDUFhKmyyX+9eo6WQjZvf51Ea/M0Q7+T374Jp1aUiyUl0GKxp8M/OETVHSDvmkyPgvX+X2w==
 
 type-fest@^4.9.0:
-  version "4.15.0"
-  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.15.0.tgz#21da206b89c15774cc718c4f2d693e13a1a14a43"
-  integrity sha512-tB9lu0pQpX5KJq54g+oHOLumOx+pMep4RaM6liXh2PKmVRFF+/vAtUP0ZaJ0kOySfVNjF6doBWPHhBhISKdlIA==
+  version "4.17.0"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.17.0.tgz#4c1b2c2852d2a40ba8c0236d3afc6fc68229e5bf"
+  integrity sha512-9flrz1zkfLRH3jO3bLflmTxryzKMxVa7841VeMgBaNQGY6vH4RCcpN/sQLB7mQQYh1GZ5utT2deypMuCy4yicw==
 
 typed-array-buffer@^1.0.2:
   version "1.0.2"
@@ -9742,7 +9893,7 @@ typescript@^5.4.2:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.4.5.tgz#42ccef2c571fdbd0f6718b1d1f5e6e5ef006f611"
   integrity sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==
 
-"uWebSockets.js@uNetworking/uWebSockets.js#semver:^20":
+"uWebSockets.js@github:uNetworking/uWebSockets.js#semver:^20":
   version "20.43.0"
   resolved "https://codeload.github.com/uNetworking/uWebSockets.js/tar.gz/1977b5039938ad863d42fc4958d48c17e5a1fa06"
 
@@ -9750,14 +9901,6 @@ ua-parser-js@^1.0.35:
   version "1.0.37"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-1.0.37.tgz#b5dc7b163a5c1f0c510b08446aed4da92c46373f"
   integrity sha512-bhTyI94tZofjo+Dn8SN6Zv8nBDvyXTymAdM3LDI/0IboIUwTu1rEhW7v2TfiVsoYWgkQ4kOVqnI8APUFbIQIFQ==
-
-uglify-es@3.3.9:
-  version "3.3.9"
-  resolved "https://registry.yarnpkg.com/uglify-es/-/uglify-es-3.3.9.tgz#0c1c4f0700bed8dbc124cdb304d2592ca203e677"
-  integrity sha512-r+MU0rfv4L/0eeW3xZrd16t4NZfK8Ld4SWVglYBb7ez5uXFWHuVRs6xCTrf1yirs9a4j4Y27nn7SRfO6v67XsQ==
-  dependencies:
-    commander "~2.13.0"
-    source-map "~0.6.1"
 
 un-eval@^1.2.0:
   version "1.2.0"
@@ -9930,11 +10073,6 @@ web-streams-polyfill@^3.2.1:
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/web-streams-polyfill/-/web-streams-polyfill-3.3.3.tgz#2073b91a2fdb1fbfbd401e7de0ac9f8214cecb4b"
   integrity sha512-d2JWLCivmZYTSIoge9MsgFCZrt571BikcWGYkjC1khllbTeDlGqZ2D8vD8E/lJa8WGWbb7Plm8/XJYV7IJHZZw==
-
-web-vitals@^3.5.2:
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/web-vitals/-/web-vitals-3.5.2.tgz#5bb58461bbc173c3f00c2ddff8bfe6e680999ca9"
-  integrity sha512-c0rhqNcHXRkY/ogGDJQxZ9Im9D19hDihbzSQJrsioex+KnFgmMzBiy57Z1EjkhX/+OjyBpclDCzz2ITtjokFmg==
 
 webcrypto-core@^1.7.9:
   version "1.7.9"
@@ -10432,6 +10570,6 @@ znv@^0.4.0:
     colorette "^2.0.19"
 
 zod@^3.22.4:
-  version "3.23.0"
-  resolved "https://registry.yarnpkg.com/zod/-/zod-3.23.0.tgz#a25dab5052702834233e0041e9dd8b6a8480e744"
-  integrity sha512-OFLT+LTocvabn6q76BTwVB0hExEBS0IduTr3cqZyMqEDbOnYmcU+y0tUAYbND4uwclpBGi4I4UUBGzylWpjLGA==
+  version "3.23.4"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.23.4.tgz#c63805b2f39e10d4ab3d55eb3c8cdb472c79dfb1"
+  integrity sha512-/AtWOKbBgjzEYYQRNfoGKHObgfAZag6qUJX1VbHo2PRBgS+wfWagEY2mizjfyAPcGesrJOcx/wcl0L9WnVrHFw==

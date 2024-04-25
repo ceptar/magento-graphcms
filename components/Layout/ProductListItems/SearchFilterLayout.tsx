@@ -1,6 +1,5 @@
 import {
   ProductFiltersPro,
-  ProductFiltersProAllFiltersChip,
   ProductFiltersProAllFiltersSidebar,
   ProductFiltersProClearAll,
   ProductListCount,
@@ -9,14 +8,12 @@ import {
   ProductListParamsProvider,
   ProductListSort,
 } from '@graphcommerce/magento-search'
-
+import { ProductFiltersProAllFiltersChip } from './ProductFiltersProAllFiltersChip'
 import { Container } from '@mui/material'
 import { ProductListFilterLayoutProps } from './CategoryFilterLayout'
 import { ProductFiltersProLayoutSidebar } from './ProductFiltersProLayoutSidebar'
 import { ProductListFiltersContainer } from './ProductListFiltersContainer'
-
 import { ProductListItemsBase } from './ProductListItemsBase'
-
 import { StickyBelowHeader } from './StickyBelowHeader'
 import { productListRenderer } from '../ProductListItems/ProductListRenderer'
 

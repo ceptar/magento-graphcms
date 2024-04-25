@@ -7,9 +7,9 @@ export function Logo() {
     href='/'
     sx={(theme) => ({
         '& .GcLogo-logo': {
-          minHeight: '30px',
-          maxHeight: '50px',
-          minWidth: '100px',
+          minHeight: '40px',
+          maxHeight: '60px',
+          minWidth: '120px',
           maxWidth: 'max-content',
           
 

@@ -119,7 +119,15 @@ export function LayoutNavigation(props: LayoutNavigationProps) {
 
 
 
-            <DesktopNavActions>
+            <DesktopNavActions
+                          sx={(theme) => ({
+
+                            columnGap: theme.spacings.xxs,
+                            paddingLeft: theme.spacings.sm,
+                            paddingRight: theme.spacings.sm,
+                          })}>
+  
+ 
               {!router.pathname.startsWith('/search') && (
                 <SearchLink href='/search' aria-label={i18n._(/* i18n */ 'Search...')} />
               )}
@@ -129,6 +137,7 @@ export function LayoutNavigation(props: LayoutNavigationProps) {
               {/* The placeholder exists because the CartFab is sticky but we want to reserve the space for the <CartFab /> */}
               <PlaceholderFab size='large' />
               <PlaceholderFab size='large' />
+           
             </DesktopNavActions>
 
           </>

@@ -2,7 +2,6 @@ import {
   ProductFiltersProClearAll,
   FilterTypes,
   ProductFiltersPro,
-  ProductFiltersProAllFiltersChip,
   ProductFiltersProAllFiltersSidebar,
   ProductFiltersQuery,
   ProductListCount,
@@ -14,7 +13,7 @@ import {
   ProductListSort,
 } from '@graphcommerce/magento-product'
 import { Container } from '@mui/material'
-
+import { ProductFiltersProAllFiltersChip } from './ProductFiltersProAllFiltersChip'
 import { ProductFiltersProLayoutSidebar } from './ProductFiltersProLayoutSidebar'
 import { ProductListFiltersContainer } from './ProductListFiltersContainer'
 import { ProductListItems } from './ProductListItems'

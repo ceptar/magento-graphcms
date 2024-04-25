@@ -12,25 +12,25 @@ export function Footer(props: FooterProps) {
 
   return (
     <FooterBase
-      socialLinks={footer?.socialLinks?.map((link) => (
-        <IconButton key={link.title} href={link.url} color='inherit' size='medium' edge='start'>
-          {link.asset ? (
-            <Image
-              layout='fill'
-              src={link.asset.url}
-              width={24}
-              height={24}
-              unoptimized
-              alt={link.title}
-              sx={(theme) => ({
-                filter: theme.palette.mode === 'dark' ? 'invert(100%)' : 'invert(0%)',
-              })}
-            />
-          ) : (
-            link.title
-          )}
-        </IconButton>
-      ))}
+      // socialLinks={footer?.socialLinks?.map((link) => (
+      //   <IconButton key={link.title} href={link.url} color='inherit' size='medium' edge='start'>
+      //     {link.asset ? (
+      //       <Image
+      //         layout='fill'
+      //         src={link.asset.url}
+      //         width={24}
+      //         height={24}
+      //         unoptimized
+      //         alt={link.title}
+      //         sx={(theme) => ({
+      //           filter: theme.palette.mode === 'dark' ? 'invert(100%)' : 'invert(0%)',
+      //         })}
+      //       />
+      //     ) : (
+      //       link.title
+      //     )}
+      //   </IconButton>
+      // ))}
       storeSwitcher={<StoreSwitcherButton />}
       customerService={
         <Button href='/service' variant='pill'>

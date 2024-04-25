@@ -56,7 +56,7 @@ export function ProductListItemsBase(props: ProductItemsGridProps) {
                 xs: `repeat(1, 1fr)`,
                 sm: `repeat(2, 1fr)`,
                 md: `repeat(3, 1fr)`,
-                lg: `repeat(auto-fill, minmax(300px, 500px))`, // Adjust minmax values for XL and above
+                lg: `repeat(auto-fill, minmax(300px, 1fr))`, // Adjust minmax values for XL and above
               },
             },
           }),
