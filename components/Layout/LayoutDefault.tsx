@@ -73,10 +73,14 @@ export function LayoutDefault(props: LayoutDefaultProps) {
           sx={(theme) => ({
             zIndex: theme.zIndex.appBar - 1,
             display: 'flex',
-            // gridTemplateColumns: `auto 1fr auto auto`,
+
+            // gridTemplateColumns: '',
             gap: theme.page.horizontal,
             px: theme.page.horizontal,
             height: theme.appShell.headerHeightMd,
+
+
+
 
             pointerEvents: 'none',
             '& > *': {

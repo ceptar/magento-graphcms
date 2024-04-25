@@ -62,7 +62,7 @@ export function LayoutNavigation(props: LayoutNavigationProps) {
             >
               <Trans id='Search...' />
             </SearchLink>,
-            
+
 
             ...magentoMenuToNavigation(menu, true),
             { id: 'blog', name: 'Blog', href: '/blog' },
@@ -103,33 +103,22 @@ export function LayoutNavigation(props: LayoutNavigationProps) {
       </NavigationProvider>
 
       <LayoutDefault
-              {...uiProps}
+        {...uiProps}
         noSticky={router.asPath.split('?')[0] === '/'}
         header={
-          
+
           <>
 
-             
-<PageLink
 
-href= '/'
 
->
-  <Box
-  sx={{
-    marginRight: 'auto',
-    marginLeft: '0'
-  
-  }}
-  >
-  <Logo   
+            <Logo 
+          
+            />
 
-/>
-</Box>
 
-</PageLink>
-            
-            
+
+
+
             <DesktopNavActions>
               {!router.pathname.startsWith('/search') && (
                 <SearchLink href='/search' aria-label={i18n._(/* i18n */ 'Search...')} />
@@ -141,6 +130,7 @@ href= '/'
               <PlaceholderFab size='large' />
               <PlaceholderFab size='large' />
             </DesktopNavActions>
+
           </>
         }
         footer={<Footer footer={footer} />}
@@ -151,6 +141,6 @@ href= '/'
       </LayoutDefault>
 
     </>
-      
+
   )
 }
