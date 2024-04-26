@@ -18,6 +18,11 @@ const config = {
 
   demoMode: true,
   limitSsg: true,
+  configurableVariantValues: {
+    url: true,
+    gallery: true,
+    content: true,
+  },
 }
 
 module.exports = config
